@@ -1,0 +1,63 @@
+{
+	"name": "milligram",
+	"version": "0.0.1",
+	"description": "Slight, weightless, slim and minimalist framework for the web.",
+	"homepage": "http://milligram.github.io",
+	"license": {
+		"type": "MIT",
+		"url": "https://cjpatoilo.mit-license.org"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/milligram/milligram.git"
+	},
+	"bugs": {
+		"url": "https://github.com/milligram/milligram/issues"
+	},
+	"author": {
+		"name": "CJ Patoilo",
+		"email": "cjpatoilo@gmail.com",
+		"url": "http://cjpatoilo.com"
+	},
+	"engines": {
+		"node": ">=0.12.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"files": [
+		"*.json",
+		"*.md",
+		".gitignore",
+		"license"
+	],
+	"keywords": [
+		"app",
+		"boilerplate",
+		"botstrap",
+		"build",
+		"css",
+		"design",
+		"dev",
+		"development",
+		"front-end",
+		"framework",
+		"html",
+		"less",
+		"milligram",
+		"responsive",
+		"mobile",
+		"mobile-first",
+		"sass",
+		"stack",
+		"stylus",
+		"style",
+		"styles",
+		"stylesheet",
+		"stylesheets",
+		"tool",
+		"tooling",
+		"web",
+		"web-design"
+	]
+}
