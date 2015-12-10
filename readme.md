@@ -1,4 +1,4 @@
-# milligramr
+# milligram
 
 | Slight, weightless, slim and minimalist framework for the web.
 
