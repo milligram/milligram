@@ -1,0 +1,62 @@
+{
+	"name": "milligram",
+	"version": "0.0.1",
+	"description": "A simple, slight, and minimalist CSS framework.",
+	"homepage": "http://milligram.github.io",
+	"license": {
+		"type": "MIT",
+		"url": "https://cjpatoilo.mit-license.org"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/milligram/milligram.git"
+	},
+	"bugs": {
+		"url": "https://github.com/milligram/milligram/issues"
+	},
+	"author": {
+		"name": "CJ Patoilo",
+		"email": "cjpatoilo@gmail.com",
+		"url": "http://cjpatoilo.com"
+	},
+	"main": "dist/milligram.min.css",
+	"keywords": [
+		"app",
+		"boilerplate",
+		"botstrap",
+		"build",
+		"css",
+		"design",
+		"dev",
+		"development",
+		"front-end",
+		"framework",
+		"html",
+		"less",
+		"milligram",
+		"responsive",
+		"mobile",
+		"mobile-first",
+		"sass",
+		"stack",
+		"stylus",
+		"style",
+		"styles",
+		"stylesheet",
+		"stylesheets",
+		"tool",
+		"tooling",
+		"web",
+		"web-design"
+	],
+	"dependencies": {
+		"normalize.css": "latest"
+	},
+	"ignore": [
+		"**/.*",
+		"bower_components",
+		"node_modules"
+	],
+	"repo": "milligram/milligram",
+	"styles": ["dist/milligram.min.css"]
+}
