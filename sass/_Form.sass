@@ -1,0 +1,51 @@
+
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea,
+select
+	appearance: none // Removes awkward default styles on some inputs for iOS
+	background-color: transparent
+	border: .1rem solid $color-quaternary
+	border-radius: .4rem
+	box-shadow: none
+	box-sizing: border-box
+	height: 3.8rem
+	padding: .6rem 1.0rem // The .6rem vertically centers text on FF, ignored by Webkit
+	width: 100%
+
+	&:focus
+		border: .1rem solid $color-primary
+		outline: 0
+
+textarea
+	padding-bottom: .6rem
+	padding-top: .6rem
+	min-height: 6.5rem
+
+label,
+legend
+	font-size: 1.6rem
+	font-weight: 700
+	display: block
+	margin-bottom: .5rem
+
+fieldset
+	border-width: 0
+	padding: 0
+
+input[type='checkbox'],
+input[type='radio']
+	display: inline
+
+.label-inline
+	font-weight: normal
+	display: inline-block
+	margin-left: .5rem
