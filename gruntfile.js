@@ -10,11 +10,21 @@ module.exports = function ( grunt ) {
 	// Define the configuration
 	grunt.initConfig({
 
-		// DEFAULT TASK
-		// ================================================================
-
 		// Specifics of npm's package.json handling
 		pkg: grunt.file.readJSON( 'package.json' ),
+
+		// Banner
+		banner:
+			'/*!\n'+
+			' * Milligram v<%= pkg.version %>\n'+
+			' * <%= pkg.homepage %>\n'+
+			' *\n'+
+			' * Copyright (c) 2015, CJ Patoilo\n'+
+			' * Licensed under the <%= pkg.license %> license\n'+
+			'*/\n\n',
+
+		// DEFAULT TASK
+		// ================================================================
 
 		// Watch files and process the above tasks
 		watch: {
@@ -31,7 +41,7 @@ module.exports = function ( grunt ) {
 			},
 			sass: {
 				files: [
-					'sass/**/*.sass'
+					'src/**/*.sass'
 				],
 				tasks: [
 					'sass',
@@ -52,39 +62,51 @@ module.exports = function ( grunt ) {
 		sass: {
 			minify: {
 				options: {
+					banner: '<%= banner %>',
 					noCache: true,
 					sourcemap: 'none',
 					style: 'compressed'
 				},
 				files: {
-					'dist/milligram.min.css': [ 'sass/**/*.sass', '!sass/**/_*.sass' ]
+					'dist/milligram.min.css': [ 'src/**/*.sass', '!src/**/_*.sass' ]
 				}
 			},
 			default: {
 				options: {
+					banner: '<%= banner %>',
 					noCache: true,
 					sourcemap: 'none',
 					style: 'expanded'
 				},
 				files: {
-					'dist/milligram.css': [ 'sass/**/*.sass', '!sass/**/_*.sass' ]
+					'dist/milligram.css': [ 'src/**/*.sass', '!src/**/_*.sass' ]
 				}
 			}
 		},
 
 		// Parse CSS and add vendor-prefixed CSS properties using the Can I Use database.
 		autoprefixer: {
-			all: {
+			minify: {
 				options: {
 					browsers: [
-						'last 2 versions',
-						'ie 8',
-						'ie 9'
+						'last 1 versions'
+					],
+					map: {
+						inline: false
+					}
+				},
+				files: {
+					'dist/milligram.min.css': 'dist/milligram.min.css'
+				}
+			},
+			default: {
+				options: {
+					browsers: [
+						'last 1 versions'
 					],
 					map: false
 				},
 				files: {
-					'dist/milligram.min.css': 'dist/milligram.min.css',
 					'dist/milligram.css': 'dist/milligram.css'
 				}
 			}
@@ -97,13 +119,13 @@ module.exports = function ( grunt ) {
 	// REGISTER TASKS
 	// ================================================================
 
-	// Default tasks
+	// Default task
 	grunt.registerTask( 'default', [
 		'build',
 		'watch'
 	]);
 
-	// Build tasks
+	// Build task
 	grunt.registerTask( 'build', [
 		'clean',
 		'sass',
