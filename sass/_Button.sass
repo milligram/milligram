@@ -1,0 +1,54 @@
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button']
+	background-color: $color-primary
+	border: .1rem solid $color-primary
+	border-radius: .4rem
+	box-sizing: border-box
+	color: $color-initial
+	cursor: pointer
+	display: inline-block
+	font-size: 1.1rem
+	font-weight: 700
+	height: 3.8rem
+	letter-spacing: .1rem
+	line-height: 3.8rem
+	padding: 0 3.0rem
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	white-space: nowrap
+
+	&:hover,
+	&:focus
+		background-color: $color-secondary
+		border-color: $color-secondary
+		color: $color-initial
+		outline: 0
+
+	&.button-outline
+		color: $color-primary
+		background-color: transparent
+
+		&:hover,
+		&:focus
+			color: $color-secondary
+			background-color: transparent
+			border-color: $color-secondary
+
+	&.button-clear
+		color: $color-primary
+		background-color: transparent
+		border-color: transparent
+
+		&:hover,
+		&:focus
+			color: $color-secondary
+			background-color: transparent
+			border-color: transparent
