@@ -3,57 +3,41 @@
 	"version": "1.0.1",
 	"description": "A minimalist CSS framework.",
 	"homepage": "http://milligram.github.io",
-	"license": {
-		"type": "MIT",
-		"url": "https://cjpatoilo.mit-license.org"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/milligram/milligram.git"
-	},
-	"bugs": {
-		"url": "https://github.com/milligram/milligram/issues"
-	},
-	"author": {
-		"name": "CJ Patoilo",
-		"email": "cjpatoilo@gmail.com",
-		"url": "http://cjpatoilo.com"
-	},
-	"main": "dist/milligram.min.css",
+	"repository": "milligram/milligram",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"main": "dist/milligram.css",
 	"keywords": [
-		"app",
 		"boilerplate",
-		"botstrap",
-		"build",
+		"bootstrap",
 		"css",
+		"css3",
 		"design",
-		"dev",
-		"development",
 		"front-end",
 		"framework",
 		"html",
+		"html5",
+		"kickstart",
 		"less",
 		"milligram",
 		"responsive",
 		"mobile",
 		"mobile-first",
+		"responsive",
 		"sass",
-		"stack",
 		"stylus",
 		"style",
-		"styles",
-		"stylesheet",
-		"stylesheets",
-		"tool",
-		"tooling",
-		"web",
-		"web-design"
+		"stylesheet"
 	],
 	"ignore": [
-		"**/.*",
-		"bower_components",
-		"node_modules"
+		".editorconfig",
+		".gitignore",
+		".travis.yml",
+		"bower.json",
+		"package.json",
+		"gruntfile.js",
+		"src"
 	],
 	"repo": "milligram/milligram",
-	"styles": ["dist/milligram.min.css"]
+	"styles": ["dist/milligram.css"]
 }
