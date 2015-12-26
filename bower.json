@@ -1,7 +1,7 @@
 {
 	"name": "milligram",
-	"version": "0.0.1",
-	"description": "Slight, weightless, slim and minimalist framework for the web.",
+	"version": "1.0.0",
+	"description": "A minimalist CSS framework.",
 	"homepage": "http://milligram.github.io",
 	"license": {
 		"type": "MIT",
@@ -20,7 +20,7 @@
 		"url": "http://cjpatoilo.com"
 	},
 	"moduleType": "globals",
-	"main": "dist/css/milligram.min.css",
+	"main": "dist/milligram.min.css",
 	"keywords": [
 		"app",
 		"boilerplate",
@@ -50,6 +50,9 @@
 		"web",
 		"web-design"
 	],
+	"dependencies": {
+		"normalize.css": "latest"
+	},
 	"ignore": [
 		"**/.*",
 		"bower_components",
