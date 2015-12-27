@@ -27,23 +27,21 @@ body {
   box-sizing: border-box;
 }
 
-.blockquote,
 blockquote {
   border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
 }
-.blockquote *:last-child,
 blockquote *:last-child {
   margin: 0;
 }
 
 .button,
 button,
-input[type='submit'],
+input[type='button'],
 input[type='reset'],
-input[type='button'] {
+input[type='submit'] {
   background-color: #9b4dca;
   border: 0.1rem solid #9b4dca;
   border-radius: 0.4rem;
@@ -65,12 +63,12 @@ input[type='button'] {
 .button:hover, .button:focus,
 button:hover,
 button:focus,
-input[type='submit']:hover,
-input[type='submit']:focus,
+input[type='button']:hover,
+input[type='button']:focus,
 input[type='reset']:hover,
 input[type='reset']:focus,
-input[type='button']:hover,
-input[type='button']:focus {
+input[type='submit']:hover,
+input[type='submit']:focus {
   background-color: #606c76;
   border-color: #606c76;
   color: #ffffff;
@@ -78,30 +76,30 @@ input[type='button']:focus {
 }
 .button.button-outline,
 button.button-outline,
-input[type='submit'].button-outline,
+input[type='button'].button-outline,
 input[type='reset'].button-outline,
-input[type='button'].button-outline {
+input[type='submit'].button-outline {
   color: #9b4dca;
   background-color: transparent;
 }
 .button.button-outline:hover, .button.button-outline:focus,
 button.button-outline:hover,
 button.button-outline:focus,
-input[type='submit'].button-outline:hover,
-input[type='submit'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='button'].button-outline:focus,
 input[type='reset'].button-outline:hover,
 input[type='reset'].button-outline:focus,
-input[type='button'].button-outline:hover,
-input[type='button'].button-outline:focus {
+input[type='submit'].button-outline:hover,
+input[type='submit'].button-outline:focus {
   color: #606c76;
   background-color: transparent;
   border-color: #606c76;
 }
 .button.button-clear,
 button.button-clear,
-input[type='submit'].button-clear,
+input[type='button'].button-clear,
 input[type='reset'].button-clear,
-input[type='button'].button-clear {
+input[type='submit'].button-clear {
   color: #9b4dca;
   background-color: transparent;
   border-color: transparent;
@@ -109,12 +107,12 @@ input[type='button'].button-clear {
 .button.button-clear:hover, .button.button-clear:focus,
 button.button-clear:hover,
 button.button-clear:focus,
-input[type='submit'].button-clear:hover,
-input[type='submit'].button-clear:focus,
+input[type='button'].button-clear:hover,
+input[type='button'].button-clear:focus,
 input[type='reset'].button-clear:hover,
 input[type='reset'].button-clear:focus,
-input[type='button'].button-clear:hover,
-input[type='button'].button-clear:focus {
+input[type='submit'].button-clear:hover,
+input[type='submit'].button-clear:focus {
   color: #606c76;
   background-color: transparent;
   border-color: transparent;
@@ -145,11 +143,11 @@ pre > code {
 
 input[type='email'],
 input[type='number'],
-input[type='search'],
-input[type='text'],
-input[type='tel'],
-input[type='url'],
 input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
 textarea,
 select {
   -webkit-appearance: none;
@@ -166,11 +164,11 @@ select {
 }
 input[type='email']:focus,
 input[type='number']:focus,
-input[type='search']:focus,
-input[type='text']:focus,
-input[type='tel']:focus,
-input[type='url']:focus,
 input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
 textarea:focus,
 select:focus {
   border: 0.1rem solid #9b4dca;
@@ -394,8 +392,8 @@ hr {
   margin-top: 3rem;
 }
 
-button,
-.button {
+.button,
+button {
   margin-bottom: 1rem;
 }
 
