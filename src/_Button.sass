@@ -32,6 +32,16 @@ input[type='submit']
 		color: $color-initial
 		outline: 0
 
+	&.disabled,
+	&[disabled]
+		opacity: .5
+		cursor: default
+
+		&:hover,
+		&:focus
+			background-color: $color-primary
+			border-color: $color-primary
+
 	&.button-outline
 		color: $color-primary
 		background-color: transparent
@@ -41,6 +51,13 @@ input[type='submit']
 			color: $color-secondary
 			background-color: transparent
 			border-color: $color-secondary
+
+		&[disabled],
+		&.disabled
+			&:hover,
+			&:focus
+				color: $color-primary
+				border-color: inherit
 
 	&.button-clear
 		color: $color-primary
@@ -52,3 +69,9 @@ input[type='submit']
 			color: $color-secondary
 			background-color: transparent
 			border-color: transparent
+
+		&.disabled,
+		&[disabled]
+			&:hover,
+			&:focus
+				color: $color-primary
