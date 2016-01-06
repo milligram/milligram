@@ -58,7 +58,7 @@ module.exports = function ( grunt ) {
 			all: [ 'dist' ]
 		},
 
-		// Compile SASS files to CSS
+		// Compile Sass files to CSS
 		sass: {
 			minify: {
 				options: {
