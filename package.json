@@ -59,5 +59,16 @@
 	"scripts": {
 		"start": "grunt",
 		"test": "grunt build"
-	}
+	},
+	"npmName": "milligram",
+	"npmFileMap": [
+		{
+			"basePath": "dist",
+			"files": [
+				"milligram.css",
+				"milligram.min.css",
+				"milligram.min.css.map"
+			]
+		}
+	]
 }
