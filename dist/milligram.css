@@ -175,7 +175,7 @@ select:focus {
 }
 
 select {
-  appearance: caret;
+  appearance: menulist;
 }
 
 textarea {
