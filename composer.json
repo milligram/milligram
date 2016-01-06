@@ -32,13 +32,14 @@
 		".npmignore",
 		".travis.yml",
 		"bower.json",
-		"composer.json",
+		"component.json",
 		"contributing.md",
 		"gruntfile.js",
 		"package.js",
 		"package.json",
 		"src"
 	],
-	"repo": "milligram/milligram",
-	"styles": ["dist/milligram.css"]
+	"dependencies": {
+		"normalize.css": "latest"
+	}
 }

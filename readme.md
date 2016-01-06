@@ -60,4 +60,4 @@ Help improve these docs. Open an [issue](https://github.com/milligram/milligram/
 
 ## License
 
-[MIT License](http://cjpatoilo.mit-license.org/) @ CJ Patoilo
+Designed with ♥ by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
