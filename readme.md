@@ -28,6 +28,11 @@ $ bower install milligram
 $ npm install milligram
 ```
 
+**Install with Meteor**
+```sh
+$meteor add noahvlncrt:milligram
+```
+
 
 ## Table of Contents
 
