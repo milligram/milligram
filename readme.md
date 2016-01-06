@@ -16,6 +16,13 @@ Milligram provides a minimal setup of styles for a fast and clean starting point
 
 ## Download
 
+**Install via CDNjs**
+
+Paste the following code into the `<head>` section of your HTML.
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.0.3/milligram.min.css">
+```
+
 **Install with Bower**
 
 ```sh
