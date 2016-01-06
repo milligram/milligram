@@ -14,7 +14,7 @@ html {
 
 body {
   color: #606c76;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -24,7 +24,7 @@ body {
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 blockquote {
@@ -46,7 +46,7 @@ input[type='submit'] {
   border: 0.1rem solid #9b4dca;
   border-radius: 0.4rem;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -71,7 +71,7 @@ input[type='submit']:hover,
 input[type='submit']:focus {
   background-color: #606c76;
   border-color: #606c76;
-  color: #ffffff;
+  color: #fff;
   outline: 0;
 }
 .button.button-outline,
@@ -118,12 +118,6 @@ input[type='submit'].button-clear:focus {
   border-color: transparent;
 }
 
-pre {
-  background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
-  font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
-}
-
 code {
   background: #f4f5f6;
   border-radius: 0.4rem;
@@ -133,6 +127,11 @@ code {
   white-space: nowrap;
 }
 
+pre {
+  background: #f4f5f6;
+  border-left: 0.3rem solid #9b4dca;
+  font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
+}
 pre > code {
   background: transparent;
   border-radius: 0;
@@ -173,6 +172,10 @@ textarea:focus,
 select:focus {
   border: 0.1rem solid #9b4dca;
   outline: 0;
+}
+
+select {
+  appearance: caret;
 }
 
 textarea {
