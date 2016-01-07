@@ -32,7 +32,7 @@ input[type='submit']
 		color: $color-initial
 		outline: 0
 
-	&.disabled,
+	&.button-disabled,
 	&[disabled]
 		opacity: .5
 		cursor: default
@@ -52,8 +52,8 @@ input[type='submit']
 			background-color: transparent
 			border-color: $color-secondary
 
-		&[disabled],
-		&.disabled
+		&.button-disabled,
+		&[disabled]
 			&:hover,
 			&:focus
 				color: $color-primary
@@ -70,7 +70,7 @@ input[type='submit']
 			background-color: transparent
 			border-color: transparent
 
-		&.disabled,
+		&.button-disabled,
 		&[disabled]
 			&:hover,
 			&:focus
