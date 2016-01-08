@@ -30,7 +30,7 @@ $ npm install milligram
 
 **Install with Meteor**
 ```sh
-$meteor add noahvlncrt:milligram
+$ meteor add milligram:milligram
 ```
 
 

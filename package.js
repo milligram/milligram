@@ -1,7 +1,7 @@
 Package.describe({
-	name: 'noahvlncrt:milligram',
+	name: 'milligram:milligram',
 	summary: 'A new minimal css framework that provides an easy starting point.',
-	version: '1.0.4',
+	version: '1.0.6',
 	git: 'https://github.com/milligram/milligram'
 });
 
