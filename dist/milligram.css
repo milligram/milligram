@@ -2,7 +2,7 @@
  * Milligram v1.0.3
  * http://milligram.github.io
  *
- * Copyright (c) 2015, CJ Patoilo
+ * Copyright (c) 2016 CJ Patoilo
  * Licensed under the MIT license
 */
 
@@ -14,7 +14,7 @@ html {
 
 body {
   color: #606c76;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -24,7 +24,7 @@ body {
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 blockquote {
@@ -45,7 +45,6 @@ input[type='submit'] {
   background-color: #9b4dca;
   border: 0.1rem solid #9b4dca;
   border-radius: 0.4rem;
-  box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -118,12 +117,6 @@ input[type='submit'].button-clear:focus {
   border-color: transparent;
 }
 
-pre {
-  background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
-  font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
-}
-
 code {
   background: #f4f5f6;
   border-radius: 0.4rem;
@@ -133,6 +126,11 @@ code {
   white-space: nowrap;
 }
 
+pre {
+  background: #f4f5f6;
+  border-left: 0.3rem solid #9b4dca;
+  font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
+}
 pre > code {
   background: transparent;
   border-radius: 0;
@@ -157,7 +155,6 @@ select {
   border: 0.1rem solid #d1d1d1;
   border-radius: 0.4rem;
   box-shadow: none;
-  box-sizing: border-box;
   height: 3.8rem;
   padding: 0.6rem 1rem;
   width: 100%;
@@ -206,7 +203,6 @@ input[type='radio'] {
 }
 
 .container {
-  box-sizing: border-box;
   margin: 0 auto;
   max-width: 112rem;
   padding: 0 2rem;
