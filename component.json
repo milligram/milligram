@@ -40,5 +40,11 @@
 		"src"
 	],
 	"repo": "milligram/milligram",
-	"styles": ["dist/milligram.css"]
+	"styles": [
+		"demo",
+		"dist/milligram.css",
+		"dist/milligram.min.css",
+		"license",
+		"readme.md"
+	]
 }

@@ -19,7 +19,7 @@ module.exports = function ( grunt ) {
 			' * Milligram v<%= pkg.version %>\n'+
 			' * <%= pkg.homepage %>\n'+
 			' *\n'+
-			' * Copyright (c) 2015, CJ Patoilo\n'+
+			' * Copyright (c) '+new Date().getFullYear()+' CJ Patoilo\n'+
 			' * Licensed under the <%= pkg.license %> license\n'+
 			'*/\n\n',
 
