@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------
+Project:        Miligram Struck Red
+Version:        1.0
+Last change:    01/10/2016 [first release]
+Author:         http://struck.io
+Description:    More colors to use with Milligram
+Home page:      http://milligram.struck.io
+Github:         https://github.com/struck-io/miligram-struck
+/*-----------------------------------------------------------------*/
+$base-color: #f34235;
+
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: $base-color;
+    border: 0.1rem solid $base-color;
+}
+
+.button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+    color: $base-color;
+}
+
+.button.button-clear,
+button.button-clear,
+input[type='button'].button-clear,
+input[type='reset'].button-clear,
+input[type='submit'].button-clear {
+    color: $base-color;
+}
+
+pre {
+    background: #f4f5f6;
+    border-left: 0.3rem solid $base-color;
+}
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+    border: 0.1rem solid $base-color;
+}
+
+a {
+    color: $base-color;
+}
+
+pre.prettyprint {
+    border-left: .3rem solid $base-color !important;
+}
+
+pre.prettyprint .typ {
+    color: lighten( $base-color, 20% )
+}
+
+pre.prettyprint .kwd {
+    color: lighten( $base-color, 10% )
+}
+
+pre.prettyprint .lit {
+    color: lighten( $base-color, 10% )
+}
+
+pre.prettyprint .pun {
+    color: #5485b6;
+}
+
+pre.prettyprint .tag {
+    color: $base-color;
+}
+
+pre.prettyprint .atn {
+    color: darken( $base-color, 15% )
+}
+
+pre.prettyprint .atv {
+    color: lighten( $base-color, 10% )
+}
+
+.button-black {
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+}
+.button-black.button-outline {
+  color: #2d2d2d;
+}
+.button-black.button-clear {
+  color: #2d2d2d;
+}
+
+/* Applying size variation */
+.button-small {
+  font-size: .8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+}
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}
