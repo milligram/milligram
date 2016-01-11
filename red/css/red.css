@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------
+Project:        Miligram Struck Red
+Version:        1.0
+Last change:    01/10/2016 [first release]
+Author:         http://struck.io
+Description:    More colors to use with Milligram
+Home page:      http://milligram.struck.io
+Github:         https://github.com/struck-io/miligram-struck
+/*-----------------------------------------------------------------*/
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: #f34235;
+  border: 0.1rem solid #f34235; }
+
+.button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+  color: #f34235; }
+
+.button.button-clear,
+button.button-clear,
+input[type='button'].button-clear,
+input[type='reset'].button-clear,
+input[type='submit'].button-clear {
+  color: #f34235; }
+
+pre {
+  background: #f4f5f6;
+  border-left: 0.3rem solid #f34235; }
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+  border: 0.1rem solid #f34235; }
+
+a {
+  color: #f34235; }
+
+pre.prettyprint {
+  border-left: 0.3rem solid #f34235 !important; }
+
+pre.prettyprint .typ {
+  color: #f99c95; }
+
+pre.prettyprint .kwd {
+  color: #f66f65; }
+
+pre.prettyprint .lit {
+  color: #f66f65; }
+
+pre.prettyprint .pun {
+  color: #5485b6; }
+
+pre.prettyprint .tag {
+  color: #f34235; }
+
+pre.prettyprint .atn {
+  color: #cf1a0c; }
+
+pre.prettyprint .atv {
+  color: #f66f65; }
+
+.button-black {
+  background-color: #2d2d2d;
+  border-color: #2d2d2d; }
+
+.button-black.button-outline {
+  color: #2d2d2d; }
+
+.button-black.button-clear {
+  color: #2d2d2d; }
+
+/* Applying size variation */
+.button-small {
+  font-size: .8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem; }
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem; }
+
+/*# sourceMappingURL=red.css.map */
