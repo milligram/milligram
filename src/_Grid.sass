@@ -18,8 +18,13 @@
 .row
 	display: flex
 	flex-direction: column
-	padding: 0
 	width: 100%
+	// Larger than mobile screen
+	@media (min-width: 40.0rem)
+
+		flex-direction: row
+		margin-left: -1.0rem
+		width: calc(100% + 2.0rem)
 
 .row-wrap
 	flex-wrap: wrap
@@ -57,6 +62,9 @@
 	margin-left: 0
 	max-width: 100%
 	width: 100%
+	// Larger than mobile screen
+	@media (min-width: 40.0rem)
+		padding: 0 1.0rem
 
 // .column-* vertically aligns an individual .column
 .col-top
@@ -146,15 +154,3 @@
 .column-90
 	flex: 0 0 90%
 	max-width: 90%
-
-// Larger than mobile screen
-@media (min-width: 40.0rem)
-
-	.row
-		flex-direction: row
-		margin-left: -1.0rem
-		width: calc(100% + 2.0rem)
-
-	.column
-		margin-bottom: inherit
-		padding: 0 1.0rem
