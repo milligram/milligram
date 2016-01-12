@@ -37,7 +37,9 @@
 		"contributing.md",
 		"gruntfile.js",
 		"package.js",
-		"src"
+		"package.json",
+		"src",
+		"test"
 	],
 	"dependencies": {
 		"normalize.css": "latest"
