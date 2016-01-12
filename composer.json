@@ -33,11 +33,13 @@
 		".travis.yml",
 		"bower.json",
 		"component.json",
+		"composer.json",
 		"contributing.md",
 		"gruntfile.js",
 		"package.js",
 		"package.json",
-		"src"
+		"src",
+		"test"
 	],
 	"dependencies": {
 		"normalize.css": "latest"

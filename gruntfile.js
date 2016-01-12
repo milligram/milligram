@@ -145,6 +145,3 @@ module.exports = function ( grunt ) {
 
 
 };
-
-
-// Code is Poetry
