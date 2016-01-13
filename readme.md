@@ -1,4 +1,4 @@
-# [Milligram](http://milligram.github.io) v1.0
+# [Milligram](http://milligram.github.io) | v1.0
 
 | A lightweight & minimalist CSS framework built on Milligram with 20 color schemes.
 
