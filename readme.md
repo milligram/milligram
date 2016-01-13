@@ -2,7 +2,7 @@
 
 | A lightweight & minimalist CSS framework built on Milligram with 20 color schemes.
 
-#v1.0
+##v1.0
 
 
 ## Why is Struck CSS so cool?
