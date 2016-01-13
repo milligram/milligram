@@ -1,8 +1,0 @@
-sudo: false
-language: node_js
-node_js:
-  - 0.12
-before_install:
-  - gem update --system
-  - gem install sass
-  - npm install grunt-cli --global

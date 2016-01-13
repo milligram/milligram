@@ -1,10 +1,1 @@
-.editorconfig
-.gitignore
-.travis.yml
-bower.json
-component.json
-composer.json
 contributing.md
-gruntfile.js
-package.js
-src
