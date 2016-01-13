@@ -2,11 +2,7 @@
 
 | A lightweight & minimalist CSS framework built on Milligram with 20 color schemes.
 
-[![Build Status](https://travis-ci.org/struck-io/struck-css.svg?branch=master)](https://travis-ci.org/struck-io/struck-css)
-[![GitHub version](https://badge.fury.io/gh/struck-io%2Fmstruck-css.svg)](https://badge.fury.io/gh/struck-io%2Fstruck-css)
-[![Bower version](https://badge.fury.io/bo/struck-io.svg)](https://badge.fury.io/bo/struck-io)
-[![npm version](https://badge.fury.io/js/struck-io.svg)](http://badge.fury.io/js/struck-io)
-[![Dependencies Status](https://david-dm.org/struck-io/struck-css.svg)](https://travis-ci.org/struck-io/struck-css)
+#v1.0
 
 
 ## Why is Struck CSS so cool?
