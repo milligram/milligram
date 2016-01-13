@@ -70,4 +70,5 @@ Help improve these docs. Open an [issue](https://github.com/struck-io/struck-css
 ## License
 
 Struck CSS by [Derek Bytheway](https://github.com/derekbtw). Licensed under the [MIT License](http://struck-io.mit-license.org/).
+
 Milligram by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
