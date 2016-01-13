@@ -31,6 +31,10 @@ input[type='submit']
 		color: $color-initial
 		outline: 0
 
+	&:active
+		background-color: $color-quinary
+		border-color: $color-quinary
+
 	&.button-disabled,
 	&[disabled]
 		opacity: .5
@@ -51,6 +55,10 @@ input[type='submit']
 			background-color: transparent
 			border-color: $color-secondary
 
+		&:active
+			color: $color-quinary
+			border-color: $color-quinary
+
 		&.button-disabled,
 		&[disabled]
 			&:hover,
@@ -68,6 +76,9 @@ input[type='submit']
 			color: $color-secondary
 			background-color: transparent
 			border-color: transparent
+
+		&:active
+			color: $color-quinary
 
 		&.button-disabled,
 		&[disabled]
