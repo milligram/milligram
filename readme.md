@@ -6,8 +6,6 @@
 
 ![struck-css thumbnail](https://raw.githubusercontent.com/struck-io/struck-css/master/img/thumbnail.jpg)
 
-![struck-css screenshot](http://i.imgur.com/Ig4FtDr.png)
-
 ## Why is Struck CSS so cool?
 
 Struck CSS is a minimal and simple CSS framework with 20 different color schemes. It's also very lightweight at only 42 KB!
