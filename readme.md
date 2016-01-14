@@ -1,6 +1,6 @@
 # [Struck CSS](http://css.struck.io)
 
-**v.1.0
+**v.1.0**
 
 | A lightweight & minimalist CSS framework built on Milligram with 20 color schemes.
 
