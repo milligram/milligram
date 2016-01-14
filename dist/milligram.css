@@ -385,6 +385,15 @@ input[type='radio'] {
   margin-left: 25%;
 }
 
+.column-30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.column-offset-30 {
+  margin-left: 30%;
+}
+
 .column-33 {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
@@ -446,6 +455,15 @@ input[type='radio'] {
 
 .column-offset-67 {
   margin-left: 66.6666%;
+}
+
+.column-70 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.column-offset-70 {
+  margin-left: 70%;
 }
 
 .column-75 {
