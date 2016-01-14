@@ -6,7 +6,7 @@
 .container
 	margin: 0 auto
 	max-width: 112.0rem
-	padding: 0 2.0rem
+	padding: 0 1.0rem
 	position: relative
 	width: 100%
 
@@ -147,14 +147,17 @@
 			flex: 0 0 90%
 			max-width: 90%
 
+.column-pad
+	padding-left: 0.5rem
+	padding-right: 0.5rem
+
 // Larger than mobile screen
 @media (min-width: 40.0rem)
 
 	.row
 		flex-direction: row
-		margin-left: -1.0rem
-		width: calc(100% + 2.0rem)
+		width: 100%
 
-		.column
-			margin-bottom: inherit
-			padding: 0 1.0rem
+		.column-pad
+			padding-left: 1rem
+			padding-right: 1rem
