@@ -147,6 +147,48 @@
 			flex: 0 0 90%
 			max-width: 90%
 
+[dir="rtl"] .row
+	.column
+		margin-right: 0
+		// Column Offsets
+		&.column-offset-10
+			margin-right: 10%
+			margin-left: 0
+
+		&.column-offset-20
+			margin-right: 20%
+			margin-left: 0
+
+		&.column-offset-25
+			margin-right: 25%
+			margin-left: 0
+
+		&.column-offset-33,
+		&.column-offset-34
+			margin-right: 33.3333%
+			margin-left: 0
+
+		&.column-offset-50
+			margin-right: 50%
+			margin-left: 0
+
+		&.column-offset-66,
+		&.column-offset-67
+			margin-right: 66.6666%
+			margin-left: 0
+
+		&.column-offset-75
+			margin-right: 75%
+			margin-left: 0
+
+		&.column-offset-80
+			margin-right: 80%
+			margin-left: 0
+
+		&.column-offset-90
+			margin-right: 90%
+			margin-left: 0
+
 // Larger than mobile screen
 @media (min-width: 40.0rem)
 
@@ -158,3 +200,8 @@
 		.column
 			margin-bottom: inherit
 			padding: 0 1.0rem
+
+	[dir="rtl"] .row
+		flex-direction: row
+		margin-right: -1.0rem
+		margin-left: 0
