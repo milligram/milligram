@@ -1,66 +1,79 @@
 {
-	"name": "milligram",
-	"version": "1.0.3",
-	"description": "A minimalist CSS framework.",
-	"homepage": "http://milligram.github.io",
-	"repository": "milligram/milligram",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"main": "dist/milligram.css",
-	"keywords": [
-		"bootstrap",
-		"css",
-		"css3",
-		"front-end",
-		"framework",
-		"html",
-		"html5",
-		"kickstarter",
-		"less",
-		"responsive",
-		"mobile",
-		"mobile-first",
-		"postcss",
-		"responsive",
-		"sass",
-		"scss",
-		"stylus"
-	],
-	"ignore": [
-		".editorconfig",
-		".gitignore",
-		".npmignore",
-		".travis.yml",
-		"bower.json",
-		"component.json",
-		"composer.json",
-		"contributing.md",
-		"gruntfile.js",
-		"package.js",
-		"package.json",
-		"src",
-		"test"
-	],
-	"dependencies": {
-		"normalize.css": "latest"
-	},
-	"devDependencies": {
-		"bower": "^1.6.8",
-		"grunt": "^0.4.5",
-		"grunt-autoprefixer": "^3.0.3",
-		"grunt-contrib-clean": "^0.7.0",
-		"grunt-contrib-sass": "~0.8.1",
-		"grunt-contrib-watch": "^0.6.1",
-		"grunt-newer": "^1.1.1",
-		"grunt-notify": "^0.4.3",
-		"load-grunt-tasks": "^3.3.0",
-		"time-grunt": "^1.2.2"
-	},
-	"engines": {
-		"node": ">=0.12.0"
-	},
-	"scripts": {
-		"start": "grunt",
-		"test": "grunt build"
-	}
+  "name": "milligram",
+  "version": "1.0.3",
+  "description": "A minimalist CSS framework.",
+  "homepage": "http://milligram.github.io",
+  "repository": "milligram/milligram",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "main": "dist/milligram.css",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "css3",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "kickstarter",
+    "less",
+    "responsive",
+    "mobile",
+    "mobile-first",
+    "postcss",
+    "responsive",
+    "sass",
+    "scss",
+    "stylus"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "bower.json",
+    "component.json",
+    "composer.json",
+    "contributing.md",
+    "gruntfile.js",
+    "package.js",
+    "package.json",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+    "normalize.css": "latest"
+  },
+  "devDependencies": {
+    "bower": "^1.6.8",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "grunt-notify": "^0.4.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-header": "^1.7.1",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt build"
+  }
 }
