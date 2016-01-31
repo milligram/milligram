@@ -1,39 +1,90 @@
-## Getting Started
+# Contributing
 
-1. Install dependencies
+We would love for you to contribute to Milligram and help us make this even better! Start reading this document to see it is not difficult as you might have imagined.
 
- * Git (<http://git-scm.com>)
- * Grunt (<http://gruntjs.com>)
- * Node.js (<http://nodejs.org>)
- * NPM (<http://npmjs.org>)
- * Sass (<http://sass-lang.com>)
 
-1. Clone repository
+## Table of Contents
 
-   ```bash
-   $ git clone git@github.com:milligram/milligram.git
-   $ cd milligram
-   ```
+- [Open an Issue](#open-an-issue)
+- [Submit a Pull Request](#submit-a-pull-request)
+- [Building](#building)
+- [Style Guide](#style-guide)
+- [Code of Conduct](#code-of-conduct)
+- [License](#license)
 
-1. Install node dependencies using npm
 
-   ```bash
-   $ npm install
-   ```
+## Open an Issue
 
-1. Run 
+[Open an Issue](https://github.com/milligram/milligram/issues/new) to report any problems or improvements. When necessary, use [Codepen](http://codepen.io/) to show the problem. Be sure to include some description to explain the problem.
 
-   ```bash
-   $ npm start
-   ```
 
-## Contributing
+## Submit a Pull Request
 
-Help improve these docs. Open an [issue](https://github.com/milligram/milligram/issues/new) or submit a pull request.
+To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
 
-- Navigate to the main page of the repository
-- [Fork it!](https://github.com/milligram/milligram#fork-destination-box)
-- Create your feature branch: git checkout -b my-new-feature
-- Commit your changes: git commit -m 'Add some feature'
-- Push to the branch: git push origin my-new-feature
-- Submit a pull request =D
+Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
+
+1. Fork the Github repo: `git clone https://github.com/milligram/milligram.git`
+1. Create a new branch: `git checkout -b issuenumber-feature-name`
+1. Commit your changes: `git commit -m 'issuenumber-feature-name'`
+1. Push to the branch: `git push origin my-feature-name`
+1. Submit a pull request!
+
+*Note: For issues relating to the site, please use the [milligram.github.io](https://github.com/milligram/milligram.github.io)*
+
+
+## Building
+
+First install [Node.js](https://nodejs.org/en/download/), em seguida [Grunt](http://gruntjs.com/getting-started) e [Sass](http://sass-lang.com/install) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `grunt`. This will run the default grunt task which compiles the Sass files into milligram.css file.
+
+
+## Style Guide
+
+Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at how the code is being maintained, we must always be consistent. We try to follow best practices as much as possible. In addition, here are some tips you should follow:
+
+- Properties and selectors are sorted in alphabetical order
+- Always use tab to indentation, no spaces
+- Always use single quote, i.e. `content: ''`
+- Quote attribute values in selectors, i.e. `input[type='checkbox']`
+- Avoid specifying units for zero-values, i.e. `margin: 0`
+- Use `rem` unit instead of `px`
+- Use lowercase and shorthand hex values, i.e. `#fff`
+- Use one discrete selector per line in multi-selector rulesets
+- Include a single space after colon and after each comma
+- Separate each ruleset by a blank line
+- Don't use prefixes, there is a task to generate this automatically
+
+```sass
+.selector-a,
+.selector-b,
+.selector-c,
+.selector-d[type='text']
+    box-sizing: border-box
+    color: #333
+    content: ''
+    display: inline-block
+    font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
+	margin-bottom: 0
+    margin-left: 5.0rem
+
+    .other-selector-a
+    	background: #fff
+
+	.other-selector-b
+    	background: #fff
+
+	&.increasing-the-specificity
+    	color: #000
+```
+
+*Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
+
+
+## Code of conduct
+
+Help us keep Milligram open and inclusive. Please read and follow our thoughts on [Code of Conduct](http://confcodeofconduct.com/).
+
+
+## License
+
+By contributing your code, you agree to license your contribution under the [MIT license](https://github.com/milligram/milligram#license).
