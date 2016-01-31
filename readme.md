@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram)
 [![GitHub version](https://badge.fury.io/gh/milligram%2Fmilligram.svg)](https://badge.fury.io/gh/milligram%2Fmilligram)
 [![Bower version](https://badge.fury.io/bo/milligram.svg)](https://badge.fury.io/bo/milligram)
-[![npm version](https://badge.fury.io/js/milligram.svg)](http://badge.fury.io/js/milligram)
+[![npm version](https://badge.fury.io/js/milligram.svg)](https://badge.fury.io/js/milligram)
 [![Dependencies Status](https://david-dm.org/milligram/milligram.svg)](https://travis-ci.org/milligram/milligram)
 
 
@@ -48,14 +48,7 @@ $ npm install milligram
 
 ## Contributing
 
-Help improve these docs. Open an [issue](https://github.com/milligram/milligram/issues/new) or submit a pull request.
-
-- Navigate to the main page of the repository
-- [Fork it!](https://github.com/milligram/milligram#fork-destination-box)
-- Create your feature branch: git checkout -b my-new-feature
-- Commit your changes: git commit -m 'Add some feature'
-- Push to the branch: git push origin my-new-feature
-- Submit a pull request =D
+Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/blob/master/contributing.md).
 
 
 ## License
