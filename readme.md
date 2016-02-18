@@ -2,6 +2,7 @@
 
 | A minimalist CSS framework.
 
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://cjpatoilo.mit-license.org/)
 [![Build Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram)
 [![GitHub version](https://badge.fury.io/gh/milligram%2Fmilligram.svg)](https://badge.fury.io/gh/milligram%2Fmilligram)
 [![Bower version](https://badge.fury.io/bo/milligram.svg)](https://badge.fury.io/bo/milligram)
