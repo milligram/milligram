@@ -15,12 +15,12 @@ We would love for you to contribute to Milligram and help us make this even bett
 
 ## Open an Issue
 
-[Open an Issue](https://github.com/milligram/milligram/issues/new) to report any problems or improvements. When necessary, use [Codepen](http://codepen.io/) to show the problem. Be sure to include some description to explain the problem.
+[Open an Issue](https://github.com/milligram/milligram/issues/new) to report any problems or improvements. When necessary, use [Codepen](http://codepen.io/clayreimann/pen/ONqbQe/?editors=1100) to show the problem. Be sure to include some description to explain the problem.
 
 
 ## Submit a Pull Request
 
-To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
+To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/clayreimann/pen/ONqbQe/?editors=1100) along with the description.
 
 Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
 
