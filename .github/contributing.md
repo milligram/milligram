@@ -80,7 +80,7 @@ Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at
 *Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
 
 
-## Code of conduct
+## Code of Conduct
 
 Help us keep Milligram open and inclusive. Please read and follow our thoughts on [Code of Conduct](http://confcodeofconduct.com/).
 
