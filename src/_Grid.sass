@@ -5,7 +5,7 @@
 // .container is main centered wrapper with a max width of 112.0rem (1120px)
 .container
 	margin: 0 auto
-	max-width: 112.0rem
+	max-width: $container-max-width
 	padding: 0 2.0rem
 	position: relative
 	width: 100%
@@ -146,7 +146,7 @@
 			align-self: center
 
 // Larger than mobile screen
-@media (min-width: 40.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
+@media (min-width: $large-screen)
 
 	.row
 		flex-direction: row
