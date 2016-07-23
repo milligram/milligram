@@ -3,6 +3,7 @@
 .npmignore
 .travis.yml
 bower.json
+changelog.md
 component.json
 composer.json
 contributing.md
