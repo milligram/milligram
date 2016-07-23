@@ -1,4 +1,5 @@
 .editorconfig
+.github
 .gitignore
 .npmignore
 .travis.yml
@@ -6,7 +7,6 @@ bower.json
 changelog.md
 component.json
 composer.json
-contributing.md
 gruntfile.js
 package.js
 package.json

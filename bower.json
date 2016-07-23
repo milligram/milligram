@@ -29,6 +29,7 @@
 	],
 	"ignore": [
 		".editorconfig",
+		".github",
 		".gitignore",
 		".npmignore",
 		".travis.yml",
@@ -36,7 +37,6 @@
 		"changelog.md",
 		"component.json",
 		"composer.json",
-		"contributing.md",
 		"gruntfile.js",
 		"package.js",
 		"package.json",
