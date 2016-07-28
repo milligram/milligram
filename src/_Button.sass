@@ -7,14 +7,14 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit']
-	background-color: $color-primary
-	border: .1rem solid $color-primary
+	background-color: $button-background-color
+	border: .1rem solid $button-border-color
 	border-radius: .4rem
-	color: $color-initial
+	color: $button-color
 	cursor: pointer
 	display: inline-block
-	font-size: 1.1rem
-	font-weight: 700
+	font-size: $button-font-size
+	font-weight: $button-font-weight
 	height: 3.8rem
 	letter-spacing: .1rem
 	line-height: 3.8rem
@@ -26,9 +26,9 @@ input[type='submit']
 
 	&:hover,
 	&:focus
-		background-color: $color-secondary
-		border-color: $color-secondary
-		color: $color-initial
+		background-color: $button-hover-background-color
+		border-color: $button-hover-border-color
+		color: $button-hover-font-color
 		outline: 0
 
 	&.button-disabled,
@@ -38,35 +38,36 @@ input[type='submit']
 
 		&:hover,
 		&:focus
-			background-color: $color-primary
-			border-color: $color-primary
+			color: $button-disabled-font-color
+			background-color: $button-disabled-background-color
+			border-color: $button-disabled-border-color
 
 	&.button-outline
-		color: $color-primary
+		color: $button-outline-font-color
 		background-color: transparent
 
 		&:hover,
 		&:focus
-			color: $color-secondary
+			color: $button-outline-hover-font-color
 			background-color: transparent
-			border-color: $color-secondary
+			border-color: $button-outline-hover-border-color
 
 		&.button-disabled,
 		&[disabled]
 
 			&:hover,
 			&:focus
-				color: $color-primary
+				color: $button-outline-disabled-font-color
 				border-color: inherit
 
 	&.button-clear
-		color: $color-primary
+		color: $button-clear-font-color
 		background-color: transparent
 		border-color: transparent
 
 		&:hover,
 		&:focus
-			color: $color-secondary
+			color: $button-clear-hover-font-color
 			background-color: transparent
 			border-color: transparent
 
@@ -75,4 +76,4 @@ input[type='submit']
 
 			&:hover,
 			&:focus
-				color: $color-primary
+				color: $button-clear-disabled-font-color
