@@ -10,5 +10,4 @@ composer.json
 gruntfile.js
 package.js
 package.json
-src
 test
