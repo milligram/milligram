@@ -62,10 +62,8 @@ module.exports = function ( grunt ) {
 		sass: {
 			minify: {
 				options: {
-					banner: '<%= banner %>',
-					noCache: true,
-					sourcemap: 'none',
-					style: 'compressed'
+					sourcemap: false,
+					outputStyle: 'compressed'
 				},
 				files: {
 					'dist/milligram.min.css': [ 'src/**/*.sass', '!src/**/_*.sass' ]
@@ -73,10 +71,8 @@ module.exports = function ( grunt ) {
 			},
 			default: {
 				options: {
-					banner: '<%= banner %>',
-					noCache: true,
-					sourcemap: 'none',
-					style: 'expanded'
+					sourcemap: true,
+					outputStyle: 'expanded'
 				},
 				files: {
 					'dist/milligram.css': [ 'src/**/*.sass', '!src/**/_*.sass' ]
