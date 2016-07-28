@@ -1,0 +1,52 @@
+a {
+    color: #39CCCC;
+}
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+    background-color: #39CCCC;
+    border: .1rem solid #39CCCC;
+}
+
+.button.button-outline, button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline {
+    color: #39CCCC;
+}
+
+.button.button-clear, button.button-clear, input[type='button'].button-clear, input[type='reset'].button-clear, input[type='submit'].button-clear {
+    color: #39CCCC;
+}
+
+pre.prettyprint .lit {
+    color: #39CCCC;
+}
+
+.share-icon {
+    background-color: #39CCCC;
+    color: #ffffff;
+}
+
+pre {
+    background: #f4f5f6;
+    border-left: .3rem solid #39CCCC;
+}
+
+pre.prettyprint {
+    border-left: .3rem solid #39CCCC !important;
+    color: #655d5d;
+}
+
+pre.prettyprint .tag {
+    color: #39CCCC;
+}
+
+pre.prettyprint .atn {
+    color: #0065ce;
+}
+
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus {
+    border: .1rem solid #39CCCC;
+}
+
+.github-corner {
+    color: #f4f5f6;
+    fill: #39CCCC;
+}
