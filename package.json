@@ -47,6 +47,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.3.6",
+		"husky": "^0.11.6",
 		"node-sass": "^3.7.0",
 		"npm-run-all": "^2.1.1",
 		"onchange": "^2.4.0",
@@ -62,6 +63,7 @@
 		"sass:compressed": "node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
 		"watch": "onchange src -- npm run build",
-		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
+		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed",
+		"precommit": "npm run build && git add dist/**"
 	}
 }
