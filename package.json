@@ -49,7 +49,7 @@
 		"autoprefixer": "^6.3.6",
 		"node-sass": "^3.7.0",
 		"npm-run-all": "^2.1.1",
-		"postcss-banner": "^3.0.0",
+		"onchange": "^2.4.0",
 		"postcss-cli": "^2.5.2"
 	},
 	"engines": {
@@ -58,10 +58,10 @@
 	"scripts": {
 		"banner:expanded": "echo '/*!\n * Milligram v1.1.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - dist/milligram.css > temp && mv temp dist/milligram.css",
 		"banner:compressed": "echo '/*!\n * Milligram v1.1.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - dist/milligram.min.css > temp && mv temp dist/milligram.min.css",
-		"clean": "rm -f -r dist",
 		"sass:expanded": "node-sass --output-style expanded src/milligram.sass dist/milligram.css",
 		"sass:compressed": "node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.banner '/* single line comment */' --autoprefixer.browsers 'last 1 versions' -r dist/*",
-		"build": "npm-run-all clean sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+		"watch": "onchange src -- npm run build",
+		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
 	}
 }
