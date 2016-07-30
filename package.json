@@ -37,7 +37,6 @@
 		"changelog.md",
 		"component.json",
 		"composer.json",
-		"gruntfile.js",
 		"package.js",
 		"package.json",
 		"src",
@@ -47,22 +46,22 @@
 		"normalize.css": "latest"
 	},
 	"devDependencies": {
-		"bower": "^1.6.8",
-		"grunt": "^0.4.5",
-		"grunt-autoprefixer": "^3.0.3",
-		"grunt-contrib-clean": "^0.7.0",
-		"grunt-contrib-sass": "^0.8.1",
-		"grunt-contrib-watch": "^0.6.1",
-		"grunt-newer": "^1.1.1",
-		"grunt-notify": "^0.4.3",
-		"load-grunt-tasks": "^3.3.0",
-		"time-grunt": "^1.2.2"
+		"autoprefixer": "^6.3.6",
+		"node-sass": "^3.7.0",
+		"npm-run-all": "^2.1.1",
+		"onchange": "^2.4.0",
+		"postcss-cli": "^2.5.2"
 	},
 	"engines": {
-		"node": ">=0.12.0"
+		"node": "^6.0.0"
 	},
 	"scripts": {
-		"start": "grunt",
-		"test": "grunt build"
+		"banner:expanded": "echo '/*!\n * Milligram v1.1.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - dist/milligram.css > temp && mv temp dist/milligram.css",
+		"banner:compressed": "echo '/*!\n * Milligram v1.1.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - dist/milligram.min.css > temp && mv temp dist/milligram.min.css",
+		"sass:expanded": "node-sass --output-style expanded src/milligram.sass dist/milligram.css",
+		"sass:compressed": "node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+		"watch": "onchange src -- npm run build",
+		"build": "npm-run-all sass:expanded sass:compressed autoprefixer banner:expanded banner:compressed"
 	}
 }

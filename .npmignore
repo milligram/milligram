@@ -7,7 +7,6 @@ bower.json
 changelog.md
 component.json
 composer.json
-gruntfile.js
 package.js
 package.json
 src

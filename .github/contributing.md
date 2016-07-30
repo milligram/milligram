@@ -35,7 +35,7 @@ Try to solve a problem for each pull request, this increases the chances of acce
 
 ## Building
 
-First install [Node.js](https://nodejs.org/en/download/), then [Grunt](http://gruntjs.com/getting-started) and [Sass](http://sass-lang.com/install) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `grunt`. This will run the default grunt task which compiles the Sass files into milligram.css file.
+First install [Node.js](https://nodejs.org/en/download/) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `npm start`. This will run the build task which compiles the Sass files into Milligram.css file in the expanded and compressed version.
 
 
 ## Style Guide
