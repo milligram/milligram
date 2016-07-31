@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="CJ Patoilo">
+		<meta name="description" content="Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
+		<title>Milligram | A minimalist CSS framework.</title>
+		<link rel="icon" href="https://milligram.github.io/img/favicon.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" href="milligram.min.css"><!-- to generate this style run `$ npm start` -->
+		<link rel="stylesheet" href="https://milligram.github.io/css/style.css">
+	</head>
+	<body>
+
+		<main class="wrapper">
+
+			<section class="container" id="typography">
+				<h5 class="title">Typography</h5>
+				<div class="example">
+					<h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 5.0rem (50px)</span></h1>
+					<h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 4.2rem (42px)</span></h2>
+					<h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 3.6rem (36px)</span></h3>
+					<h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 3.0rem (30px)</span></h4>
+					<h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 2.4rem (24px)</span></h5>
+					<h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.5rem (15px)</span></h6>
+				</div>
+				<p>See more examples of <strong>typography</strong> <a href="typography.html" title="Examples about typography">here</a>.</p>
+			</section>
+
+			<section class="container" id="blockquotes">
+				<h5 class="title">Blockquotes</h5>
+				<div class="example">
+					<blockquote>
+						<p><em>Yeah!! Milligram is amazing.</em></p>
+					</blockquote>
+				</div>
+				<p>See more examples of <strong>blockquotes</strong> <a href="blockquotes.html" title="Examples about blockquotes">here</a>.</p>
+			</section>
+
+			<section class="container" id="buttons">
+				<h5 class="title">Buttons</h5>
+				<div class="example">
+					<a class="button" href="javascript: void(0)">Default Button</a>
+					<button class="button button-outline">Outlined Button</button>
+					<input class="button button-clear" type="submit" value="Clear Button">
+				</div>
+				<p>See more examples of <strong>buttons</strong> <a href="buttons.html" title="Examples about buttons">here</a>.</p>
+			</section>
+
+			<section class="container" id="lists">
+				<h5 class="title">Lists</h5>
+				<div class="example">
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>Unordered list item 1</li>
+								<li>Unordered list item 2</li>
+							</ul>
+						</div>
+						<div class="column">
+							<ol>
+								<li>Ordered list item 1</li>
+								<li>Ordered list item 2</li>
+							</ol>
+						</div>
+						<div class="column">
+							<dl>
+								<dt>Description list item 1</dt>
+								<dd>Description list item 1.1</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<p>See more examples of <strong>lists</strong> <a href="lists.html" title="Examples about lists">here</a>.</p>
+			</section>
+
+			<section class="container" id="forms">
+				<h5 class="title">Forms</h5>
+				<div class="example">
+					<form action="javascript: void(0)">
+						<fieldset>
+							<label for="nameField">Name</label>
+							<input type="text" placeholder="CJ Patoilo" id="nameField">
+							<label for="commentField">Comment</label>
+							<textarea placeholder="Hi CJ &hellip;" id="commentField"></textarea>
+							<div class="example-send-yourself-copy">
+								<input type="checkbox" id="confirmField">
+								<label class="label-inline" for="confirmField">Send a copy to yourself</label>
+							</div>
+							<input class="button-primary" type="submit" value="Send">
+						</fieldset>
+					</form>
+				</div>
+				<p>See more examples of <strong>forms</strong> <a href="forms.html" title="Examples about forms">here</a>.</p>
+			</section>
+
+			<section class="container" id="tables">
+				<h5 class="title">Tables</h5>
+				<div class="example">
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Age</th>
+								<th>Height</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Stephen Curry</td>
+								<td>27</td>
+								<td>1,91</td>
+								<td>Akron, OH</td>
+							</tr>
+							<tr>
+								<td>Klay Thompson</td>
+								<td>25</td>
+								<td>2,01</td>
+								<td>Los Angeles, CA</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>See more examples of <strong>tables</strong> <a href="tables.html" title="Examples about tables">here</a>.</p>
+			</section>
+
+			<section class="container" id="grids">
+				<h5 class="title">Grids</h5>
+				<div class="example">
+					<div class="container">
+						<div class="row">
+							<div class="column"><span class="column-demo">.column</span></div>
+							<div class="column"><span class="column-demo">.column</span></div>
+							<div class="column"><span class="column-demo">.column</span></div>
+							<div class="column"><span class="column-demo">.column</span></div>
+						</div>
+						<div class="row">
+							<div class="column"><span class="column-demo">.column</span></div>
+							<div class="column column-50 column-offset-25"><span class="column-demo">.column-50.column-offset-25</span></div>
+						</div>
+					</div>
+				</div>
+				<p>See more examples of <strong>grids</strong> <a href="grids.html" title="Examples about grids">here</a>.</p>
+			</section>
+
+			<section class="container" id="codes">
+				<h5 class="title">Codes</h5>
+				<div class="example">
+<pre><code>.milligram {
+  color: #9b4dca;
+}
+</code></pre>
+				</div>
+				<p>See more examples of <strong>codes</strong> <a href="codes.html" title="Examples about codes">here</a>.</p>
+			</section>
+
+			<section class="container" id="utilities">
+				<h5 class="title">Utilities</h5>
+				<div class="example">
+					<div class="clearfix">
+						<div class="float-left">
+							<h6>Float to left</h6>
+						</div>
+						<div class="float-right">
+							<h6>Float to right</h6>
+						</div>
+					</div>
+				</div>
+				<p>See more examples of <strong>utilities</strong> <a href="utilities.html" title="Examples about utilities">here</a>.</p>
+			</section>
+
+			<section class="container" id="examples">
+				<h5 class="title">Examples</h5>
+				<p>
+					<ul>
+						<li><a href="https://milligram.github.io/getting-started.html" title="Getting Started">Getting Started</a></li>
+						<li><a href="https://milligram.github.io/typography.html" title="Typography">Typography</a></li>
+						<li><a href="https://milligram.github.io/blockquotes.html" title="Blockquotes">Blockquotes</a></li>
+						<li><a href="https://milligram.github.io/buttons.html" title="Buttons">Buttons</a></li>
+						<li><a href="https://milligram.github.io/lists.html" title="Lists">Lists</a></li>
+						<li><a href="https://milligram.github.io/forms.html" title="Forms">Forms</a></li>
+						<li><a href="https://milligram.github.io/tables.html" title="Tables">Tables</a></li>
+						<li><a href="https://milligram.github.io/grids.html" title="Grids">Grids</a></li>
+						<li><a href="https://milligram.github.io/codes.html" title="Codes">Codes</a></li>
+						<li><a href="https://milligram.github.io/utilities.html" title="Utilities">Utilities</a></li>
+						<li><a href="https://milligram.github.io/tips.html" title="Tips">Tips</a></li>
+						<li><a href="https://milligram.github.io/browser-support.html" title="Browser Support">Browser Support</a></li>
+					</ul>
+				</p>
+			</section>
+
+			<footer class="footer">
+				<section class="container">
+					<p>Designed with ♥ by <a target="blank" href="http://cjpatoilo.com" title="CJ Patoilo">CJ Patoilo</a>. Licensed under the <a target="blank" href="https://github.com/milligram/milligram#license" title="MIT License">MIT License</a>.</p>
+				</section>
+			</footer>
+
+		</main>
+
+	</body>
+</html>
