@@ -9,6 +9,7 @@ We would love for you to contribute to Milligram and help us make this even bett
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Building](#building)
 - [Style Guide](#style-guide)
+- [Test](#test)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
@@ -78,6 +79,11 @@ Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at
 ```
 
 *Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
+
+
+## Test
+
+Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison run `npm test` after making changes to the source code.
 
 
 ## Code of Conduct
