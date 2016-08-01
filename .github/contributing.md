@@ -9,6 +9,7 @@ We would love for you to contribute to Milligram and help us make this even bett
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Building](#building)
 - [Style Guide](#style-guide)
+- [Test](#test)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
@@ -35,7 +36,7 @@ Try to solve a problem for each pull request, this increases the chances of acce
 
 ## Building
 
-First install [Node.js](https://nodejs.org/en/download/), then [Grunt](http://gruntjs.com/getting-started) and [Sass](http://sass-lang.com/install) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `grunt`. This will run the default grunt task which compiles the Sass files into milligram.css file.
+First install [Node.js](https://nodejs.org/en/download/) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `npm start`. This will run the build task which compiles the Sass files into Milligram.css file in the expanded and compressed version.
 
 
 ## Style Guide
@@ -80,7 +81,12 @@ Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at
 *Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
 
 
-## Code of conduct
+## Test
+
+Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison run `npm test` after making changes to the source code.
+
+
+## Code of Conduct
 
 Help us keep Milligram open and inclusive. Please read and follow our thoughts on [Code of Conduct](http://confcodeofconduct.com/).
 
