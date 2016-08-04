@@ -33,6 +33,7 @@
 		".gitignore",
 		".npmignore",
 		".travis.yml",
+		".versions",
 		"bower.json",
 		"changelog.md",
 		"component.json",
@@ -44,9 +45,11 @@
 	],
 	"repo": "milligram/milligram",
 	"styles": [
-		"demo",
+		"examples",
 		"dist/milligram.css",
+		"dist/milligram.css.map",
 		"dist/milligram.min.css",
+		"dist/milligram.min.css.map",
 		"license",
 		"readme.md"
 	]

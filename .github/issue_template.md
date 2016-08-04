@@ -24,7 +24,7 @@ be fixed in the latest versions. -->
 
 **Milligram:**
 
-**Other (e.g. Normalize.css, Node.js, npm, bower, browser, operating system) (if applicable):**
+**Other (e.g. normalize.css, node.js, npm, bower, browser, operating system) (if applicable):**
 
 
 ### Test case
