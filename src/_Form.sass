@@ -12,8 +12,8 @@ input[type='url'],
 textarea,
 select
 	appearance: none // Removes awkward default styles on some inputs for iOS
-	background-color: transparent
-	border: .1rem solid $color-quaternary
+	background-color: $form-input-background-color
+	border: .1rem solid $form-input-border-color
 	border-radius: .4rem
 	box-shadow: none
 	height: 3.8rem
@@ -21,7 +21,7 @@ select
 	width: 100%
 
 	&:focus
-		border: .1rem solid $color-primary
+		border: .1rem solid $form-input-focus-border-color
 		outline: 0
 
 select
@@ -38,8 +38,8 @@ textarea
 
 label,
 legend
-	font-size: 1.6rem
-	font-weight: 700
+	font-size: $form-label-font-size
+	font-weight: $form-label-font-weight
 	display: block
 	margin-bottom: .5rem
 
@@ -52,6 +52,6 @@ input[type='radio']
 	display: inline
 
 .label-inline
-	font-weight: normal
+	font-weight: $form-label-inline-font-weight
 	display: inline-block
 	margin-left: .5rem
