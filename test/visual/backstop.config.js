@@ -11,7 +11,7 @@ module.exports = {
 		label: 'Milligram | A minimalist CSS framework.',
 		url: 'http://localhost:3000',
 		hideSelectors: [],
-		removeSelectors: ['.__bs_notify__'],
+		removeSelectors: ['#__bs_notify__'],
 		selectors: ['body'],
 		readyEvent: null,
 		delay: 500,
