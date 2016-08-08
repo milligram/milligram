@@ -31,6 +31,10 @@ input[type='submit']
 		color: $color-initial
 		outline: 0
 
+	&:active
+		background-color: darken($color-secondary, 5%)
+		border-color: darken($color-secondary, 5%)
+
 	&.button-disabled,
 	&[disabled]
 		opacity: .5
@@ -51,6 +55,10 @@ input[type='submit']
 			background-color: transparent
 			border-color: $color-secondary
 
+		&:active
+			color: darken($color-secondary, 5%)
+			border-color: darken($color-secondary, 5%)
+
 		&.button-disabled,
 		&[disabled]
 
@@ -69,6 +77,9 @@ input[type='submit']
 			color: $color-secondary
 			background-color: transparent
 			border-color: transparent
+
+		&:active
+			color: darken($color-secondary, 5%)
 
 		&.button-disabled,
 		&[disabled]
