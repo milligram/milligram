@@ -29,9 +29,11 @@
 	],
 	"ignore": [
 		".editorconfig",
+		".github",
 		".gitignore",
 		".npmignore",
 		".travis.yml",
+		".versions",
 		"bower.json",
 		"changelog.md",
 		"component.json",

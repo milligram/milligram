@@ -1,6 +1,6 @@
 
 // Grid
-// â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“
+// ÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐÐ
 
 // .container is main centered wrapper with a max width of 112.0rem (1120px)
 .container
@@ -21,21 +21,15 @@
 	padding: 0
 	width: 100%
 
+	// Larger than mobile screen
+	@media (min-width: $large-screen)
+		flex-direction: row
+		margin-left: -1.0rem
+		width: calc(100% + 2.0rem)
+
 	&.row-wrap
 		flex-wrap: wrap
 
-	&.row-no-padding
-		padding: 0
-
-		&> .column
-			padding: 0
-
-	// & + .row
-	// 	margin-top: -.5rem
-	// 	padding-top: 0
-
-	// Vertically Align Columns
-	// .row-* vertically aligns every .col in the .row
 	&.row-top
 		align-items: flex-start
 
@@ -51,12 +45,22 @@
 	&.row-baseline
 		align-items: baseline
 
+	&.row-no-padding
+		padding: 0
+
+		&> .column
+			padding: 0
+
 	.column
 		display: block
 		flex: 1
 		margin-left: 0
 		max-width: 100%
 		width: 100%
+
+		@media (min-width: $large-screen)
+			margin-bottom: inherit
+			padding: 0 1.0rem
 
 		// .column-* vertically aligns an individual .column
 		.col-top
@@ -131,7 +135,8 @@
 			flex: 0 0 60%
 			max-width: 60%
 
-		&.column-66, &.column-67
+		&.column-66,
+		&.column-67
 			flex: 0 0 66.6666%
 			max-width: 66.6666%
 
@@ -146,15 +151,3 @@
 		&.column-90
 			flex: 0 0 90%
 			max-width: 90%
-
-// Larger than mobile screen
-@media (min-width: $large-screen)
-
-	.row
-		flex-direction: row
-		margin-left: -1.0rem
-		width: calc(100% + 2.0rem)
-
-		.column
-			margin-bottom: inherit
-			padding: 0 1.0rem
