@@ -7,6 +7,9 @@
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
 	"main": "dist/milligram.css",
+	"files": [
+		"src"
+	],
 	"keywords": [
 		"bootstrap",
 		"css",
