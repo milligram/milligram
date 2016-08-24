@@ -1,0 +1,37 @@
+
+// Cards
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.card
+	border: .3rem solid $color-secondary
+	border-radius: .4rem
+	margin-left: 0
+	margin-right: 0
+
+	.card-header
+		background: $color-secondary
+		color: $color-initial
+		font-weight: 700
+		height: 3.8rem
+		letter-spacing: .1rem
+		line-height: 3.8rem
+		margin-left: 0
+		margin-right: 0
+		padding: 0 1.5rem
+
+	.card-content
+		margin-left: 0
+		margin-right: 0
+		padding: 1rem 1.5rem
+
+	&.card-action
+		border-color: $color-primary
+
+		.card-header
+			background: $color-primary
+
+	&.card-outline
+		& .card-header
+			background: transparent
+			color: $color-secondary
+			border-bottom: .3rem solid $color-secondary
