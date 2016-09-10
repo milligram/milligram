@@ -64,10 +64,12 @@
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
 		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
 		"lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
-		"build": "npm-run-all sass autoprefixer banner",
+		"build": "run-s lint sass autoprefixer banner",
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start -s test --ss dist -f dist",
-		"start": "npm-run-all -p watch serve",
-		"test": "cd node_modules/backstopjs && npm run test -- --configPath=../../test/visual/backstop.config.js && cd ../../"
+		"start": "run-p watch serve",
+		"reference": "cd node_modules/backstopjs && npm run reference -- --configPath=../../test/visual/backstop.config.js && cd ../../",
+		"compare": "cd node_modules/backstopjs && npm run test -- --configPath=../../test/visual/backstop.config.js && cd ../../",
+		"test": "run-p serve compare"
 	}
 }

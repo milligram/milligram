@@ -193,8 +193,7 @@ pre > code {
 hr {
   border: 0;
   border-top: 0.1rem solid #f4f5f6;
-  margin-bottom: 3.5rem;
-  margin-top: 3.0rem;
+  margin: 3.0rem 0;
 }
 
 input[type='email'],
