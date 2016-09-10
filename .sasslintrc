@@ -1,0 +1,74 @@
+#########################
+## Sass Lint File
+## See rules https://github.com/sasstools/sass-lint/tree/master/docs/rules
+#########################
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+# File Options
+files:
+  include: 'src/**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.*'
+# Rule Configuration
+rules:
+  attribute-quotes:
+    - 2
+    -
+      include: true
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+  nesting-depth:
+    - 1
+    -
+      max-depth: 2
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-duplicate-properties: 1
+  no-trailing-whitespace: 2
+
+  leading-zero:
+    - 2
+    -
+      include: false
+  no-vendor-prefixes:
+    - 2
+    -
+      ignore-non-standard: true
+  no-important: 2
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+  indentation:
+    - 2
+    -
+      size: 'tab'
+  property-sort-order:
+    - 1
+    -
+      order: 'alphabetical'
+      ignore-custom-properties: true
+  property-units:
+    - 1
+    -
+      global: ['em', 'rem', '%']
+  quotes: 2
+  space-after-colon: 2
+  space-after-comma: 2
+  single-line-per-selector: 2
+  variable-for-property:
+    - 2
+    -
+      properties:
+        - color
+  zero-unit: 2

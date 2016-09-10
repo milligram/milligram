@@ -53,15 +53,17 @@
 		"node-sass": "^3.7.0",
 		"npm-run-all": "^2.1.1",
 		"onchange": "^2.4.0",
-		"postcss-cli": "^2.5.2"
+		"postcss-cli": "^2.5.2",
+		"sass-lint": "^1.8.2"
 	},
 	"engines": {
 		"node": "^6.0.0"
 	},
 	"scripts": {
 		"banner": "for m in dist/*.css; do echo '/*!\n * Milligram v1.1.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - $m > temp && mv temp $m; done",
-		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
+		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+		"lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
 		"build": "npm-run-all sass autoprefixer banner",
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start -s test --ss dist -f dist",

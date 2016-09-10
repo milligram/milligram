@@ -47,22 +47,18 @@
 	&.row-baseline
 		align-items: baseline
 
+	&.row-no-padding
+		padding: 0
+
+		&> .column
+			padding: 0
+
 	.column
 		display: block
 		flex: 1
 		margin-left: 0
 		max-width: 100%
 		width: 100%
-
-		// .column-* vertically aligns an individual .column
-		.col-top
-			align-self: flex-start
-
-		.col-bottom
-			align-self: flex-end
-
-		.col-center
-			align-self: center
 
 		// Column Offsets
 		&.column-offset-10
@@ -144,8 +140,18 @@
 			flex: 0 0 90%
 			max-width: 90%
 
+		// .column-* vertically aligns an individual .column
+		.column-top
+			align-self: flex-start
+
+		.column-bottom
+			align-self: flex-end
+
+		.column-center
+			align-self: center
+
 // Larger than mobile screen
-@media (min-width: 640px)
+@media (min-width: 40.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
 
 	.row
 		flex-direction: row
