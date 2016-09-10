@@ -16,12 +16,13 @@ select
 	border: .1rem solid $color-quaternary
 	border-radius: .4rem
 	box-shadow: none
+	box-sizing: inherit // Forced to replace inherit values of the normalize.css
 	height: 3.8rem
 	padding: .6rem 1.0rem // The .6rem vertically centers text on FF, ignored by Webkit
 	width: 100%
 
 	&:focus
-		border: .1rem solid $color-primary
+		border-color: $color-primary
 		outline: 0
 
 select
@@ -33,8 +34,6 @@ select
 
 textarea
 	min-height: 6.5rem
-	padding-bottom: .6rem
-	padding-top: .6rem
 
 label,
 legend

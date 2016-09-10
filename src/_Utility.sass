@@ -4,14 +4,10 @@
 
 // Clear a float with .clearfix
 .clearfix
-	*zoom: 1
 
 	&:after
 		clear: both
-
-	&:after,
-	&:before
-		content: ''
+		content: ' ' // The space content is one way to avoid an Opera bug.
 		display: table
 
 // Float either direction
