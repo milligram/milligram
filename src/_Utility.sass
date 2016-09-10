@@ -2,21 +2,21 @@
 // Utility
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Float either direction
-.float-right
-	float: right
-
-.float-left
-	float: left
-
 // Clear a float with .clearfix
 .clearfix
 	*zoom: 1
+
+	&:after
+		clear: both
 
 	&:after,
 	&:before
 		content: ''
 		display: table
 
-	&:after
-		clear: both
+// Float either direction
+.float-left
+	float: left
+
+.float-right
+	float: right
