@@ -53,8 +53,7 @@
 		"node-sass": "^3.7.0",
 		"npm-run-all": "^2.1.1",
 		"onchange": "^2.4.0",
-		"postcss-cli": "^2.5.2",
-		"slimerjs": "^0.906.2"
+		"postcss-cli": "^2.5.2"
 	},
 	"engines": {
 		"node": "^6.0.0"
