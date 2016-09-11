@@ -70,6 +70,6 @@
 		"start": "run-p watch serve",
 		"reference": "cd node_modules/backstopjs && npm run reference -- --configPath=../../test/visual/backstop.config.js && cd ../../",
 		"compare": "cd node_modules/backstopjs && npm run test -- --configPath=../../test/visual/backstop.config.js && cd ../../",
-		"test": "run-p serve compare"
+		"test": "npm run lint"
 	}
 }
