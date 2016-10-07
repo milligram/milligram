@@ -43,7 +43,6 @@
 		"src",
 		"test"
 	],
-	"repo": "milligram/milligram",
 	"styles": [
 		"examples",
 		"dist/milligram.css",
