@@ -41,7 +41,7 @@ $ npm install milligram
 - [Forms](http://milligram.github.io/#forms)
 - [Tables](http://milligram.github.io/#tables)
 - [Grids](http://milligram.github.io/#grids)
-- [Codes](http://milligram.github.io/#codes)
+- [Code](http://milligram.github.io/#code)
 - [Utilities](http://milligram.github.io/#utilities)
 - [Tips](http://milligram.github.io/#tips)
 - [Browser Support](http://milligram.github.io/#browser-support)
