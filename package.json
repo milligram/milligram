@@ -49,7 +49,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.3.6",
-		"backstopjs": "^1.3.5",
+		"backstopjs": "^2.0.6",
 		"browser-sync": "^2.13.0",
 		"node-sass": "^3.7.0",
 		"npm-run-all": "^2.1.1",
@@ -69,10 +69,10 @@
 		"lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
 		"build": "run-s lint sass autoprefixer banner",
 		"watch": "onchange src -- npm run build",
-		"serve": "browser-sync start -s test --ss dist -f dist",
+		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
 		"start": "run-p watch serve",
-		"reference": "cd node_modules/backstopjs && npm run reference -- --configPath=../../test/visual/backstop.config.js && cd ../../",
-		"compare": "cd node_modules/backstopjs && npm run test -- --configPath=../../test/visual/backstop.config.js && cd ../../",
-		"test": "run-s build"
+		"reference": "backstop reference --configPath=backstop.conf.js",
+		"compare": "backstop test --configPath=backstop.conf.js",
+		"test": "run-s build && run-p serve compare"
 	}
 }
