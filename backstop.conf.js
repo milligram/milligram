@@ -104,13 +104,14 @@ module.exports = {
 		onBeforeScript: null
 	}],
 	paths: {
-		bitmaps_reference: '../../test/visual/reference',
-		bitmaps_test: '.tmp',
-		casper_scripts: null,
-		compare_data: '.tmp/compare.json'
+		bitmaps_reference: 'test/reference',
+		bitmaps_test: 'node_modules/backstopjs/.tmp/bitmaps_test',
+		casper_scripts: 'node_modules/backstopjs/.tmp/casper_scripts',
+		html_report: 'node_modules/backstopjs/.tmp/html_report',
+		ci_report: 'node_modules/backstopjs/.tmp/ci_report'
 	},
 	engine: 'phantomjs',
-	report: ['browser', 'CLI'],
+	report: ['browser', 'CLI', 'CI'],
 	casperFlags: [],
 	debug: false,
 	port: 3002
