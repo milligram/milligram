@@ -48,17 +48,17 @@
 		"normalize.css": "latest"
 	},
 	"devDependencies": {
-		"autoprefixer": "^6.3.6",
-		"backstopjs": "^2.0.6",
-		"browser-sync": "^2.13.0",
-		"node-sass": "^3.7.0",
-		"npm-run-all": "^2.1.1",
-		"onchange": "^2.4.0",
-		"postcss-cli": "^2.5.2",
-		"sass-lint": "^1.8.2"
+		"autoprefixer": "^6.5.3",
+		"backstopjs": "^2.3.3",
+		"browser-sync": "^2.18.1",
+		"node-sass": "^3.13.0",
+		"npm-run-all": "^2.3.0",
+		"onchange": "^2.5.0",
+		"postcss-cli": "^2.6.0",
+		"sass-lint": "^1.10.2"
 	},
 	"engines": {
-		"node": "^6.0.0"
+		"node": "^7.0.0"
 	},
 	"scripts": {
 		"prestart": "npm install",
