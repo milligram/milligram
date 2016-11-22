@@ -79,7 +79,7 @@
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
 		"start": "run-p watch serve",
-		"test": "run-s build",
+		"test": "run-s build coverage",
 		"coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --require intelli-espower-loader test/unit/*.js",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
