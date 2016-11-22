@@ -29,6 +29,7 @@
 	],
 	"ignore": [
 		".appveyor.yml",
+		".coveralls.yml",
 		".editorconfig",
 		".github",
 		".gitignore",
