@@ -28,7 +28,10 @@
 		"stylus"
 	],
 	"ignore": [
+		".appveyor.yml",
+		".coveralls.yml",
 		".editorconfig",
+		".eslintrc",
 		".github",
 		".gitignore",
 		".npmignore",

@@ -28,7 +28,10 @@
 		"stylus"
 	],
 	"ignore": [
+		".appveyor.yml",
+		".coveralls.yml",
 		".editorconfig",
+		".eslintrc",
 		".github",
 		".gitignore",
 		".npmignore",
@@ -51,10 +54,15 @@
 		"autoprefixer": "^6.5.3",
 		"backstopjs": "^2.3.3",
 		"browser-sync": "^2.18.1",
+		"coveralls": "^2.11.15",
+		"intelli-espower-loader": "^1.0.1",
+		"istanbul": "^0.4.5",
+		"mocha": "^3.1.2",
 		"node-sass": "^3.13.0",
 		"npm-run-all": "^2.3.0",
 		"onchange": "^2.5.0",
 		"postcss-cli": "^2.6.0",
+		"power-assert": "^1.4.2",
 		"sass-lint": "^1.10.2"
 	},
 	"engines": {
@@ -72,6 +80,7 @@
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
 		"start": "run-p watch serve",
 		"test": "run-s build",
+		"coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --require intelli-espower-loader test/unit/*.js",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
 		"backstop": "run-s build && run-p serve compare"
