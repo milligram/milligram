@@ -28,6 +28,7 @@
 		"stylus"
 	],
 	"ignore": [
+		".coveralls.yml",
 		".editorconfig",
 		".github",
 		".gitignore",
