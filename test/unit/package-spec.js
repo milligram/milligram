@@ -1,4 +1,3 @@
-const fs = require('fs');
 const assert = require('power-assert');
 const npm = require('../../package.json');
 const bower = require('../../bower.json');
