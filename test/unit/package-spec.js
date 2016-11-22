@@ -112,7 +112,7 @@ describe('Package', () => {
 
 	describe('Ignore', () => {
 
-		it(`should be equal`, () => {
+		it('should be equal', () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
 					if (referenceIndex !== compareIndex) assert(referenceValue.ignore, compareValue.ignore);
@@ -124,7 +124,7 @@ describe('Package', () => {
 
 	describe('Keywords', () => {
 
-		it(`should be equal`, () => {
+		it('should be equal', () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
 					if (referenceIndex !== compareIndex) assert(referenceValue.keywords, compareValue.keywords);

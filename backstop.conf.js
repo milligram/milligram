@@ -104,7 +104,7 @@ module.exports = {
 		onBeforeScript: null
 	}],
 	paths: {
-		bitmaps_reference: 'test/reference',
+		bitmaps_reference: 'test/regression',
 		bitmaps_test: 'node_modules/backstopjs/.tmp/bitmaps_test',
 		casper_scripts: 'node_modules/backstopjs/.tmp/casper_scripts',
 		html_report: 'node_modules/backstopjs/.tmp/html_report',
@@ -115,4 +115,4 @@ module.exports = {
 	casperFlags: [],
 	debug: false,
 	port: 3002
-}
+};
