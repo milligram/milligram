@@ -115,4 +115,4 @@ module.exports = {
 	casperFlags: [],
 	debug: false,
 	port: 3002
-}
+};
