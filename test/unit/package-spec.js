@@ -1,13 +1,11 @@
 const assert = require('power-assert');
 const npm = require('../../package.json');
 const bower = require('../../bower.json');
-const component = require('../../component.json');
 const composer = require('../../composer.json');
 
 const packages = [
 	npm,
 	bower,
-	component,
 	composer
 ];
 
@@ -15,10 +13,11 @@ describe('Package', () => {
 
 	describe('Name', () => {
 
-		it(`should be equal to ${npm.name}`, () => {
+		it(`should be equal "${npm.name}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.name, compareValue.name);
+					if (compareValue.name.match('/')) compareValue.name = compareValue.name.split('/')[1]
+					if (referenceIndex !== compareIndex) assert(referenceValue.name === compareValue.name);
 				});
 			});
 		});
@@ -27,10 +26,10 @@ describe('Package', () => {
 
 	describe('Version', () => {
 
-		it(`should be equal to v${npm.version}`, () => {
+		it(`should be equal to "v${npm.version}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.version, compareValue.version);
+					if (referenceIndex !== compareIndex) assert(referenceValue.version === compareValue.version);
 				});
 			});
 		});
@@ -39,10 +38,10 @@ describe('Package', () => {
 
 	describe('Description', () => {
 
-		it(`should be equal to ${npm.description}`, () => {
+		it(`should be equal to "${npm.description}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.description, compareValue.description);
+					if (referenceIndex !== compareIndex) assert(referenceValue.description === compareValue.description);
 				});
 			});
 		});
@@ -51,10 +50,10 @@ describe('Package', () => {
 
 	describe('Homepage', () => {
 
-		it(`should be equal to ${npm.homepage}`, () => {
+		it(`should be equal to "${npm.homepage}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.homepage, compareValue.homepage);
+					if (referenceIndex !== compareIndex) assert(referenceValue.homepage === compareValue.homepage);
 				});
 			});
 		});
@@ -63,10 +62,10 @@ describe('Package', () => {
 
 	describe('Repository', () => {
 
-		it(`should be equal to ${npm.repository}`, () => {
+		it(`should be equal to "${npm.repository}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.repository, compareValue.repository);
+					if (referenceIndex !== compareIndex) assert(referenceValue.repository === compareValue.repository);
 				});
 			});
 		});
@@ -75,10 +74,10 @@ describe('Package', () => {
 
 	describe('License', () => {
 
-		it(`should be equal to ${npm.license}`, () => {
+		it(`should be equal to "${npm.license}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.license, compareValue.license);
+					if (referenceIndex !== compareIndex) assert(referenceValue.license === compareValue.license);
 				});
 			});
 		});
@@ -87,10 +86,10 @@ describe('Package', () => {
 
 	describe('Author Name', () => {
 
-		it(`should be equal to ${npm.author}`, () => {
+		it(`should be equal to "${npm.author}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.author, compareValue.author);
+					if (referenceIndex !== compareIndex) assert(referenceValue.author === compareValue.author);
 				});
 			});
 		});
@@ -99,10 +98,10 @@ describe('Package', () => {
 
 	describe('Main File', () => {
 
-		it(`should be equal to ${npm.main}`, () => {
+		it(`should be equal to "${npm.main}"`, () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.main, compareValue.main);
+					if (referenceIndex !== compareIndex) assert(referenceValue.main === compareValue.main);
 				});
 			});
 		});
@@ -114,7 +113,7 @@ describe('Package', () => {
 		it('should be equal', () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.ignore, compareValue.ignore);
+					if (referenceIndex !== compareIndex) assert(JSON.stringify(referenceValue.ignore) === JSON.stringify(compareValue.ignore));
 				});
 			});
 		});
@@ -126,7 +125,7 @@ describe('Package', () => {
 		it('should be equal', () => {
 			packages.map((referenceValue, referenceIndex) => {
 				packages.map((compareValue, compareIndex) => {
-					if (referenceIndex !== compareIndex) assert(referenceValue.keywords, compareValue.keywords);
+					if (referenceIndex !== compareIndex) assert(JSON.stringify(referenceValue.keywords) === JSON.stringify(compareValue.keywords));
 				});
 			});
 		});

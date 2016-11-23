@@ -1,4 +1,3 @@
-
 .appveyor.yml
 .coveralls.yml
 .editorconfig
@@ -11,7 +10,6 @@
 backstop.conf.js
 bower.json
 changelog.md
-component.json
 composer.json
 package.js
 package.json
