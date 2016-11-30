@@ -47,6 +47,6 @@
 		"test"
 	],
 	"dependencies": {
-		"normalize.css": "latest"
+		"normalize.css": "~5.0.0"
 	}
 }

@@ -47,7 +47,7 @@
 		"test"
 	],
 	"dependencies": {
-		"normalize.css": "latest"
+		"normalize.css": "~5.0.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.5.3",
