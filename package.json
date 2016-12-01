@@ -47,21 +47,20 @@
 		"test"
 	],
 	"dependencies": {
-		"normalize.css": "latest"
+		"normalize.css": "~5.0.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.5.3",
+		"ava": "^0.17.0",
 		"backstopjs": "^2.3.3",
+		"banner-cli": "^0.4.0",
 		"browser-sync": "^2.18.1",
 		"coveralls": "^2.11.15",
-		"intelli-espower-loader": "^1.0.1",
-		"istanbul": "^0.4.5",
-		"mocha": "^3.1.2",
 		"node-sass": "^3.13.0",
 		"npm-run-all": "^2.3.0",
+		"nyc": "^10.0.0",
 		"onchange": "^2.5.0",
 		"postcss-cli": "^2.6.0",
-		"power-assert": "^1.4.2",
 		"sass-lint": "^1.10.2"
 	},
 	"engines": {
@@ -70,16 +69,16 @@
 	"scripts": {
 		"prestart": "npm install",
 		"pretest": "npm install",
-		"banner": "for m in dist/*.css; do echo \"/*!\n * Milligram v1.2.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n\" | cat - $m > temp && mv temp $m; done",
+		"banner": "banner-cli dist/*.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
 		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
-		"lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
+		"lint": "sass-lint -c .sasslintrc \"src/*.sass\" --verbose --no-exit",
 		"build": "run-s lint sass autoprefixer banner",
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
 		"start": "run-p watch serve",
-		"test": "run-s build coverage",
-		"coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --require intelli-espower-loader test/unit/*.js",
+		"test": "run-s build",
+		"coverage": "nyc ava | coveralls",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
 		"backstop": "run-s build && run-p serve compare"
