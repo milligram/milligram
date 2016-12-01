@@ -77,7 +77,7 @@
 		"build": "run-s clean lint sass autoprefixer banner",
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-		"start": "run-p watch serve",
+		"start": "run-p build watch serve",
 		"test": "nyc ava",
 		"coveralls": "nyc report --reporter=text-lcov | coveralls",
 		"reference": "backstop reference --configPath=backstop.conf.js",
