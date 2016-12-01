@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'milligram:milligram',
-	version: '1.2.1',
+	version: '1.2.2',
 	summary: 'A minimalist CSS framework.',
 	git: 'https://github.com/milligram/milligram.git',
 	documentation: 'readme.md'
