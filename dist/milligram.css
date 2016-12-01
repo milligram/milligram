@@ -6,6 +6,12 @@
  * Licensed under the MIT license
 */
 
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -18,12 +24,6 @@ body {
   font-weight: 300;
   letter-spacing: .01em;
   line-height: 1.6;
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: inherit;
 }
 
 blockquote {
@@ -523,6 +523,11 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
 }
 
 p {
