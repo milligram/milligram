@@ -12,7 +12,7 @@ const packages = [
 test(`Name should be equal "${npm.name}"`, t => {
 	packages.map((referenceValue, referenceIndex) => {
 		packages.map((compareValue, compareIndex) => {
-			if (compareValue.name.match('/')) compareValue.name = compareValue.name.split('/')[1]
+			if (compareValue.name.match('/')) compareValue.name = compareValue.name.split('/')[1];
 			if (referenceIndex !== compareIndex) t.is(referenceValue.name, compareValue.name);
 		});
 	});
