@@ -53,6 +53,7 @@
 		"autoprefixer": "^6.5.3",
 		"ava": "^0.17.0",
 		"backstopjs": "^2.3.3",
+		"banner-cli": "^0.4.0",
 		"browser-sync": "^2.18.1",
 		"coveralls": "^2.11.15",
 		"node-sass": "^3.13.0",
@@ -68,7 +69,7 @@
 	"scripts": {
 		"prestart": "npm install",
 		"pretest": "npm install",
-		"banner": "for m in dist/*.css; do echo '/*!\n * Milligram v1.2.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - $m > temp && mv temp $m; done",
+		"banner": "banner-cli dist/*.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
 		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
 		"lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
