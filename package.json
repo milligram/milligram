@@ -1,6 +1,6 @@
 {
 	"name": "milligram",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "A minimalist CSS framework.",
 	"homepage": "http://milligram.github.io",
 	"repository": "milligram/milligram",
@@ -53,7 +53,7 @@
 		"autoprefixer": "^6.5.3",
 		"ava": "^0.17.0",
 		"backstopjs": "^2.3.3",
-		"banner-cli": "^0.4.0",
+		"banner-cli": "^0.5.0",
 		"browser-sync": "^2.18.1",
 		"coveralls": "^2.11.15",
 		"node-sass": "^3.13.0",
