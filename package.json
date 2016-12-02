@@ -63,9 +63,6 @@
 		"postcss-cli": "^2.6.0",
 		"sass-lint": "^1.10.2"
 	},
-	"engines": {
-		"node": "^7.0.0"
-	},
 	"scripts": {
 		"prestart": "npm install",
 		"pretest": "npm install",
