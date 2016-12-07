@@ -1,5 +1,5 @@
 /*!
- * Milligram v1.2.2
+ * Milligram v1.2.3
  * http://milligram.github.io
  *
  * Copyright (c) 2016 CJ Patoilo
@@ -181,6 +181,7 @@ code {
 pre {
   background: #f4f5f6;
   border-left: 0.3rem solid #9b4dca;
+  overflow-y: hidden;
 }
 
 pre > code {
