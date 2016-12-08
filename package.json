@@ -61,27 +61,28 @@
 		"nyc": "^10.0.0",
 		"onchange": "^2.5.0",
 		"postcss-cli": "^2.6.0",
+		"rimraf": "^2.5.4",
 		"sass-lint": "^1.10.2"
 	},
 	"engines": {
 		"node": "^7.0.0"
 	},
 	"scripts": {
-		"prestart": "npm install",
-		"pretest": "npm install",
-		"banner": "banner-cli dist/*.css",
-		"clean": "rm -rf dist",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+		"start": "run-p build watch serve",
+		"build": "run-s clean sass autoprefixer banner",
+		"clean": "rimraf dist",
 		"lint": "sass-lint -c .sasslintrc \"src/*.sass\" --verbose --no-exit",
-		"build": "run-s clean lint sass autoprefixer banner",
+		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+		"banner": "banner-cli dist/*.css",
 		"watch": "onchange src -- npm run build",
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-		"start": "run-p build watch serve",
-		"test": "nyc ava",
+		"test": "lint && nyc ava",
 		"coveralls": "nyc report --reporter=text-lcov | coveralls",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
-		"backstop": "run-s build && run-p serve compare"
+		"backstop": "run-s build && run-p serve compare",
+		"prestart": "npm install",
+		"pretest": "npm install"
 	}
 }
