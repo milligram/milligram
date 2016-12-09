@@ -63,9 +63,6 @@
 		"rimraf": "^2.5.4",
 		"sass-lint": "^1.10.2"
 	},
-	"engines": {
-		"node": "^7.0.0"
-	},
 	"scripts": {
 		"start": "run-p build watch serve",
 		"build": "run-s clean sass autoprefixer banner",
