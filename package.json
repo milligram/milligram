@@ -49,13 +49,13 @@
 		"normalize.css": "~5.0.0"
 	},
 	"devDependencies": {
-		"autoprefixer": "^6.5.3",
+		"autoprefixer": "^6.5.4",
 		"ava": "^0.17.0",
-		"backstopjs": "^2.3.3",
-		"banner-cli": "^0.6.0",
-		"browser-sync": "^2.18.2",
-		"husky": "^0.11.6",
-		"node-sass": "^3.13.0",
+		"backstopjs": "^2.3.5",
+		"banner-cli": "^0.9.2",
+		"browser-sync": "^2.18.5",
+		"husky": "^0.11.9",
+		"node-sass": "^3.13.1",
 		"npm-run-all": "^2.3.0",
 		"nyc": "^10.0.0",
 		"onchange": "^2.5.0",
@@ -64,7 +64,7 @@
 		"sass-lint": "^1.10.2"
 	},
 	"engines": {
-		"node": "^7.0.0"
+		"node": ">=4"
 	},
 	"scripts": {
 		"start": "run-p build watch serve",
@@ -81,7 +81,7 @@
 		"backstop": "run-s build && run-p serve compare",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
-		"precommit": "run-s build test && git add dist/*",
+		"precommit": "run-s build test",
 		"prestart": "npm install",
 		"pretest": "npm install"
 	}
