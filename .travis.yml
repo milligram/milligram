@@ -1,4 +1,8 @@
-sudo: false
 language: node_js
-node_js: 7
-scripts: npm test
+node_js:
+  - 7
+  - 6
+  - 5
+  - 4
+before_install:
+  - npm i -g npm

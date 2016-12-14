@@ -1,10 +1,19 @@
 environment:
-  nodejs_version: 7
-platform:
-  - x86
-  - x64
+  matrix:
+    - nodejs_version: 7
+    - nodejs_version: 6
+    - nodejs_version: 5
+    - nodejs_version: 4
 install:
-  - ps: Install-Product node $env:nodejs_version $env:platform
-  - npm install
-test_script: npm test
+  - ps: Install-Product node $env:nodejs_version
+  - set CI=true
+  - npm i -g npm
+  - set PATH=%APPDATA%\npm;%PATH%
+  - npm i
+matrix:
+  fast_finish: true
 build: off
+version: '{build}'
+shallow_clone: true
+clone_depth: 1
+test_script: npm t
