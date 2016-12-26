@@ -1,7 +1,8 @@
-sudo: false
 language: node_js
 node_js:
+  - 7
   - 6
+  - 5
+  - 4
 before_install:
-  - node --version
-  - npm --version
+  - npm i -g npm

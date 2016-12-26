@@ -2,21 +2,17 @@
 // Utility
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Float either direction
-.float-right
-	float: right
-
-.float-left
-	float: left
-
 // Clear a float with .clearfix
 .clearfix
-	*zoom: 1
-
-	&:after,
-	&:before
-		content: ''
-		display: table
 
 	&:after
 		clear: both
+		content: ' ' // The space content is one way to avoid an Opera bug.
+		display: table
+
+// Float either direction
+.float-left
+	float: left
+
+.float-right
+	float: right

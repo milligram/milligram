@@ -1,6 +1,6 @@
 {
 	"name": "milligram",
-	"version": "1.1.0",
+	"version": "1.2.4",
 	"description": "A minimalist CSS framework.",
 	"homepage": "http://milligram.github.io",
 	"repository": "milligram/milligram",
@@ -28,15 +28,17 @@
 		"stylus"
 	],
 	"ignore": [
+		".appveyor.yml",
 		".editorconfig",
+		".eslintrc",
 		".github",
 		".gitignore",
 		".npmignore",
+		".sasslintrc",
 		".travis.yml",
-		".versions",
+		"backstop.conf.js",
 		"bower.json",
 		"changelog.md",
-		"component.json",
 		"composer.json",
 		"package.js",
 		"package.json",
@@ -44,6 +46,6 @@
 		"test"
 	],
 	"dependencies": {
-		"normalize.css": "latest"
+		"normalize.css": "~5.0.0"
 	}
 }
