@@ -2,7 +2,7 @@
  * Milligram v1.2.4
  * http://milligram.github.io
  *
- * Copyright (c) 2016 CJ Patoilo
+ * Copyright (c) 2017 CJ Patoilo
  * Licensed under the MIT license
  */
 
@@ -204,6 +204,12 @@ input[type='search'],
 input[type='tel'],
 input[type='text'],
 input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
 textarea,
 select {
   -webkit-appearance: none;
@@ -226,6 +232,12 @@ input[type='search']:focus,
 input[type='tel']:focus,
 input[type='text']:focus,
 input[type='url']:focus,
+input[type='color']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
 textarea:focus,
 select:focus {
   border-color: #9b4dca;
@@ -318,7 +330,7 @@ input[type='radio'] {
 
 .row .column {
   display: block;
-  flex: 1;
+  flex: 1 1 auto;
   margin-left: 0;
   max-width: 100%;
   width: 100%;
@@ -506,6 +518,7 @@ ul {
 }
 
 table {
+  border-spacing: 0;
   width: 100%;
 }
 
