@@ -1,4 +1,5 @@
-module.exports = {
+'use strict'
+const config = {
 	viewports: [
 		{
 			name: 'phone',
@@ -122,4 +123,6 @@ module.exports = {
 	casperFlags: [],
 	debug: false,
 	port: 3002
-};
+}
+
+module.exports = config
