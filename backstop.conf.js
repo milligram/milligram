@@ -1,7 +1,14 @@
 module.exports = {
 	viewports: [
-		{ name: 'phone', width: 320, height: 480 },
-		{ name: 'laptop', width: 1280, height: 800 }
+		{
+			name: 'phone',
+			width: 320,
+			height: 480
+		}, {
+			name: 'laptop',
+			width: 1280,
+			height: 800
+		}
 	],
 	scenarios: [{
 		label: 'Typography',
