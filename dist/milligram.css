@@ -1,8 +1,8 @@
 /*!
- * Milligram v1.2.4
- * http://milligram.github.io
+ * Milligram v1.3.0
+ * https://milligram.github.io
  *
- * Copyright (c) 2016 CJ Patoilo
+ * Copyright (c) 2017 CJ Patoilo
  * Licensed under the MIT license
  */
 
@@ -318,7 +318,7 @@ input[type='radio'] {
 
 .row .column {
   display: block;
-  flex: 1;
+  flex: 1 1 auto;
   margin-left: 0;
   max-width: 100%;
   width: 100%;
@@ -506,6 +506,7 @@ ul {
 }
 
 table {
+  border-spacing: 0;
   width: 100%;
 }
 
@@ -548,7 +549,7 @@ h6 {
 }
 
 h1 {
-  font-size: 4.0rem;
+  font-size: 4.6rem;
   line-height: 1.2;
 }
 
@@ -558,12 +559,12 @@ h2 {
 }
 
 h3 {
-  font-size: 3.0rem;
+  font-size: 2.8rem;
   line-height: 1.3;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   letter-spacing: -.08rem;
   line-height: 1.35;
 }
@@ -578,27 +579,6 @@ h6 {
   font-size: 1.6rem;
   letter-spacing: 0;
   line-height: 1.4;
-}
-
-@media (min-width: 40rem) {
-  h1 {
-    font-size: 5.0rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3.0rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
 }
 
 img {
