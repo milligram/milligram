@@ -1,14 +1,20 @@
-module.exports = {
-	viewports: [
-		{ name: 'phone', width: 320, height: 480 },
-		{ name: 'laptop', width: 1280, height: 800 }
-	],
+'use strict'
+const config = {
+	viewports: [{
+		name: 'phone',
+		width: 320,
+		height: 480
+	}, {
+		name: 'laptop',
+		width: 1280,
+		height: 800
+	}],
 	scenarios: [{
 		label: 'Typography',
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#typography'],
+		selectors: ['#typography .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -19,7 +25,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#blockquotes'],
+		selectors: ['#blockquotes .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -30,7 +36,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#buttons'],
+		selectors: ['#buttons .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -41,7 +47,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#lists'],
+		selectors: ['#lists .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -52,7 +58,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#forms'],
+		selectors: ['#forms .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -63,7 +69,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#tables'],
+		selectors: ['#tables .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -74,7 +80,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#grids'],
+		selectors: ['#grids .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -85,7 +91,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#codes'],
+		selectors: ['#codes .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -96,7 +102,7 @@ module.exports = {
 		url: 'http://localhost:3000',
 		hideSelectors: [],
 		removeSelectors: [],
-		selectors: ['#utilities'],
+		selectors: ['#utilities .example'],
 		readyEvent: null,
 		delay: 500,
 		misMatchThreshold: 0.1,
@@ -111,8 +117,14 @@ module.exports = {
 		ci_report: 'node_modules/backstopjs/.tmp/ci_report'
 	},
 	engine: 'phantomjs',
-	report: ['browser', 'CLI', 'CI'],
+	report: [
+		'browser',
+		'CLI',
+		'CI'
+	],
 	casperFlags: [],
 	debug: false,
 	port: 3002
-};
+}
+
+module.exports = config
