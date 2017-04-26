@@ -306,6 +306,8 @@ input[type='radio'] {
 
 .row.row-center {
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .row.row-stretch {
@@ -597,6 +599,18 @@ img {
 
 .float-right {
   float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=milligram.css.map */
