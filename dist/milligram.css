@@ -277,6 +277,10 @@ input[type='radio'] {
   width: 100%;
 }
 
+.container.fluid {
+  max-width: 100%;
+}
+
 .row {
   display: flex;
   flex-direction: column;
