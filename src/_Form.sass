@@ -54,3 +54,86 @@ input[type='radio']
 	display: inline-block
 	font-weight: normal
 	margin-left: .5rem
+
+input[type='range'],
+  	-webkit-appearance: none
+  	width: 100%
+  	background: transparent
+	  &:focus 
+  		outline: none
+
+&::-webkit-slider-thumb 
+  	-webkit-appearance: none
+&::-ms-track 
+	width: 100%
+  	cursor: pointer
+	background: transparent
+  	border-color: transparent
+  	color: transparent
+&::-webkit-slider-thumb 
+  -webkit-appearance: none
+  border: 1px solid $color-primary
+  height: 30px
+  width: 30px
+  border-radius: 100px
+  background: $color-primary
+  cursor: pointer
+  margin-top: -14px
+  box-shadow: none
+&::-moz-range-thumb 
+  box-shadow: none
+  border: 1px solid $color-primary
+  height: 30px
+  width: 30px
+  border-radius: 100px
+  background: $color-primary
+  cursor: pointer
+&::-ms-thumb 
+  box-shadow: none
+  border: 1px solid $color-primary
+  height: 30px
+  width: 30px
+  border-radius: 100px
+  background: $color-primary
+  cursor: pointer
+
+&::-webkit-slider-runnable-track
+  width: 100%
+  height: 5px
+  cursor: pointer
+  box-shadow: none
+  background: $color-quaternary
+  border-radius: 1.3px
+  border: none
+&focus::-webkit-slider-runnable-track 
+  background: #367ebd
+&::-moz-range-track 
+  width: 100%
+  height: 5px
+  cursor: pointer
+  box-shadow: none
+  background: $color-quaternary
+  border-radius: 1.3px
+  border: none
+&::-ms-track 
+  width: 100%
+  height: 8.4px
+  cursor: pointer
+  background: transparent
+  border-color: transparent
+  border-width: 16px 0px
+  color: transparent
+&::-ms-fill-lower 
+  background: $color-quaternary
+  border: none
+  border-radius: 2.6px
+  box-shadow: none
+&:focus::-ms-fill-lower 
+  background: $color-quaternary
+&::-ms-fill-upper 
+  background: $color-quaternary
+  border: none
+  border-radius: 2.6px
+  box-shadow: none
+&:focus::-ms-fill-upper 
+  background: $color-quaternary
