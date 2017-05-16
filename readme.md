@@ -1,19 +1,7 @@
-<p align="center">
-	<a href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.jpg" alt="Milligram - A minimalist CSS framework"></a>
-</p>
-
-> A minimalist CSS framework. ** RTL Version **
-
-[![Build Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram)
-[![Dependencies Status](https://david-dm.org/milligram/milligram.svg)](https://travis-ci.org/milligram/milligram)
-[![npm version](https://badge.fury.io/js/milligram.svg)](https://badge.fury.io/js/milligram)
-[![Bower version](https://badge.fury.io/bo/milligram.svg)](https://badge.fury.io/bo/milligram)
-[![Gitter chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
-
 
 ## Why it's awesome?
 
-Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
+Millistrap provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
 
 
 ## Download
@@ -21,13 +9,13 @@ Milligram provides a minimal setup of styles for a fast and clean starting point
 **Install with Bower**
 
 ```sh
-$ bower install milligram
+$ bower install milistrap
 ```
 
 **Install with npm**
 
 ```sh
-$ npm install milligram
+$ npm install milistrap
 ```
 
 
@@ -55,4 +43,4 @@ Want to contribute? Follow these [recommendations](https://github.com/milligram/
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [Mohammad Sharifi](http://lenus.org). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).

@@ -64,12 +64,11 @@
   "scripts": {
     "prestart": "npm install",
     "pretest": "npm install",
-    "banner": "for m in dist/*.css; do echo '/*!\n * Milligram v1.2.0\n * http://milligram.github.io\n *\n * Copyright (c) 2016 CJ Patoilo\n * Licensed under the MIT license\n*/\n' | cat - $m > temp && mv temp $m; done",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers 'last 1 versions' -r dist/*.css",
     "rtlize": "postcss -u rtlcss -d dist/rtl dist/*.css",
     "sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
     "lint": "sass-lint -c .sasslintrc 'src/*.sass' --verbose --no-exit",
-    "build": "run-s lint sass autoprefixer banner",
+    "build": "run-s lint sass autoprefixer",
     "build-rtl": "run-s lint sass autoprefixer rtlize",
     "watchRtl": "onchange src -- npm run build-rtl",
     "watchLtr": "onchange src -- npm run build",
