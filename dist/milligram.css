@@ -598,5 +598,49 @@ img {
 .float-right {
   float: right;
 }
+/*Margin and padding utilities*/
+.m-0{
+	margin:0rem;
+}
+.m-05{
+	margin:0.5rem;
+}
+.m-1{
+	margin:1rem;
+}
+.m-15{
+	margin:1.5rem;
+}
+.m-2{
+	margin:2rem;
+}
+.m-25{
+	margin:2.5rem;	
+}
+.m-3{
+	margin:3rem;
+}
+.p-0{
+	padding:0rem;
+}
+.p-05{
+	padding:0.5rem;
+}
+.p-1{
+	padding:1rem;
+}
+.p-15{
+	padding:1.5rem;
+}
+.p-2{
+	padding:2rem;
+}
+.p-25{
+	padding:2.5rem;	
+}
+.p-3{
+	padding:3rem;
+}
+
 
 /*# sourceMappingURL=milligram.css.map */
