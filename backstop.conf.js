@@ -1,5 +1,5 @@
 'use strict'
-const config = {
+export const config = {
 	viewports: [{
 		name: 'phone',
 		width: 320,
@@ -127,4 +127,3 @@ const config = {
 	port: 3002
 }
 
-module.exports = config
