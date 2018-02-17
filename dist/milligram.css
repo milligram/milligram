@@ -204,6 +204,7 @@ input[type='search'],
 input[type='tel'],
 input[type='text'],
 input[type='url'],
+input:not([type]),
 textarea,
 select {
   -webkit-appearance: none;
@@ -226,6 +227,7 @@ input[type='search']:focus,
 input[type='tel']:focus,
 input[type='text']:focus,
 input[type='url']:focus,
+input:not([type]):focus,
 textarea:focus,
 select:focus {
   border-color: #9b4dca;
@@ -525,6 +527,16 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
+}
+
+div.panel {
+  overflow: hidden;
+  border-radius: .4rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.2), 0 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.14), 0 0.2rem 0.1rem -0.1rem rgba(0, 0, 0, 0.12);
+}
+
+div.panel.padded {
+  padding: 2rem;
 }
 
 b,
