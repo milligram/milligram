@@ -2,7 +2,7 @@
  * Milligram v1.3.0
  * https://milligram.github.io
  *
- * Copyright (c) 2017 CJ Patoilo
+ * Copyright (c) 2018 CJ Patoilo
  * Licensed under the MIT license
  */
 
@@ -204,6 +204,13 @@ input[type='search'],
 input[type='tel'],
 input[type='text'],
 input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
+input:not([type]),
 textarea,
 select {
   -webkit-appearance: none;
@@ -226,6 +233,13 @@ input[type='search']:focus,
 input[type='tel']:focus,
 input[type='text']:focus,
 input[type='url']:focus,
+input[type='color']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input:not([type]):focus,
 textarea:focus,
 select:focus {
   border-color: #9b4dca;
@@ -233,12 +247,12 @@ select:focus {
 }
 
 select {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
   padding-right: 3.0rem;
 }
 
 select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%239b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
 }
 
 textarea {
