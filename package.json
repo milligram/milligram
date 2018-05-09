@@ -64,7 +64,7 @@
 		"onchange": "^2.5.0",
 		"postcss-cli": "^2.6.0",
 		"rimraf": "^2.5.4",
-		"sass-lint": "^1.10.2"
+		"sass-lint": "^1.12.1"
 	},
 	"engines": {
 		"node": ">=4"
