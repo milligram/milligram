@@ -85,5 +85,8 @@
 		"ava": "nyc ava",
 		"test": "run-s build lint ava",
 		"precommit": "run-p test"
-	}
+	},
+	"resolutions": {
+		"natives": "1.1.3"
+	  }
 }
