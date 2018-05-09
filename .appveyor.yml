@@ -13,7 +13,7 @@ install:
   - set CI=true
   - npm i -g npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm install --build-from-source
+  - npm install
 matrix:
   fast_finish: true
 shallow_clone: true
