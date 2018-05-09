@@ -1,3 +1,7 @@
+os: Visual Studio 2015
+version: "{build}"
+build: off
+platform: x64
 environment:
   matrix:
     - nodejs_version: 7
