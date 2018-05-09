@@ -11,9 +11,9 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
-  - npm i -g npm
+  - npm i -g npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm i
+  - npm install --build-from-source
 matrix:
   fast_finish: true
 shallow_clone: true
