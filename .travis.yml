@@ -6,3 +6,6 @@ node_js:
   - 4
 before_install:
   - npm i -g npm
+cache:
+  directories:
+    - node_modules
