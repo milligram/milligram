@@ -247,12 +247,12 @@ select:focus {
 }
 
 select {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2214%22%20viewBox%3D%220%200%2029%2014%22%20width%3D%2229%22%3E%3Cpath%20fill%3D%22%2523d1d1d1%22%20d%3D%22M9.37727%203.625l5.08154%206.93523L19.54036%203.625%22%2F%3E%3C%2Fsvg%3E") center right no-repeat;
   padding-right: 3.0rem;
 }
 
 select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%239b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2214%22%20viewBox%3D%220%200%2029%2014%22%20width%3D%2229%22%3E%3Cpath%20fill%3D%22%25239b4dca%22%20d%3D%22M9.37727%203.625l5.08154%206.93523L19.54036%203.625%22%2F%3E%3C%2Fsvg%3E");
 }
 
 textarea {
@@ -539,6 +539,52 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
+}
+
+@media screen and (max-width: 40rem) {
+  table {
+    border-spacing: 0;
+    display: flex;
+    width: 100%;
+  }
+  table thead {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table thead td,
+  table thead th {
+    padding-left: 0;
+  }
+  table thead td:first-child,
+  table thead th:first-child {
+    padding-left: 0;
+  }
+  table thead td:last-child,
+  table thead th:last-child {
+    padding-right: 1.2rem;
+  }
+  table tbody {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table tbody tr {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table tbody tr:last-child {
+    border-right: none;
+  }
+  table td,
+  table th {
+    display: block;
+  }
+  table td:first-child,
+  table th:first-child {
+    padding-left: 1.2rem;
+  }
+  table td:last-child,
+  table th:last-child {
+    padding-right: 1.2rem;
+  }
 }
 
 b,
