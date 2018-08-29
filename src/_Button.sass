@@ -9,16 +9,16 @@ input[type='reset'],
 input[type='submit']
 	background-color: $color-primary
 	border: .1rem solid $color-primary
-	border-radius: .4rem
+	border-radius: $button-radius
 	color: $color-initial
 	cursor: pointer
 	display: inline-block
-	font-size: 1.1rem
-	font-weight: 700
-	height: 3.8rem
-	letter-spacing: .1rem
-	line-height: 3.8rem
-	padding: 0 3.0rem
+	font-size: $button-font-size
+	font-weight: $button-font-weight
+	height: $button-height
+	letter-spacing: $button-letter-spacing
+	line-height: $button-line-height
+	padding: $button-padding
 	text-align: center
 	text-decoration: none
 	text-transform: uppercase
@@ -33,7 +33,7 @@ input[type='submit']
 
 	&[disabled]
 		cursor: default
-		opacity: .5
+		opacity: $button-disabled-opacity
 
 		&:focus,
 		&:hover

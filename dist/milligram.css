@@ -19,10 +19,10 @@ html {
 
 body {
   color: #606c76;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   line-height: 1.6;
 }
 
@@ -44,16 +44,16 @@ input[type='reset'],
 input[type='submit'] {
   background-color: #9b4dca;
   border: 0.1rem solid #9b4dca;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 700;
   height: 3.8rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 3.8rem;
-  padding: 0 3.0rem;
+  padding: 0 3rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ input[type='button'][disabled],
 input[type='reset'][disabled],
 input[type='submit'][disabled] {
   cursor: default;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .button[disabled]:focus, .button[disabled]:hover,
@@ -171,10 +171,10 @@ input[type='submit'].button-clear[disabled]:hover {
 
 code {
   background: #f4f5f6;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   font-size: 86%;
-  margin: 0 .2rem;
-  padding: .2rem .5rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
   white-space: nowrap;
 }
 
@@ -194,7 +194,7 @@ pre > code {
 hr {
   border: 0;
   border-top: 0.1rem solid #f4f5f6;
-  margin: 3.0rem 0;
+  margin: 3rem 0;
 }
 
 input[type='email'],
@@ -218,7 +218,7 @@ select {
           appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
   height: 3.8rem;
@@ -248,7 +248,7 @@ select:focus {
 
 select {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-  padding-right: 3.0rem;
+  padding-right: 3rem;
 }
 
 select:focus {
@@ -264,7 +264,7 @@ legend {
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 fieldset {
@@ -481,7 +481,7 @@ ul dl,
 ul ol,
 ul ul {
   font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3.0rem;
+  margin: 1.5rem 0 1.5rem 3rem;
 }
 
 ol {
@@ -497,7 +497,7 @@ button,
 dd,
 dt,
 li {
-  margin-bottom: 1.0rem;
+  margin-bottom: 1rem;
 }
 
 fieldset,
@@ -541,6 +541,52 @@ th:last-child {
   padding-right: 0;
 }
 
+@media screen and (max-width: 40rem) {
+  table {
+    border-spacing: 0;
+    display: flex;
+    width: 100%;
+  }
+  table thead {
+    border-right: 0.1rem solid #e1e1e1;
+  }
+  table thead td,
+  table thead th {
+    padding-left: 0;
+  }
+  table thead td:first-child,
+  table thead th:first-child {
+    padding-left: 0;
+  }
+  table thead td:last-child,
+  table thead th:last-child {
+    padding-right: 1.2rem;
+  }
+  table tbody {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table tbody tr {
+    border-right: 0.1rem solid #e1e1e1;
+  }
+  table tbody tr:last-child {
+    border-right: none;
+  }
+  table td,
+  table th {
+    display: block;
+  }
+  table td:first-child,
+  table th:first-child {
+    padding-left: 1.2rem;
+  }
+  table td:last-child,
+  table th:last-child {
+    padding-right: 1.2rem;
+  }
+}
+
 b,
 strong {
   font-weight: bold;
@@ -558,7 +604,7 @@ h5,
 h6 {
   font-weight: 300;
   letter-spacing: -.1rem;
-  margin-bottom: 2.0rem;
+  margin-bottom: 2rem;
   margin-top: 0;
 }
 

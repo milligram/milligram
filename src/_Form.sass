@@ -20,11 +20,11 @@ textarea,
 select
 	appearance: none // Removes awkward default styles on some inputs for iOS
 	background-color: transparent
-	border: .1rem solid $color-quaternary
-	border-radius: .4rem
+	border: $form-border $color-quaternary
+	border-radius: $form-radius
 	box-shadow: none
 	box-sizing: inherit // Forced to replace inherit values of the normalize.css
-	height: 3.8rem
+	height: $form-height
 	padding: .6rem 1.0rem // The .6rem vertically centers text on FF, ignored by Webkit
 	width: 100%
 
@@ -34,20 +34,20 @@ select
 
 select
 	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat
-	padding-right: 3.0rem
+	padding-right: $rem * 3
 
 	&:focus
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%239b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>')
 
 textarea
-	min-height: 6.5rem
+	min-height: $form-text-area-min-height
 
 label,
 legend
 	display: block
-	font-size: 1.6rem
-	font-weight: 700
-	margin-bottom: .5rem
+	font-size: $form-label-font-size
+	font-weight: $form-label-font-weight
+	margin-bottom: $rem / 2
 
 fieldset
 	border-width: 0
