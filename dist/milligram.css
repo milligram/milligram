@@ -26,6 +26,33 @@ body {
   line-height: 1.6;
 }
 
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+.breadcrumb-item {
+  margin: 0;
+  display: inline;
+}
+
+.breadcrumb-item::before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #CCCCCC;
+}
+
+.breadcrumb-item:first-child::before {
+  display: none;
+}
+
+.breadcrumb-item a {
+  color: #9b4dca;
+}
+
 blockquote {
   border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
@@ -539,6 +566,52 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
+}
+
+@media screen and (max-width: 40rem) {
+  table {
+    border-spacing: 0;
+    display: flex;
+    width: 100%;
+  }
+  table thead {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table thead td,
+  table thead th {
+    padding-left: 0;
+  }
+  table thead td:first-child,
+  table thead th:first-child {
+    padding-left: 0;
+  }
+  table thead td:last-child,
+  table thead th:last-child {
+    padding-right: 1.2rem;
+  }
+  table tbody {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table tbody tr {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table tbody tr:last-child {
+    border-right: none;
+  }
+  table td,
+  table th {
+    display: block;
+  }
+  table td:first-child,
+  table th:first-child {
+    padding-left: 1.2rem;
+  }
+  table td:last-child,
+  table th:last-child {
+    padding-right: 1.2rem;
+  }
 }
 
 b,

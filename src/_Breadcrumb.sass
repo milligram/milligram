@@ -1,0 +1,23 @@
+
+// Breadcrumb
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.breadcrumb
+  padding: 8px 15px
+  margin-bottom: 20px
+  list-style: none
+  background-color: #F5F5F5
+  border-radius: 5px
+  &-item
+    margin: 0
+    display: inline
+    &::before
+      content: "/\00a0"
+      padding: 0 5px
+      color: #CCCCCC
+    &:first-child
+      &::before
+        display: none
+    a
+      color: #9b4dca
+
