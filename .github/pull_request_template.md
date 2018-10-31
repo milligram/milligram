@@ -1,12 +1,12 @@
 <!--
 
-We would love for you to contribute to Milligram and help us make this even better! Start reading this [document](https://github.com/milligram/milligram/blob/master/.github/contributing.md) to see it is not difficult as you might have imagined.
+We would love for you to contribute to Milligram and help us make this even better! Start reading this [document](contributing.md) to see it is not difficult as you might have imagined.
 
 Submit a Pull Request
 ==============================
-To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](https://github.com/milligram/milligram/blob/master/.github/contributing.md#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
+To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](contributing.md#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
 
-Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](https://github.com/milligram/milligram/blob/master/.github/contributing.md#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
+Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](contributing.md#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
 
 1. Fork the Github repo: `git clone https://github.com/milligram/milligram.git`
 1. Create a new branch: `git checkout -b issuenumber-feature-name`
@@ -22,7 +22,7 @@ Help us keep Milligram open and inclusive. Please read and follow our thoughts o
 
 License
 ==============================
-By contributing your code, you agree to license your contribution under the [MIT license](https://github.com/milligram/milligram#license).
+By contributing your code, you agree to license your contribution under the [MIT license](../license).
 
 -->
 
