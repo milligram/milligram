@@ -1,19 +1,19 @@
+os: Visual Studio 2015
+version: "{build}"
+build: off
+platform: x64
 environment:
   matrix:
-    - nodejs_version: 7
-    - nodejs_version: 6
-    - nodejs_version: 5
-    - nodejs_version: 4
+    - nodejs_version: 10
+    - nodejs_version: 8
 install:
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node $env:nodejs_version x64
   - set CI=true
-  - npm i -g npm
+  - npm i -g npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm i
+  - npm install
 matrix:
   fast_finish: true
-build: off
-version: '{build}'
 shallow_clone: true
 clone_depth: 1
 test_script: npm t
