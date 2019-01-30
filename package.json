@@ -57,13 +57,13 @@
 		"eslint": "^3.14.0",
 		"eslint-config-styled": "^0.0.0",
 		"husky": "^0.11.9",
-		"node-sass": "^3.13.1",
+		"node-sass": "^4.9.0",
 		"npm-run-all": "^2.3.0",
 		"nyc": "^10.0.0",
 		"onchange": "^2.5.0",
 		"postcss-cli": "^2.6.0",
 		"rimraf": "^2.5.4",
-		"sass-lint": "^1.10.2"
+		"sass-lint": "^1.12.1"
 	},
 	"engines": {
 		"node": ">=4"
@@ -84,5 +84,8 @@
 		"ava": "nyc ava",
 		"test": "run-s build lint ava",
 		"precommit": "run-p test"
-	}
+	},
+	"resolutions": {
+		"natives": "1.1.3"
+	  }
 }
