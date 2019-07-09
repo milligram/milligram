@@ -79,7 +79,7 @@
 		"backstop": "run-s build && run-p serve compare",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
-		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled",
+		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint . --ignore-path .gitignore package.js",
 		"ava": "nyc ava",
 		"precommit": "run-p test",
 		"prepublish": "run-s build",
