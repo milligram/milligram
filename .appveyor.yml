@@ -4,14 +4,15 @@ build: off
 platform: x64
 environment:
   matrix:
+    - nodejs_version: 12
+    - nodejs_version: 11
     - nodejs_version: 10
-    - nodejs_version: 8
 install:
   - ps: Install-Product node $env:nodejs_version x64
   - set CI=true
   - npm i -g npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm install
+  - npm i
 matrix:
   fast_finish: true
 shallow_clone: true
