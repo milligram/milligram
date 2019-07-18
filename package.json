@@ -50,7 +50,7 @@
 	"devDependencies": {
 		"autoprefixer": "^9.6.1",
 		"ava": "^2.2.0",
-		"backstopjs": "^4.1.9",
+		"backstopjs": "^3.8.9",
 		"banner-cli": "^0.14.0",
 		"browser-sync": "^2.18.5",
 		"eslint": "^6.0.1",
@@ -76,7 +76,7 @@
 		"banner": "banner-cli dist/*.css",
 		"watch": "onchange src -- run-p build",
 		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-		"backstop": "run-s build && run-p serve compare",
+		"backstop": "run-s build && run-s serve compare",
 		"reference": "backstop reference --configPath=backstop.conf.js",
 		"compare": "backstop test --configPath=backstop.conf.js",
 		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint . --ignore-path .gitignore package.js",
