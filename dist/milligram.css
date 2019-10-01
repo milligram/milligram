@@ -694,4 +694,45 @@ img {
   float: right;
 }
 
+span.tag {
+  background-color: #9b4dca;
+  border: 0.1rem solid #9b4dca;
+  border-radius: .4rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  height: 3.0rem;
+  letter-spacing: .1rem;
+  line-height: 3.0rem;
+  padding: 0 2.0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+span.tag.secondary {
+  background-color: #606c76;
+  border: 0.1rem solid #606c76;
+  color: #fff;
+}
+
+span.tag.tertiary {
+  background-color: #f4f5f6;
+  border: 0.1rem solid #f4f5f6;
+  color: #000;
+}
+
+span.tag.quaternary {
+  background-color: #d1d1d1;
+  border: 0.1rem solid #d1d1d1;
+  color: #000;
+}
+
+span.tag.quinary {
+  background-color: #e1e1e1;
+  border: 0.1rem solid #e1e1e1;
+  color: #000;
+}
+
 /*# sourceMappingURL=milligram.css.map */
