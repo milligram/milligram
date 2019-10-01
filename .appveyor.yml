@@ -10,8 +10,9 @@ install:
   - ps: Install-Product node $env:nodejs_version x64
   - set CI=true
   - npm i -g npm@latest
-  - set PATH=%APPDATA%\npm;%PATH%
+  - set PATH=%APPDATA%\npm;%PATH
   - rm -rf node_module
+  - rm package-lock.json
   - npm cache clean --force
   - npm install
 matrix:

@@ -58,14 +58,14 @@
         "eslint": "^3.14.0",
         "eslint-config-styled": "^0.0.0",
         "husky": "^0.11.9",
+        "natives": "1.1.6",
         "node-sass": "^4.12.0",
         "npm-run-all": "^2.3.0",
         "nyc": "^14.1.1",
         "onchange": "^6.1.0",
         "postcss-cli": "^6.1.3",
         "rimraf": "^2.5.4",
-        "sass-lint": "^1.12.1",
-        "natives": "1.1.6"
+        "sass-lint": "^1.12.1"
     },
     "engines": {
         "node": ">=4"
