@@ -1,6 +1,7 @@
 $RECYCLE.BIN/
 *.cab
 *.lnk
+*.lock
 *.log
 *.msi
 *.msm
