@@ -45,23 +45,24 @@
 		"test"
 	],
 	"dependencies": {
-		"normalize.css": "~5.0.0"
+		"normalize.css": "~5.0.0",
+		"yarn": "^1.19.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^6.5.4",
-		"ava": "^0.17.0",
-		"backstopjs": "^2.3.5",
+		"ava": "^2.4.0",
+		"backstopjs": "^4.3.2",
 		"banner-cli": "^0.9.2",
 		"browser-sync": "^2.18.5",
 		"editorconfig-tools": "^0.1.1",
 		"eslint": "^3.14.0",
 		"eslint-config-styled": "^0.0.0",
 		"husky": "^0.11.9",
-		"node-sass": "^4.9.0",
+		"node-sass": "^4.12.0",
 		"npm-run-all": "^2.3.0",
-		"nyc": "^10.0.0",
-		"onchange": "^2.5.0",
-		"postcss-cli": "^2.6.0",
+		"nyc": "^14.1.1",
+		"onchange": "^6.1.0",
+		"postcss-cli": "^6.1.3",
 		"rimraf": "^2.5.4",
 		"sass-lint": "^1.12.1"
 	},
@@ -87,5 +88,5 @@
 	},
 	"resolutions": {
 		"natives": "1.1.3"
-	  }
+	}
 }
