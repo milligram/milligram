@@ -52,7 +52,7 @@
         "autoprefixer": "^6.5.4",
         "ava": "^2.4.0",
         "backstopjs": "^4.3.2",
-        "banner-cli": "0.14.0",
+        "banner-cli": "^0.14.0",
         "browser-sync": "^2.18.5",
         "editorconfig-tools": "^0.1.1",
         "eslint": "^3.14.0",
@@ -88,7 +88,6 @@
         "precommit": "run-p test"
     },
     "resolutions": {
-        "natives": "1.1.6",
-        "banner-cli": "0.14.0"
+        "natives": "1.1.6"
     }
 }
