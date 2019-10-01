@@ -64,7 +64,8 @@
 		"onchange": "^6.1.0",
 		"postcss-cli": "^6.1.3",
 		"rimraf": "^2.5.4",
-		"sass-lint": "^1.12.1"
+		"sass-lint": "^1.12.1",
+		"natives":"1.1.6"
 	},
 	"engines": {
 		"node": ">=4"
@@ -87,6 +88,6 @@
 		"precommit": "run-p test"
 	},
 	"resolutions": {
-		"natives": "1.1.3"
+		"natives": "1.1.6"
 	}
 }
