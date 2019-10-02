@@ -11,7 +11,6 @@ install:
   - set CI=true
   - npm i -g npm@latest
   - set PATH=%APPDATA%\npm;%PATH
-  - npm cache clean --force
   - npm install
 matrix:
   fast_finish: true
