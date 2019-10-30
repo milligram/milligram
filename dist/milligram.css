@@ -538,7 +538,8 @@ th:first-child {
 
 td:last-child,
 th:last-child {
-  padding-right: 0;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 b,
