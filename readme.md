@@ -2,6 +2,7 @@
 
 > A minimalist CSS framework.
 
+[![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Travis Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/xcm8meymwerq0r82?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram)
 [![Codacy Status](https://img.shields.io/codacy/grade/848fb4bd6902434fab0bcfb5461284fe/master.svg)](https://www.codacy.com/app/milligram/milligram/dashboard)
