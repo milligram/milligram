@@ -337,7 +337,33 @@ input[type='radio'] {
   max-width: 100%;
   width: 100%;
 }
+/*start of edit*/
+.row th.colspan{
+  margin-left:0;
+  text-align: left;
+  width:100%;
+  
 
+}
+.row td.rowspan{
+    text-align: left;
+    margin: 0;
+    
+    padding-left:100px;
+}
+.row td.rowspan:nth-child(n+2){
+  padding-left:0px;
+  margin:0;
+
+ 
+}
+.row th.rowspan{
+    text-align: left;
+    margin:0;
+    width:100px;
+    
+}
+/*end of code to adjust for rowspan and colspan usage*/
 .row .column.column-offset-10 {
   margin-left: 10%;
 }
