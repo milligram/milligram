@@ -1,13 +1,13 @@
 tasks:
-- init: yarn install
-  command: yarn start
+  - init: yarn install
+    command: yarn start
 
 # list the ports to be exposed
 ports:
-- port: 3000
-  onOpen: open-preview
-- port: 3001
-  onOpen: ignore
+  - port: 3000
+    onOpen: open-preview
+  - port: 3001
+    onOpen: ignore
 
 vscode:
   extensions:

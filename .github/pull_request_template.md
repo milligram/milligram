@@ -26,7 +26,6 @@ By contributing your code, you agree to license your contribution under the [MIT
 
 -->
 
-
 ### Description
 
 <!-- Are you fixing a bug? Implementing a new feature? Updating the documentation? Describe here something about your changes. Don't forget to add the link to the open issue, or to other pull request related. -->
