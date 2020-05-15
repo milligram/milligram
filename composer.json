@@ -29,10 +29,10 @@
 	],
 	"ignore": [
 		".appveyor.yml",
-		".editorconfig",
-		".eslintrc",
 		".github",
 		".gitignore",
+		".gitpod.yml",
+		".prettierignore",
 		".sasslintrc",
 		".travis.yml",
 		"backstop.config.js",
