@@ -4,49 +4,16 @@
 
 table
 	border-spacing: 0
-	display: flex
 	width: 100%
-
-thead
-	border-right: .1rem solid $color-quinary
-
-tbody
-	display: flex
-	overflow-x: auto
-	white-space: nowrap
-
-tr
-	border-right: .1rem solid $color-quinary
-
-	&:last-child
-		border-right: 0
 
 td,
 th
-	display: block
+	border-bottom: .1rem solid $color-quinary
 	padding: 1.2rem 1.5rem
 	text-align: left
 
-@media (min-width: 40.0rem)
+	&:first-child
+		padding-left: 0
 
-	table
-		display: table
-
-	thead
-		border-right: 0
-		overflow-x: visible
-		white-space: normal
-
-	tbody
-		display: table-row-group
-
-	tr
-		border-right: 0
-
-		&:last-child td
-			border-bottom: 0
-
-	td,
-	th
-		border-bottom: .1rem solid $color-quinary
-		display: table-cell
+	&:last-child
+		padding-right: 0
