@@ -41,7 +41,6 @@
     "composer.json",
     "package.js",
     "package.json",
-    "src",
     "test"
   ],
   "dependencies": {
