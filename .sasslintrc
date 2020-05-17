@@ -57,7 +57,7 @@ rules:
     -
       size: 2
   property-sort-order:
-    - 1
+    - 2
     -
       order: 'alphabetical'
       ignore-custom-properties: true
