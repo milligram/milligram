@@ -81,7 +81,7 @@
     "visual-regression:compare": "backstop test --config backstop.config.js",
     "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
     "prepublish": "run-s build",
-    "test": "run-s build lint && nyc ava"
+    "test": "npm run build && nyc ava"
   },
   "husky": {
     "hooks": {
