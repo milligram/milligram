@@ -45,27 +45,27 @@
     "test"
   ],
   "dependencies": {
-    "normalize.css": "~5.0.0"
+    "normalize.css": "5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "ava": "^2.2.0",
-    "backstopjs": "^3.8.9",
-    "banner-cli": "^0.14.0",
+    "ava": "^3.8.2",
+    "backstopjs": "3.8.8",
+    "banner-cli": "^0.14.1",
     "browser-sync": "^2.18.5",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
-    "nyc": "^14.1.1",
-    "onchange": "^6.0.0",
-    "postcss-cli": "^6.1.3",
+    "nyc": "^15.0.1",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
     "prettier-standard": "^16.3.0",
-    "rimraf": "^2.5.4",
+    "rimraf": "^3.0.2",
     "sass-lint": "^1.12.1"
   },
   "engines": {
-    "node": "^10.20.1",
+    "node": "^12.16.2",
     "npm": "^6.14.4"
   },
   "scripts": {
