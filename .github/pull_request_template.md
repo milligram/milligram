@@ -14,7 +14,7 @@ Try to solve a problem for each pull request, this increases the chances of acce
 1. Push to the branch: `git push origin my-feature-name`
 1. Submit a pull request!
 
-*Note: For issues relating to the site, please use the [milligram.github.io](https://github.com/milligram/milligram.github.io)*
+_Note: For issues relating to the site, please use the [milligram/milligram.github.io](https://github.com/milligram/milligram.github.io)_
 
 Code of Conduct
 ==============================

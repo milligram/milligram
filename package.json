@@ -76,13 +76,12 @@
     "banner": "banner-cli dist/*.css",
     "watch": "onchange src -- run-p build",
     "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-    "backstop": "run-s build && run-s serve compare",
-    "reference": "backstop reference --config backstop.config.js",
-    "compare": "backstop test --config backstop.config.js",
-    "lint": "prettier-standard --check && sass-lint -c .sasslintrc src --verbose --no-exit",
+    "visual-regression": "run-s build && run-p serve visual-regression:compare",
+    "visual-regression:reference": "backstop reference --config backstop.config.js",
+    "visual-regression:compare": "backstop test --config backstop.config.js",
+    "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
     "prepublish": "run-s build",
-    "postpublish": "run-s clean",
-    "test": "npm run build && nyc ava"
+    "test": "run-s build lint && nyc ava"
   },
   "husky": {
     "hooks": {

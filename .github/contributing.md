@@ -32,7 +32,7 @@ You can do all of this from your browser using Gitpod, the free online dev envir
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/milligram/milligram)
 
-_Note: For issues relating to the site, please use the [milligram.github.io](https://github.com/milligram/milligram.github.io)_
+_Note: For issues relating to the site, please use the [milligram/milligram.github.io](https://github.com/milligram/milligram.github.io)_
 
 ## Building
 
@@ -81,7 +81,7 @@ _Note: This style guide was inspired by [Idiomatic.css](https://github.com/necol
 
 ## Test
 
-Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison run `npm test` after making changes to the source code.
+Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison run `npm run visual-regression` after making changes to the source code.
 
 ## Code of Conduct
 
