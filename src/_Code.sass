@@ -4,19 +4,19 @@
 
 code
 	background: $color-tertiary
-	border-radius: .4rem
-	font-size: 86%
-	margin: 0 .2rem
-	padding: .2rem .5rem
+	border-radius: $code-radius
+	font-size: $code-font-size
+	margin: $code-margin
+	padding: $code-padding
 	white-space: nowrap
 
 pre
 	background: $color-tertiary
-	border-left: .3rem solid $color-primary
+	border-left: $code-border $color-primary
 	overflow-y: hidden
 
 	& > code
 		border-radius: 0
 		display: block
-		padding: 1rem 1.5rem
+		padding: $code-pre-padding
 		white-space: pre

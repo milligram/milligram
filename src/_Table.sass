@@ -8,8 +8,8 @@ table
 
 td,
 th
-	border-bottom: .1rem solid $color-quinary
-	padding: 1.2rem 1.5rem
+	border-bottom: $table-border $color-quinary
+	padding: $table-padding
 	text-align: left
 
 	&:first-child
@@ -25,7 +25,7 @@ th
     width: 100%
 
     thead
-      border-right: solid .1rem $color-quinary
+      border-right: $table-border $color-quinary
 
       td,
       th
@@ -35,7 +35,7 @@ th
           padding-left: 0
 
         &:last-child
-          padding-right: 1.2rem
+          padding-right: $rem * 1.2
 
     tbody
       display: flex
@@ -43,7 +43,7 @@ th
       white-space: nowrap
 
       tr
-        border-right: solid .1rem $color-quinary
+        border-right: $table-border $color-quinary
 
         &:last-child
           border-right: none
@@ -53,7 +53,7 @@ th
       display: block
 
       &:first-child
-        padding-left: 1.2rem
+        padding-left: $rem * 1.2
 
       &:last-child
-        padding-right: 1.2rem
+        padding-right: $rem * 1.2
