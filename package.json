@@ -52,20 +52,19 @@
     "npm": "^6.14.4"
   },
   "scripts": {
-    "start": "run-p build watch serve",
-    "build": "run-s clean sass autoprefixer banner",
-    "clean": "rimraf dist",
-    "sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "banner": "banner-cli dist/*.css",
-    "watch": "onchange src -- run-p build",
-    "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-    "visual-regression": "run-s build && run-p serve visual-regression:compare",
-    "visual-regression:reference": "backstop reference --config backstop.config.js",
-    "visual-regression:compare": "backstop test --config backstop.config.js",
+    "build": "rimraf dist && run-s sass autoprefixer banner",
     "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
-    "prepublish": "run-s build",
-    "test": "npm run build && nyc ava"
+    "prepublishOnly": "npm run build",
+    "sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+    "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
+    "start": "run-p build watch serve",
+    "test": "npm run build && nyc ava",
+    "visual-regression": "run-s build && run-p serve visual-regression:compare",
+    "visual-regression:compare": "backstop test --config backstop.config.js",
+    "visual-regression:reference": "backstop reference --config backstop.config.js",
+    "watch": "onchange src -- run-p build"
   },
   "husky": {
     "hooks": {
