@@ -4,16 +4,23 @@
 
 table
   border-spacing: 0
+  display: block
+  overflow-x: auto
   width: 100%
 
 td,
 th
   border-bottom: .1rem solid $color-quinary
   padding: 1.2rem 1.5rem
-  text-align: left
 
   &:first-child
     padding-left: 0
 
   &:last-child
     padding-right: 0
+
+@media (min-width: 40.0rem)
+
+  table
+    display: table
+    overflow-x: initial
