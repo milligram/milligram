@@ -47,10 +47,6 @@
     "rimraf": "^3.0.2",
     "sass-lint": "^1.12.1"
   },
-  "engines": {
-    "node": "^12.16.2",
-    "npm": "^6.14.4"
-  },
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "banner": "banner-cli dist/*.css",
@@ -65,6 +61,14 @@
     "visual-regression:compare": "backstop test --config backstop.config.js",
     "visual-regression:reference": "backstop reference --config backstop.config.js",
     "watch": "onchange src -- run-p build"
+  },
+  "engines": {
+    "node": "^12.16.2",
+    "npm": "^6.14.4"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
   },
   "husky": {
     "hooks": {

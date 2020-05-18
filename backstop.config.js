@@ -5,13 +5,13 @@ module.exports = {
     {
       name: 'phone',
       width: 320,
-      height: 480
+      height: 480,
     },
     {
       name: 'laptop',
       width: 1280,
-      height: 800
-    }
+      height: 800,
+    },
   ],
   scenarios: [
     {
@@ -24,7 +24,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Blockquotes',
@@ -36,7 +36,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Buttons',
@@ -48,7 +48,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Lists',
@@ -60,7 +60,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Forms',
@@ -72,7 +72,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Tables',
@@ -84,7 +84,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Grids',
@@ -96,7 +96,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Code',
@@ -108,7 +108,7 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
+      onBeforeScript: null,
     },
     {
       label: 'Utilities',
@@ -120,19 +120,19 @@ module.exports = {
       delay: 500,
       misMatchThreshold: 0.1,
       onReadyScript: null,
-      onBeforeScript: null
-    }
+      onBeforeScript: null,
+    },
   ],
   paths: {
     bitmaps_reference: 'test/regression',
     bitmaps_test: 'node_modules/backstopjs/.tmp/bitmaps_test',
     casper_scripts: 'node_modules/backstopjs/.tmp/casper_scripts',
     html_report: 'node_modules/backstopjs/.tmp/html_report',
-    ci_report: 'node_modules/backstopjs/.tmp/ci_report'
+    ci_report: 'node_modules/backstopjs/.tmp/ci_report',
   },
   engine: 'phantomjs',
   report: ['browser', 'CLI', 'CI'],
   casperFlags: [],
   debug: false,
-  port: 3002
+  port: 3002,
 }

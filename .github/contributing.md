@@ -2,6 +2,8 @@
 
 We would love for you to contribute to Milligram and help us make this even better! Start reading this document to see it is not difficult as you might have imagined.
 
+_Note: For issues relating to the site, please use the [milligram/milligram.github.io](https://github.com/milligram/milligram.github.io)_
+
 ## Table of Contents
 
 - [Open an Issue](#open-an-issue)
@@ -28,15 +30,13 @@ Try to solve a problem for each pull request, this increases the chances of acce
 1. Push to the branch: `git push origin my-feature-name`
 1. Submit a pull request!
 
-You can do all of this from your browser using Gitpod, the free online dev environment.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/milligram/milligram)
-
-_Note: For issues relating to the site, please use the [milligram/milligram.github.io](https://github.com/milligram/milligram.github.io)_
-
 ## Building
 
 First install [Node.js](https://nodejs.org/en/download/) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `npm start`. This will run the build task which compiles the Sass files into Milligram.css file in the expanded and compressed version.
+
+You can do all of this from your browser using Gitpod, the free online dev environment.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/milligram/milligram)
 
 ## Style Guide
 
@@ -77,7 +77,7 @@ Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at
 			color: #000
 ```
 
-_Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css). Milligram uses an `.editorconfig` file, which most editors support, to enforce these coding standards._
+_Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css)._
 
 ## Test
 

@@ -3,7 +3,7 @@ Package.describe({
   version: '1.3.0',
   summary: 'A minimalist CSS framework.',
   git: 'https://github.com/milligram/milligram.git',
-  documentation: 'readme.md'
+  documentation: 'readme.md',
 })
 
 Package.onUse(api => {

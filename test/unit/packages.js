@@ -85,7 +85,7 @@ test('Ignore should be equal', t => {
       if (referenceIndex !== compareIndex)
         t.is(
           JSON.stringify(referenceValue.ignore),
-          JSON.stringify(compareValue.ignore)
+          JSON.stringify(compareValue.ignore),
         )
     })
   })
@@ -97,7 +97,7 @@ test('Keywords should be equal', t => {
       if (referenceIndex !== compareIndex)
         t.is(
           JSON.stringify(referenceValue.keywords),
-          JSON.stringify(compareValue.keywords)
+          JSON.stringify(compareValue.keywords),
         )
     })
   })
