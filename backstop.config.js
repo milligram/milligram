@@ -99,11 +99,11 @@ module.exports = {
       onBeforeScript: null
     },
     {
-      label: 'Codes',
+      label: 'Code',
       url: 'http://localhost:3000',
       hideSelectors: [],
       removeSelectors: [],
-      selectors: ['#codes .example'],
+      selectors: ['#code .example'],
       readyEvent: null,
       delay: 500,
       misMatchThreshold: 0.1,
