@@ -1,4 +1,4 @@
-<a align="center" href="https://milligram.io"><img width="100%" src="https://milligram.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework"></a>
+<a align="center" href="https://milligram.io"><img width="100%" src="https://milligram.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
 
 > A minimalist CSS framework.
 
@@ -53,7 +53,7 @@ $ yarn add milligram
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/contribute).
 
 ## License
 
