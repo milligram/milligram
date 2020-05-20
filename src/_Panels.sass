@@ -1,0 +1,34 @@
+// Panels
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.panel
+	margin-bottom: 20px
+	background-color: #FFFFFF
+	border-radius: 4px
+	background-color: $color-initial
+	&-default
+		border: 1px solid $color-tertiary
+		> .panel-heading,
+		> .panel-footer
+			background-color: $color-quinary
+			border-color: $color-tertiary
+	&-primary
+		border: 1px solid $color-primary
+		> .panel-heading,
+		> .panel-footer
+			background-color: $color-primary
+			border-color: $color-primary
+			color: #FFF
+	&-heading
+		border-top-left-radius: 3px
+		border-top-right-radius: 3px
+		border-bottom: 1px solid transparent
+	&-heading,
+	&-footer
+		padding: 10px 15px
+	&-footer
+		border-bottom-left-radius: 3px
+		border-bottom-right-radius: 3px
+		border-top: 1px solid transparent
+	&-body
+		padding: 15px
