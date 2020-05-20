@@ -541,6 +541,61 @@ th:last-child {
   padding-right: 0;
 }
 
+table.table-hover tbody tr:hover {
+  background-color: #e1c7f1;
+}
+
+table.table-condensed td,
+table.table-condensed th {
+  padding: 0.5rem 0.5rem;
+}
+
+@media screen and (max-width: 40rem) {
+  table {
+    border-spacing: 0;
+    display: flex;
+    width: 100%;
+  }
+  table thead {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table thead td,
+  table thead th {
+    padding-left: 0;
+  }
+  table thead td:first-child,
+  table thead th:first-child {
+    padding-left: 0;
+  }
+  table thead td:last-child,
+  table thead th:last-child {
+    padding-right: 1.2rem;
+  }
+  table tbody {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table tbody tr {
+    border-right: solid 0.1rem #e1e1e1;
+  }
+  table tbody tr:last-child {
+    border-right: none;
+  }
+  table td,
+  table th {
+    display: block;
+  }
+  table td:first-child,
+  table th:first-child {
+    padding-left: 1.2rem;
+  }
+  table td:last-child,
+  table th:last-child {
+    padding-right: 1.2rem;
+  }
+}
+
 b,
 strong {
   font-weight: bold;
