@@ -57,9 +57,9 @@
     "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
     "start": "run-p build watch serve",
     "test": "npm run build && nyc ava",
-    "visual-regression": "run-s build && run-p serve visual-regression:compare",
-    "visual-regression:compare": "backstop test --config backstop.config.js",
-    "visual-regression:reference": "backstop reference --config backstop.config.js",
+    "visual-regression": "run-p serve visual-regression:compare",
+    "visual-regression:compare": "run-s build && backstop test --config backstop.config.js",
+    "visual-regression:reference": "run-s build && backstop reference --config backstop.config.js",
     "watch": "onchange src -- run-p build"
   },
   "engines": {
