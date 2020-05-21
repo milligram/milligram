@@ -59,22 +59,22 @@ Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at
 .selector-b,
 .selector-c,
 .selector-d[type='text']
-	box-sizing: border-box
-	color: #333
-	content: ''
-	display: inline-block
-	font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
-	margin-bottom: 0
-	margin-left: 5.0rem
+  box-sizing: border-box
+  color: #333
+  content: ''
+  display: inline-block
+  font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
+  margin-bottom: 0
+  margin-left: 5.0rem
 
-	.other-selector-a
-		background: #fff
+  .other-selector-a
+    background: #fff
 
-		.other-selector-b
-			background: #fff
+    .other-selector-b
+      background: #fff
 
-		&.increasing-the-specificity
-			color: #000
+    &.increasing-the-specificity
+      color: #000
 ```
 
 _Note: This style guide was inspired by [Idiomatic.css](https://github.com/necolas/idiomatic-css)._
