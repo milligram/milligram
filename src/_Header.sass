@@ -1,0 +1,124 @@
+
+*
+    margin: 0
+    padding: 0
+
+header 
+    text-align: center
+    width: 100%
+    z-index: 999
+    padding: .4rem
+    position: fixed
+    background:#f4f5f6
+    border-bottom: 0.1rem solid #d1d1d1
+
+    input.menu-toggle
+        display: none
+       
+nav 
+    position: absolute
+    text-align: center
+    top: 100%
+    left: 0
+    background-color:#f4f5f6 
+    width: 100%
+    transform: scale(1, 0)
+    transition: transform 400ms ease-in-out
+    transform-origin: top
+
+    ul
+        list-style:none
+        margin: 0
+        margin-top: 14%
+        padding: 0
+        height: 90vh        
+    
+    li
+        margin-left: 1rem
+        height: 10%
+        list-style: none
+    
+    a
+        text-transform: uppercase
+        opacity: 0
+
+.nav-heading
+    font-size: 3rem
+
+.menu-toggle
+    &:checked
+        ~ nav
+            transform : scale(1,1)
+            a
+                opacity: 1
+                transition: opacity 200ms ease-in 100ms
+
+.menu-nav-toggle
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    display: flex
+    align-items: center
+    margin-right: 2rem
+
+    &:hover,
+    &:focus
+        cursor: pointer
+    span
+        &,
+        &:before,
+        &:after
+            display: block
+            background: #333
+            width: 2rem
+            border-radius: 0.125rem
+            position: relative
+            height: 0.25rem
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+
+        &:before
+            top: 0.8rem
+            
+        &:after
+            bottom: 0.8rem
+            
+@media screen and (min-width: 50rem)
+    .menu-nav-toggle
+        display: none
+    
+    header
+        display: grid
+        grid-template-columns: 1fr auto minmax(37.5rem, 3fr) 1fr
+
+    .nav-brand
+        grid-column: 2/3    
+
+    nav
+        all: unset
+        grid-column: 3/4
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        ul
+            margin-top: 0;      
+            display: flex
+            align-items: center
+            height: auto
+
+        li
+            margin-bottom: 0
+            margin-left: 2rem
+            align-items: center
+            height: auto
+        
+        li
+            margin-bottom: 0
+            margin-left: 2rem
+        
+        a
+           opacity: 1

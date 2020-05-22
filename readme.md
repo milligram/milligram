@@ -11,11 +11,9 @@
 [![Download Status](https://img.shields.io/npm/dt/milligram.svg)](https://www.npmjs.com/package/milligram)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
 
-
 ## Why it's awesome
 
 Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
-
 
 ## Download
 
@@ -37,7 +35,6 @@ $ npm install milligram
 $ yarn add milligram
 ```
 
-
 ## Table of Contents
 
 - [Getting Started](https://milligram.io/#getting-started)
@@ -49,16 +46,15 @@ $ yarn add milligram
 - [Tables](https://milligram.io/#tables)
 - [Grids](https://milligram.io/#grids)
 - [Codes](https://milligram.io/#codes)
+- [Codes](https://milligram.io/#header)
 - [Utilities](https://milligram.io/#utilities)
 - [Tips](https://milligram.io/#tips)
 - [Browser Support](https://milligram.io/#browser-support)
 - [Examples](https://milligram.io/#examples)
 
-
 ## Contributing
 
 Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/blob/master/.github/contributing.md).
-
 
 ## License
 
