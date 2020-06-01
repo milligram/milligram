@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - 10
-  - 8
+  - 12
 before_install:
   - npm i -g npm@latest
 cache:
   directories:
     - node_modules
+before_script:
+  - npm run lint

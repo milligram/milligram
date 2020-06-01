@@ -3,57 +3,25 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 table
-	border-spacing: 0
-	width: 100%
+  border-spacing: 0
+  display: block
+  overflow-x: auto
+  text-align: left
+  width: 100%
 
 td,
 th
-	border-bottom: .1rem solid $color-quinary
-	padding: 1.2rem 1.5rem
-	text-align: left
+  border-bottom: .1rem solid $color-quinary
+  padding: 1.2rem 1.5rem
 
-	&:first-child
-		padding-left: 0
+  &:first-child
+    padding-left: 0
 
-	&:last-child
-		padding-right: 0
+  &:last-child
+    padding-right: 0
 
-@media screen and (max-width: 40.0rem)
-	table
-		border-spacing: 0
-		display: flex
-		width: 100%
+@media (min-width: 40.0rem)
 
-		thead
-			border-right: solid .1rem $color-quinary
-
-			td,
-			th
-				padding-left: 0
-
-				&:first-child
-					padding-left: 0
-
-				&:last-child
-					padding-right: 1.2rem
-
-		tbody
-			display: flex
-			overflow-x: auto
-			white-space: nowrap
-
-			tr
-				border-right: solid .1rem $color-quinary
-
-				&:last-child
-					border-right: none
-
-		td,
-		th
-			display: block
-
-			&:first-child
-				padding-left: 1.2rem
-
-			&:last-child
-				padding-right: 1.2rem
+  table
+    display: table
+    overflow-x: initial

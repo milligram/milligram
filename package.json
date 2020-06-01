@@ -1,91 +1,84 @@
 {
-	"name": "milligram",
-	"version": "1.3.0",
-	"description": "A minimalist CSS framework.",
-	"homepage": "https://milligram.io",
-	"repository": "milligram/milligram",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"main": "dist/milligram.css",
-	"keywords": [
-		"bootstrap",
-		"css",
-		"css3",
-		"flexbox",
-		"front-end",
-		"framework",
-		"html",
-		"html5",
-		"kickstarter",
-		"less",
-		"responsive",
-		"mobile",
-		"mobile-first",
-		"postcss",
-		"responsive",
-		"sass",
-		"scss",
-		"stylus"
-	],
-	"ignore": [
-		".appveyor.yml",
-		".editorconfig",
-		".eslintrc",
-		".github",
-		".gitignore",
-		".sasslintrc",
-		".travis.yml",
-		"backstop.conf.js",
-		"bower.json",
-		"changelog.md",
-		"composer.json",
-		"package.js",
-		"package.json",
-		"src",
-		"test"
-	],
-	"dependencies": {
-		"normalize.css": "~5.0.0"
-	},
-	"devDependencies": {
-		"autoprefixer": "^6.5.4",
-		"ava": "^0.17.0",
-		"backstopjs": "^2.3.5",
-		"banner-cli": "^0.9.2",
-		"browser-sync": "^2.18.5",
-		"editorconfig-tools": "^0.1.1",
-		"eslint": "^3.14.0",
-		"eslint-config-styled": "^0.0.0",
-		"husky": "^0.11.9",
-		"node-sass": "^4.9.0",
-		"npm-run-all": "^2.3.0",
-		"nyc": "^10.0.0",
-		"onchange": "^2.5.0",
-		"postcss-cli": "^2.6.0",
-		"rimraf": "^2.5.4",
-		"sass-lint": "^1.12.1"
-	},
-	"engines": {
-		"node": ">=4"
-	},
-	"scripts": {
-		"start": "run-p build watch serve",
-		"build": "run-s clean sass autoprefixer banner",
-		"clean": "rimraf dist",
-		"sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-		"banner": "banner-cli dist/*.css",
-		"watch": "onchange src -- run-p build",
-		"serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-		"backstop": "run-s build && run-p serve compare",
-		"reference": "backstop reference --configPath=backstop.conf.js",
-		"compare": "backstop test --configPath=backstop.conf.js",
-		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check .",
-		"ava": "nyc ava",
-		"test": "run-s build lint ava",
-		"precommit": "run-p test"
-	},
-	"resolutions": {
-		"natives": "1.1.3"
-	  }
+  "name": "milligram",
+  "version": "1.4.0",
+  "description": "A minimalist CSS framework.",
+  "homepage": "https://milligram.io",
+  "repository": "milligram/milligram",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "main": "dist/milligram.css",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "css3",
+    "flexbox",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "kickstarter",
+    "less",
+    "responsive",
+    "mobile",
+    "mobile-first",
+    "postcss",
+    "responsive",
+    "sass",
+    "scss",
+    "stylus"
+  ],
+  "dependencies": {
+    "normalize.css": "~8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "ava": "^3.8.2",
+    "backstopjs": "3.8.8",
+    "banner-cli": "^0.14.1",
+    "browser-sync": "^2.18.5",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^15.1.0",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
+    "prettier-standard": "^16.3.0",
+    "rimraf": "^3.0.2",
+    "sass-lint": "^1.12.1"
+  },
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "banner": "banner-cli dist/*.css",
+    "build": "rimraf dist && run-s sass autoprefixer banner",
+    "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
+    "prepublishOnly": "npm run build",
+    "sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
+    "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
+    "start": "run-p build watch serve",
+    "test": "npm run build && nyc ava",
+    "visual-regression": "run-p serve visual-regression:compare",
+    "visual-regression:compare": "run-s build && backstop test --config backstop.config.js",
+    "visual-regression:reference": "run-s build && backstop reference --config backstop.config.js",
+    "watch": "onchange src -- run-p build"
+  },
+  "engines": {
+    "node": "^12.17.0",
+    "npm": "^6.14.5"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  }
 }

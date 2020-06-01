@@ -2,66 +2,66 @@
 // Form
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
 input[type='email'],
+input[type='month'],
 input[type='number'],
 input[type='password'],
 input[type='search'],
 input[type='tel'],
 input[type='text'],
 input[type='url'],
-input[type='color'],
-input[type='date'],
-input[type='month'],
 input[type='week'],
-input[type='datetime'],
-input[type='datetime-local'],
 input:not([type]),
 textarea,
 select
-	appearance: none // Removes awkward default styles on some inputs for iOS
-	background-color: transparent
-	border: .1rem solid $color-quaternary
-	border-radius: .4rem
-	box-shadow: none
-	box-sizing: inherit // Forced to replace inherit values of the normalize.css
-	height: 3.8rem
-	padding: .6rem 1.0rem // The .6rem vertically centers text on FF, ignored by Webkit
-	width: 100%
+  -webkit-appearance: none // sass-lint:disable-line no-vendor-prefixes
+  background-color: transparent
+  border: .1rem solid $color-quaternary
+  border-radius: .4rem
+  box-shadow: none
+  box-sizing: inherit // Forced to replace inherit values of the normalize.css
+  height: 3.8rem
+  padding: .6rem 1.0rem .7rem // This vertically centers text on FF, ignored by Webkit
+  width: 100%
 
-	&:focus
-		border-color: $color-primary
-		outline: 0
+  &:focus
+    border-color: $color-primary
+    outline: 0
 
 select
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-quaternary), 2) + '" d="M0,0l6,8l6-8"/></svg>') center right no-repeat
-	padding-right: 3.0rem
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-quaternary), 2) + '" d="M0,0l6,8l6-8"/></svg>') center right no-repeat
+  padding-right: 3.0rem
 
-	&:focus
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-primary), 2) + '" d="M0,0l6,8l6-8"/></svg>')
+  &:focus
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23' + str-slice(inspect($color-primary), 2) + '" d="M0,0l6,8l6-8"/></svg>')
+
+  &[multiple]
+    background: none
+    height: auto
 
 textarea
-	min-height: 6.5rem
+  min-height: 6.5rem
 
 label,
 legend
-	display: block
-	font-size: 1.6rem
-	font-weight: 700
-	margin-bottom: .5rem
+  display: block
+  font-size: 1.6rem
+  font-weight: 700
+  margin-bottom: .5rem
 
 fieldset
-	border-width: 0
-	padding: 0
+  border-width: 0
+  padding: 0
 
 input[type='checkbox'],
 input[type='radio']
-	display: inline
+  display: inline
 
 .label-inline
-	display: inline-block
-	font-weight: normal
-	margin-left: .5rem
-
-select[multiple]
-	height: auto
-	background: none
+  display: inline-block
+  font-weight: normal
+  margin-left: .5rem
