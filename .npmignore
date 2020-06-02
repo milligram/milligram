@@ -1,6 +1,4 @@
 .appveyor.yml
-.editorconfig
-.eslintrc
 .github
 .gitignore
 .gitpod.yml
@@ -13,6 +11,7 @@ backstop.config.js
 bower.json
 changelog.md
 composer.json
+package-lock.json
 package.js
 package.json
 test
