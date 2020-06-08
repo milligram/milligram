@@ -1,2 +1,15 @@
-dist
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+bower_components
+node_modules
+
+# testing
+coverage
 .nyc_output
+
+# production
+dist
+
+# debug
+*.log
