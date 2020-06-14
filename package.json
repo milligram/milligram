@@ -62,10 +62,6 @@
     "visual-regression:reference": "run-s build && backstop reference --config backstop.config.js",
     "watch": "onchange src -- run-p build"
   },
-  "engines": {
-    "node": "^12.17.0",
-    "npm": "^6.14.5"
-  },
   "prettier": {
     "jsxSingleQuote": false,
     "trailingComma": "all"
