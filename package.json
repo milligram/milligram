@@ -73,8 +73,7 @@
   },
   "lint-staged": {
     "**/*": [
-      "prettier-standard --format",
-      "git add"
+      "prettier-standard --format"
     ]
   }
 }
