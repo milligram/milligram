@@ -54,10 +54,10 @@
     "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
     "prepublishOnly": "npm run build",
     "sass": "sass --style expanded src/milligram.sass dist/milligram.css && sass --style compressed src/milligram.sass dist/milligram.min.css",
-    "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-    "start": "run-p build watch serve",
+    "server": "browser-sync start --no-notify -s test --ss dist -f dist",
+    "start": "run-p build watch server",
     "test": "npm run build && nyc ava",
-    "visual-regression": "run-p serve visual-regression:compare",
+    "visual-regression": "run-p server visual-regression:compare",
     "visual-regression:compare": "run-s build && backstop test --config backstop.config.js",
     "visual-regression:reference": "run-s build && backstop reference --config backstop.config.js",
     "watch": "onchange src -- run-p build"
