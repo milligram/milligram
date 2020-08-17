@@ -272,6 +272,12 @@ input[type=radio] {
   margin-left: 0.5rem;
 }
 
+input[type=file].input-file {
+  margin-left: -15rem;
+  visibility: hidden;
+  width: 15rem;
+}
+
 .container {
   margin: 0 auto;
   max-width: 112rem;
