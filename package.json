@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "ava": "^3.9.0",
+    "ava": "^3.11.1",
     "backstopjs": "3.8.8",
     "banner-cli": "^0.14.3",
     "browser-sync": "^2.18.5",
