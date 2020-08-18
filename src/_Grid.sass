@@ -31,7 +31,7 @@
     flex-wrap: wrap
 
   // Vertically Align Columns
-  // .row-* vertically aligns every .col in the .row
+  // .row-* vertically aligns every .column in the .row
   &.row-top
     align-items: flex-start
 
@@ -49,8 +49,6 @@
 
   .column
     display: block
-    // IE 11 required specifying the flex-basis otherwise it breaks mobile
-    flex: 1 1 auto
     margin-left: 0
     max-width: 100%
     width: 100%
@@ -96,59 +94,49 @@
     // across the grid. However, you can specify individual
     // columns to take up a certain size of the available area
     &.column-10
-      flex: 0 0 10%
       max-width: 10%
 
     &.column-20
-      flex: 0 0 20%
       max-width: 20%
 
     &.column-25
-      flex: 0 0 25%
       max-width: 25%
 
     &.column-33,
     &.column-34
-      flex: 0 0 33.3333%
       max-width: 33.3333%
 
     &.column-40
-      flex: 0 0 40%
       max-width: 40%
 
     &.column-50
-      flex: 0 0 50%
       max-width: 50%
 
     &.column-60
-      flex: 0 0 60%
       max-width: 60%
 
     &.column-66,
     &.column-67
-      flex: 0 0 66.6666%
       max-width: 66.6666%
 
     &.column-75
-      flex: 0 0 75%
       max-width: 75%
 
     &.column-80
-      flex: 0 0 80%
       max-width: 80%
 
     &.column-90
-      flex: 0 0 90%
       max-width: 90%
 
+    // Vertically Align Columns
     // .column-* vertically aligns an individual .column
-    .column-top
+    &.column-top
       align-self: flex-start
 
-    .column-bottom
+    &.column-bottom
       align-self: flex-end
 
-    .column-center
+    &.column-center
       align-self: center
 
 // Larger than mobile screen
