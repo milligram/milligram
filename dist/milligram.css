@@ -6,6 +6,15 @@
   * Licensed under the MIT license
  */
 
+:root {
+  --color-initial: #fff;
+  --color-primary: #9b4dca;
+  --color-secondary: #606c76;
+  --color-tertiary: #f4f5f6;
+  --color-quaternary: #d1d1d1;
+  --color-quinary: #e1e1e1;
+}
+
 *,
 *:after,
 *:before {
@@ -18,7 +27,7 @@ html {
 }
 
 body {
-  color: #606c76;
+  color: var(--color-secondary);
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
@@ -27,7 +36,7 @@ body {
 }
 
 blockquote {
-  border-left: 0.3rem solid #d1d1d1;
+  border-left: 0.3rem solid var(--color-quaternary);
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -41,10 +50,10 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: var(--color-primary);
+  border: 0.1rem solid var(--color-primary);
   border-radius: 0.4rem;
-  color: #fff;
+  color: var(--color-initial);
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -67,9 +76,9 @@ input[type=reset]:focus,
 input[type=reset]:hover,
 input[type=submit]:focus,
 input[type=submit]:hover {
-  background-color: #606c76;
-  border-color: #606c76;
-  color: #fff;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-initial);
   outline: 0;
 }
 .button[disabled],
@@ -89,8 +98,8 @@ input[type=reset][disabled]:focus,
 input[type=reset][disabled]:hover,
 input[type=submit][disabled]:focus,
 input[type=submit][disabled]:hover {
-  background-color: #9b4dca;
-  border-color: #9b4dca;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .button.button-outline,
 button.button-outline,
@@ -98,7 +107,7 @@ input[type=button].button-outline,
 input[type=reset].button-outline,
 input[type=submit].button-outline {
   background-color: transparent;
-  color: #9b4dca;
+  color: var(--color-primary);
 }
 .button.button-outline:focus, .button.button-outline:hover,
 button.button-outline:focus,
@@ -110,8 +119,8 @@ input[type=reset].button-outline:hover,
 input[type=submit].button-outline:focus,
 input[type=submit].button-outline:hover {
   background-color: transparent;
-  border-color: #606c76;
-  color: #606c76;
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
 button.button-outline[disabled]:focus,
@@ -123,7 +132,7 @@ input[type=reset].button-outline[disabled]:hover,
 input[type=submit].button-outline[disabled]:focus,
 input[type=submit].button-outline[disabled]:hover {
   border-color: inherit;
-  color: #9b4dca;
+  color: var(--color-primary);
 }
 .button.button-clear,
 button.button-clear,
@@ -132,7 +141,7 @@ input[type=reset].button-clear,
 input[type=submit].button-clear {
   background-color: transparent;
   border-color: transparent;
-  color: #9b4dca;
+  color: var(--color-primary);
 }
 .button.button-clear:focus, .button.button-clear:hover,
 button.button-clear:focus,
@@ -145,7 +154,7 @@ input[type=submit].button-clear:focus,
 input[type=submit].button-clear:hover {
   background-color: transparent;
   border-color: transparent;
-  color: #606c76;
+  color: var(--color-secondary);
 }
 .button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
 button.button-clear[disabled]:focus,
@@ -156,11 +165,11 @@ input[type=reset].button-clear[disabled]:focus,
 input[type=reset].button-clear[disabled]:hover,
 input[type=submit].button-clear[disabled]:focus,
 input[type=submit].button-clear[disabled]:hover {
-  color: #9b4dca;
+  color: var(--color-primary);
 }
 
 code {
-  background: #f4f5f6;
+  background: var(--color-tertiary);
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
@@ -169,8 +178,8 @@ code {
 }
 
 pre {
-  background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
+  background: var(--color-tertiary);
+  border-left: 0.3rem solid var(--color-primary);
   overflow-y: hidden;
 }
 pre > code {
@@ -182,7 +191,7 @@ pre > code {
 
 hr {
   border: 0;
-  border-top: 0.1rem solid #f4f5f6;
+  border-top: 0.1rem solid var(--color-tertiary);
   margin: 3rem 0;
 }
 
@@ -204,7 +213,7 @@ textarea,
 select {
   -webkit-appearance: none;
   background-color: transparent;
-  border: 0.1rem solid #d1d1d1;
+  border: 0.1rem solid var(--color-quaternary);
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
@@ -228,16 +237,16 @@ input[type=week]:focus,
 input:not([type]):focus,
 textarea:focus,
 select:focus {
-  border-color: #9b4dca;
+  border-color: var(--color-primary);
   outline: 0;
 }
 
 select {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23d1d1d1" d="M0,0l6,8l6-8"/></svg>') center right no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23ar(--color-quaternary)" d="M0,0l6,8l6-8"/></svg>') center right no-repeat;
   padding-right: 3rem;
 }
 select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%239b4dca" d="M0,0l6,8l6-8"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23ar(--color-primary)" d="M0,0l6,8l6-8"/></svg>');
 }
 select[multiple] {
   background: none;
@@ -422,11 +431,11 @@ input[type=file].input-file {
   }
 }
 a {
-  color: #9b4dca;
+  color: var(--color-primary);
   text-decoration: none;
 }
 a:focus, a:hover {
-  color: #606c76;
+  color: var(--color-secondary);
 }
 
 dl,
@@ -494,7 +503,7 @@ table {
 
 td,
 th {
-  border-bottom: 0.1rem solid #e1e1e1;
+  border-bottom: 0.1rem solid var(--color-quinary);
   padding: 1.2rem 1.5rem;
 }
 td:first-child,
