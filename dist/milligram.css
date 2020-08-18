@@ -400,13 +400,13 @@ input[type=file].input-file {
   flex: 0 0 90%;
   max-width: 90%;
 }
-.row .column .column-top {
+.row .column.column-top {
   align-self: flex-start;
 }
-.row .column .column-bottom {
+.row .column.column-bottom {
   align-self: flex-end;
 }
-.row .column .column-center {
+.row .column.column-center {
   align-self: center;
 }
 
