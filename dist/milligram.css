@@ -11,12 +11,12 @@
 *:before {
   box-sizing: inherit;
 }
-
+/*here styling is done of html tag*/
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
+/*here styling is done of body tag*/
 body {
   color: #606c76;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -25,7 +25,7 @@ body {
   letter-spacing: .01em;
   line-height: 1.6;
 }
-
+/*here styling is done of blockquote tag*/
 blockquote {
   border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
@@ -168,7 +168,7 @@ input[type='submit'].button-clear[disabled]:focus,
 input[type='submit'].button-clear[disabled]:hover {
   color: #9b4dca;
 }
-
+/*here styling is done of code tag*/
 code {
   background: #f4f5f6;
   border-radius: .4rem;
