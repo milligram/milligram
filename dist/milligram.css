@@ -14,23 +14,23 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 57.6%;
 }
 
 body {
-  color: #606c76;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.6em;
-  font-weight: 300;
+  color: #707c86;
+  font-family: 'Roboto';
+  font-size: 2.6em;
+  font-weight: 400;
   letter-spacing: .01em;
-  line-height: 1.6;
+  line-height: 3.6;
 }
 
 blockquote {
   border-left: 0.3rem solid #d1d1d1;
-  margin-left: 0;
+  margin-left: 1;
   margin-right: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.7rem;
 }
 
 blockquote *:last-child {
@@ -69,7 +69,7 @@ input[type='reset']:focus,
 input[type='reset']:hover,
 input[type='submit']:focus,
 input[type='submit']:hover {
-  background-color: #606c76;
+  background-color: #707c86;
   border-color: #606c76;
   color: #fff;
   outline: 0;
@@ -219,9 +219,9 @@ select {
   border-radius: .4rem;
   box-shadow: none;
   box-sizing: inherit;
-  height: 3.8rem;
+  height: 7.8rem;
   padding: .6rem 1.0rem .7rem;
-  width: 100%;
+  width: 200%;
 }
 
 input[type='color']:focus,
@@ -338,7 +338,7 @@ input[type='radio'] {
   flex: 1 1 auto;
   margin-left: 0;
   max-width: 100%;
-  width: 100%;
+  width: 200%;
 }
 
 .row .column.column-offset-10 {
