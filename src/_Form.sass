@@ -2,20 +2,7 @@
 // Form
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-input[type='color'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='email'],
-input[type='month'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-input[type='week'],
-input:not([type]),
+input[type]:not([type='button']):not([type='checkbox']):not([type='hidden']):not([type='image']):not([type='radio']):not([type='range']):not([type='reset']):not([type='submit']),
 textarea,
 select
   -webkit-appearance: none // sass-lint:disable-line no-vendor-prefixes
