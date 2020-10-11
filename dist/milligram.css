@@ -14,14 +14,14 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 75.5%;
 }
 
 body {
   color: #606c76;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.6em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .01em;
   line-height: 1.6;
 }
@@ -42,9 +42,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
   border: 0.1rem solid #9b4dca;
-  border-radius: .4rem;
+  border-radius: .5rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -172,7 +171,7 @@ input[type='submit'].button-clear[disabled]:hover {
 code {
   background: #f4f5f6;
   border-radius: .4rem;
-  font-size: 86%;
+  font-size: 72%;
   margin: 0 .2rem;
   padding: .2rem .5rem;
   white-space: nowrap;
@@ -221,7 +220,7 @@ select {
   box-sizing: inherit;
   height: 3.8rem;
   padding: .6rem 1.0rem .7rem;
-  width: 100%;
+  width: 80%;
 }
 
 input[type='color']:focus,
@@ -255,7 +254,7 @@ select:focus {
 
 select[multiple] {
   background: none;
-  height: auto;
+  height: 80%;
 }
 
 textarea {
@@ -342,7 +341,7 @@ input[type='radio'] {
 }
 
 .row .column.column-offset-10 {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .row .column.column-offset-20 {
@@ -625,7 +624,7 @@ img {
 }
 
 .float-left {
-  float: left;
+  float: right;
 }
 
 .float-right {
