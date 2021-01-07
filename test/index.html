@@ -10,7 +10,6 @@
     />
     <title>Milligram | A minimalist CSS framework.</title>
     <link rel="icon" href="https://milligram.io/images/icon.png" />
-    <link rel="stylesheet" href="https://milligram.io/styles/main.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
@@ -21,14 +20,30 @@
     />
     <link rel="stylesheet" href="milligram.min.css" />
     <!-- to generate this style run `$ npm start` -->
+
+    <style>
+      .column-demo {
+        background: #ccc;
+        border-radius: 2px;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <main class="wrapper">
       <section class="container" id="image">
-        <img
-          src="https://milligram.io/images/thumbnail.png"
-          alt="Milligram | A minimalist CSS framework."
-        />
+        <div class="row">
+          <div class="column column-20"></div>
+          <div class="column column-60">
+            <img
+              src="https://milligram.io/images/thumbnail.png"
+              alt="Milligram | A minimalist CSS framework."
+            />
+          </div>
+          <div class="column column-20"></div>
+        </div>
       </section>
 
       <section class="container" id="typography">
@@ -827,6 +842,73 @@
           <div class="row">
             <div class="column column-75 column-offset-25">
               <span class="column-demo">75%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="grids">
+        <h5 class="title">Grids Responsive</h5>
+        <hr />
+        <div class="example">
+          <small>row</small>
+          <div class="row row-responsive" style="border: 1px solid #9b4dca;">
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50/xs100</span>
+            </div>
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50/xs100</span>
+            </div>
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50/xs100</span>
+            </div>
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50/xs100</span>
+            </div>
+          </div>
+          <small>row</small>
+          <div class="row row-responsive" style="border: 1px solid #9b4dca;">
+            <div class="column column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50</span>
+            </div>
+            <div class="column column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50</span>
+            </div>
+            <div class="column column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50</span>
+            </div>
+            <div class="column column-sm-50 column-md-25">
+              <span class="column-demo">md25/sm50</span>
+            </div>
+          </div>
+          <small>row</small>
+          <div class="row row-responsive" style="border: 1px solid #9b4dca;">
+            <div
+              class="column column-xs-100 column-sm-60 column-offset-sm-20 column-md-50 column-offset-md-25 column-lg-40 column-offset-lg-30"
+            >
+              <span class="column-demo"
+                >xs100/sm60off20/md50off25/lg40off30-</span
+              >
+            </div>
+          </div>
+          <small>row</small>
+          <div class="row row-ressonsive" style="border: 1px solid #9b4dca;">
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">xs100/sm50/md25</span>
+            </div>
+            <div class="column column-xs-100 column-sm-50 column-md-25">
+              <span class="column-demo">xs100/sm50/md25</span>
+            </div>
+            <div class="column column-xs-100 column-sm-50 column-offset-sm-25">
+              <span class="column-demo">xs100/sm50off25</span>
+            </div>
+          </div>
+          <small>row</small>
+          <div class="row row-responsive" style="border: 1px solid #9b4dca;">
+            <div
+              class="column column-xs-33 column-offset-xs-33 column-md-50 column-offset-md-0"
+            >
+              <span class="column-demo">xs33off33/md50off0</span>
             </div>
           </div>
         </div>
