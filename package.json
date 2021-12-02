@@ -32,19 +32,19 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "ava": "^3.9.0",
+    "ava": "^3.11.1",
     "backstopjs": "3.8.8",
     "banner-cli": "^0.14.3",
     "browser-sync": "^2.18.5",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
     "onchange": "^7.0.2",
     "postcss-cli": "^7.1.1",
     "prettier-standard": "^16.3.0",
     "rimraf": "^3.0.2",
+    "sass": "^1.26.10",
     "sass-lint": "^1.12.1"
   },
   "scripts": {
@@ -53,11 +53,11 @@
     "build": "rimraf dist && run-s sass autoprefixer banner",
     "lint": "prettier-standard --check && sass-lint --verbose --no-exit",
     "prepublishOnly": "npm run build",
-    "sass": "node-sass --output-style expanded src/milligram.sass dist/milligram.css && node-sass --output-style compressed src/milligram.sass dist/milligram.min.css",
-    "serve": "browser-sync start --no-notify -s test --ss dist -f dist",
-    "start": "run-p build watch serve",
+    "sass": "sass --style expanded src/milligram.sass dist/milligram.css && sass --style compressed src/milligram.sass dist/milligram.min.css",
+    "server": "browser-sync start --no-notify -s test --ss dist -f dist",
+    "start": "run-p build watch server",
     "test": "npm run build && nyc ava",
-    "visual-regression": "run-p serve visual-regression:compare",
+    "visual-regression": "run-p server visual-regression:compare",
     "visual-regression:compare": "run-s build && backstop test --config backstop.config.js",
     "visual-regression:reference": "run-s build && backstop reference --config backstop.config.js",
     "watch": "onchange src -- run-p build"
@@ -73,8 +73,7 @@
   },
   "lint-staged": {
     "**/*": [
-      "prettier-standard --format",
-      "git add"
+      "prettier-standard --format"
     ]
   }
 }

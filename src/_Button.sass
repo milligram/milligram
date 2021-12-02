@@ -7,10 +7,10 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit']
-  background-color: $color-primary
-  border: .1rem solid $color-primary
+  background-color: var(--color-primary)
+  border: .1rem solid var(--color-primary)
   border-radius: .4rem
-  color: $color-initial
+  color: var(--color-initial)
   cursor: pointer
   display: inline-block
   font-size: 1.1rem
@@ -26,9 +26,9 @@ input[type='submit']
 
   &:focus,
   &:hover
-    background-color: $color-secondary
-    border-color: $color-secondary
-    color: $color-initial
+    background-color: var(--color-secondary)
+    border-color: var(--color-secondary)
+    color: var(--color-initial)
     outline: 0
 
   &[disabled]
@@ -37,39 +37,39 @@ input[type='submit']
 
     &:focus,
     &:hover
-      background-color: $color-primary
-      border-color: $color-primary
+      background-color: var(--color-primary)
+      border-color: var(--color-primary)
 
   &.button-outline
     background-color: transparent
-    color: $color-primary
+    color: var(--color-primary)
 
     &:focus,
     &:hover
       background-color: transparent
-      border-color: $color-secondary
-      color: $color-secondary
+      border-color: var(--color-secondary)
+      color: var(--color-secondary)
 
     &[disabled]
 
       &:focus,
       &:hover
         border-color: inherit
-        color: $color-primary
+        color: var(--color-primary)
 
   &.button-clear
     background-color: transparent
     border-color: transparent
-    color: $color-primary
+    color: var(--color-primary)
 
     &:focus,
     &:hover
       background-color: transparent
       border-color: transparent
-      color: $color-secondary
+      color: var(--color-secondary)
 
     &[disabled]
 
       &:focus,
       &:hover
-        color: $color-primary
+        color: var(--color-primary)
