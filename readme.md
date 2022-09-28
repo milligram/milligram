@@ -58,3 +58,4 @@ Want to contribute? Follow these [recommendations](https://github.com/milligram/
 ## License
 
 Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://cjpatoilo.com/license).
+Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.
