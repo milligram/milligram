@@ -45,6 +45,7 @@ $ yarn add milligram
 - [Forms](https://milligram.io/#forms)
 - [Tables](https://milligram.io/#tables)
 - [Grids](https://milligram.io/#grids)
+- [Card](https://milligram.io/#card)
 - [Code](https://milligram.io/#code)
 - [Utilities](https://milligram.io/#utilities)
 - [Tips](https://milligram.io/#tips)
