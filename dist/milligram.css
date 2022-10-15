@@ -632,4 +632,8 @@ img {
   float: right;
 }
 
+:root {
+  --highlight-color: #abcabc;
+}
+
 /*# sourceMappingURL=milligram.css.map */
