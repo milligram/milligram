@@ -53,7 +53,7 @@ $ yarn add milligram
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/contribute).
+Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram/blob/main/.github/contributing.md).
 
 ## License
 
