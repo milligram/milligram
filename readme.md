@@ -5,7 +5,7 @@
 [![Travis Status](https://travis-ci.org/milligram/milligram.svg?branch=master)](https://travis-ci.org/milligram/milligram?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/xcm8meymwerq0r82?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram)
 [![Codacy Status](https://img.shields.io/codacy/grade/848fb4bd6902434fab0bcfb5461284fe/master.svg)](https://www.codacy.com/app/milligram/milligram/dashboard)
-[![Dependencies Status](https://david-dm.org/milligram/milligram.svg)](https://david-dm.org/milligram/milligram)
+[![Dependencies Status](https://img.shields.io/librariesio/github/milligram/milligram)](https://david-dm.org/milligram/milligram)
 [![Version Status](https://badge.fury.io/js/milligram.svg)](https://www.npmjs.com/package/milligram)
 [![Download Status](https://img.shields.io/npm/dt/milligram.svg)](https://www.npmjs.com/package/milligram)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
