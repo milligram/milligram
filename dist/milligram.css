@@ -632,4 +632,9 @@ img {
   float: right;
 }
 
+footer{
+  text-align: center;
+  right: 0;
+  left: 0;
+}
 /*# sourceMappingURL=milligram.css.map */
