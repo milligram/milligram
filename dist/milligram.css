@@ -632,4 +632,18 @@ img {
   float: right;
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width : 10px ;
+}
+
+::-webkit-scrollbar-track{
+    background: #f4f5f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color : #9b4dca ;
+    border-radius : 10px ;
+}
+
 /*# sourceMappingURL=milligram.css.map */
