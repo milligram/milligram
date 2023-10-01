@@ -634,7 +634,7 @@ img {
 
 /* custom scrollbar */
 ::-webkit-scrollbar{
-    width : 15px ;
+    width : 10px ;
 }
 
 ::-webkit-scrollbar-track{
@@ -642,7 +642,8 @@ img {
 }
 
 ::-webkit-scrollbar-thumb{
-    background : linear-gradient(#9b4dca , #f4f5f6) ;
+    background-color : #9b4dca ;
+    border-radius : 10px ;
 }
 
 /*# sourceMappingURL=milligram.css.map */
