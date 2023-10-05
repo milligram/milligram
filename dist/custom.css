@@ -1,0 +1,12 @@
+/* Custom CSS for Milligram Mobile Fix */
+
+/* Revert Milligram's .column classes to 100% width on mobile */
+@media (max-width: 42rem) {
+    .column {
+      flex: 1 1 auto !important;
+      margin-left: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
+  
