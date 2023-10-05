@@ -1,4 +1,3 @@
-
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -8,15 +7,15 @@ input[type='button'],
 input[type='reset'],
 input[type='submit']
   background-color: $color-primary
-  border: .1rem solid $color-primary
-  border-radius: .4rem
+  border: 0.1rem solid $color-primary
+  border-radius: 0.4rem
   color: $color-initial
   cursor: pointer
   display: inline-block
   font-size: 1.1rem
   font-weight: 700
   height: 3.8rem
-  letter-spacing: .1rem
+  letter-spacing: 0.1rem
   line-height: 3.8rem
   padding: 0 3.0rem
   text-align: center
@@ -28,12 +27,11 @@ input[type='submit']
   &:hover
     background-color: $color-secondary
     border-color: $color-secondary
-    color: $color-initial
     outline: 0
 
   &[disabled]
-    cursor: default
-    opacity: .5
+    cursor: not-allowed
+    opacity: 0.5
 
     &:focus,
     &:hover
@@ -51,11 +49,7 @@ input[type='submit']
       color: $color-secondary
 
     &[disabled]
-
-      &:focus,
-      &:hover
-        border-color: inherit
-        color: $color-primary
+      border-color: inherit
 
   &.button-clear
     background-color: transparent
@@ -64,12 +58,7 @@ input[type='submit']
 
     &:focus,
     &:hover
-      background-color: transparent
-      border-color: transparent
       color: $color-secondary
 
     &[disabled]
-
-      &:focus,
-      &:hover
-        color: $color-primary
+      color: $color-primary
