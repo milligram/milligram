@@ -1,35 +1,36 @@
 /*!
-  * Milligram v1.4.1
-  * https://milligram.io
-  *
-  * Copyright (c) 2020 CJ Patoilo
-  * Licensed under the MIT license
+ * Milligram v1.4.1
+ * https://milligram.io
+ *
+ * Copyright (c) 2020 CJ Patoilo
+ * Licensed under the MIT license
  */
 
-*,
-*:after,
-*:before {
+/* Box sizing for all elements */
+*, *:after, *:before {
   box-sizing: inherit;
 }
 
+/* Set default font size to 10px */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
+/* Global typography settings */
 body {
   color: #606c76;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 300;
-  letter-spacing: .01em;
+  letter-spacing: 0.01rem;
   line-height: 1.6;
 }
 
+/* Blockquote styles */
 blockquote {
   border-left: 0.3rem solid #d1d1d1;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   padding: 1rem 1.5rem;
 }
 
@@ -37,147 +38,88 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
-.button,
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+/* Button styles */
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
   background-color: #9b4dca;
   border: 0.1rem solid #9b4dca;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 700;
   height: 3.8rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 3.8rem;
-  padding: 0 3.0rem;
+  padding: 0 3rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-.button:focus, .button:hover,
-button:focus,
-button:hover,
-input[type='button']:focus,
-input[type='button']:hover,
-input[type='reset']:focus,
-input[type='reset']:hover,
-input[type='submit']:focus,
-input[type='submit']:hover {
+.button:focus, .button:hover, button:focus, button:hover, input[type='button']:focus, input[type='button']:hover, input[type='reset']:focus, input[type='reset']:hover, input[type='submit']:focus, input[type='submit']:hover {
   background-color: #606c76;
   border-color: #606c76;
   color: #fff;
   outline: 0;
 }
 
-.button[disabled],
-button[disabled],
-input[type='button'][disabled],
-input[type='reset'][disabled],
-input[type='submit'][disabled] {
+.button[disabled], button[disabled], input[type='button'][disabled], input[type='reset'][disabled], input[type='submit'][disabled] {
   cursor: default;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.button[disabled]:focus, .button[disabled]:hover,
-button[disabled]:focus,
-button[disabled]:hover,
-input[type='button'][disabled]:focus,
-input[type='button'][disabled]:hover,
-input[type='reset'][disabled]:focus,
-input[type='reset'][disabled]:hover,
-input[type='submit'][disabled]:focus,
-input[type='submit'][disabled]:hover {
+.button[disabled]:focus, .button[disabled]:hover, button[disabled]:focus, button[disabled]:hover, input[type='button'][disabled]:focus, input[type='button'][disabled]:hover, input[type='reset'][disabled]:focus, input[type='reset'][disabled]:hover, input[type='submit'][disabled]:focus, input[type='submit'][disabled]:hover {
   background-color: #9b4dca;
   border-color: #9b4dca;
 }
 
-.button.button-outline,
-button.button-outline,
-input[type='button'].button-outline,
-input[type='reset'].button-outline,
-input[type='submit'].button-outline {
+/* Button outline styles */
+.button.button-outline, button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline {
   background-color: transparent;
   color: #9b4dca;
 }
 
-.button.button-outline:focus, .button.button-outline:hover,
-button.button-outline:focus,
-button.button-outline:hover,
-input[type='button'].button-outline:focus,
-input[type='button'].button-outline:hover,
-input[type='reset'].button-outline:focus,
-input[type='reset'].button-outline:hover,
-input[type='submit'].button-outline:focus,
-input[type='submit'].button-outline:hover {
+.button.button-outline:focus, .button.button-outline:hover, button.button-outline:focus, button.button-outline:hover, input[type='button'].button-outline:focus, input[type='button'].button-outline:hover, input[type='reset'].button-outline:focus, input[type='reset'].button-outline:hover, input[type='submit'].button-outline:focus, input[type='submit'].button-outline:hover {
   background-color: transparent;
   border-color: #606c76;
   color: #606c76;
 }
 
-.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
-button.button-outline[disabled]:focus,
-button.button-outline[disabled]:hover,
-input[type='button'].button-outline[disabled]:focus,
-input[type='button'].button-outline[disabled]:hover,
-input[type='reset'].button-outline[disabled]:focus,
-input[type='reset'].button-outline[disabled]:hover,
-input[type='submit'].button-outline[disabled]:focus,
-input[type='submit'].button-outline[disabled]:hover {
+.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover, button.button-outline[disabled]:focus, button.button-outline[disabled]:hover, input[type='button'].button-outline[disabled]:focus, input[type='button'].button-outline[disabled]:hover, input[type='reset'].button-outline[disabled]:focus, input[type='reset'].button-outline[disabled]:hover, input[type='submit'].button-outline[disabled]:focus, input[type='submit'].button-outline[disabled]:hover {
   border-color: inherit;
   color: #9b4dca;
 }
 
-.button.button-clear,
-button.button-clear,
-input[type='button'].button-clear,
-input[type='reset'].button-clear,
-input[type='submit'].button-clear {
+/* Button clear styles */
+.button.button-clear, button.button-clear, input[type='button'].button-clear, input[type='reset'].button-clear, input[type='submit'].button-clear {
   background-color: transparent;
   border-color: transparent;
   color: #9b4dca;
 }
 
-.button.button-clear:focus, .button.button-clear:hover,
-button.button-clear:focus,
-button.button-clear:hover,
-input[type='button'].button-clear:focus,
-input[type='button'].button-clear:hover,
-input[type='reset'].button-clear:focus,
-input[type='reset'].button-clear:hover,
-input[type='submit'].button-clear:focus,
-input[type='submit'].button-clear:hover {
+.button.button-clear:focus, .button.button-clear:hover, button.button-clear:focus, button.button-clear:hover, input[type='button'].button-clear:focus, input[type='button'].button-clear:hover, input[type='reset'].button-clear:focus, input[type='reset'].button-clear:hover, input[type='submit'].button-clear:focus, input[type='submit'].button-clear:hover {
   background-color: transparent;
   border-color: transparent;
   color: #606c76;
 }
 
-.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
-button.button-clear[disabled]:focus,
-button.button-clear[disabled]:hover,
-input[type='button'].button-clear[disabled]:focus,
-input[type='button'].button-clear[disabled]:hover,
-input[type='reset'].button-clear[disabled]:focus,
-input[type='reset'].button-clear[disabled]:hover,
-input[type='submit'].button-clear[disabled]:focus,
-input[type='submit'].button-clear[disabled]:hover {
+.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover, button.button-clear[disabled]:focus, button.button-clear[disabled]:hover, input[type='button'].button-clear[disabled]:focus, input[type='button'].button-clear[disabled]:hover, input[type='reset'].button-clear[disabled]:focus, input[type='reset'].button-clear[disabled]:hover, input[type='submit'].button-clear[disabled]:focus, input[type='submit'].button-clear[disabled]:hover {
   color: #9b4dca;
 }
 
+/* Code styles */
 code {
   background: #f4f5f6;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   font-size: 86%;
-  margin: 0 .2rem;
-  padding: .2rem .5rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
   white-space: nowrap;
 }
 
+/* Preformatted text styles */
 pre {
   background: #f4f5f6;
   border-left: 0.3rem solid #9b4dca;
@@ -191,62 +133,35 @@ pre > code {
   white-space: pre;
 }
 
+/* Horizontal rule styles */
 hr {
   border: 0;
   border-top: 0.1rem solid #f4f5f6;
-  margin: 3.0rem 0;
+  margin: 3rem 0;
 }
 
-input[type='color'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='email'],
-input[type='month'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-input[type='week'],
-input:not([type]),
-textarea,
-select {
+/* Form input styles */
+input[type='color'], input[type='date'], input[type='datetime'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], input[type='week'], input:not([type]), textarea, select {
   -webkit-appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
   height: 3.8rem;
-  padding: .6rem 1.0rem .7rem;
+  padding: 0.6rem 1rem 0.7rem;
   width: 100%;
 }
 
-input[type='color']:focus,
-input[type='date']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='email']:focus,
-input[type='month']:focus,
-input[type='number']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='text']:focus,
-input[type='url']:focus,
-input[type='week']:focus,
-input:not([type]):focus,
-textarea:focus,
-select:focus {
+input[type='color']:focus, input[type='date']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='week']:focus, input:not([type]):focus, textarea:focus, select:focus {
   border-color: #9b4dca;
   outline: 0;
 }
 
+/* Custom select styles */
 select {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%23d1d1d1" d="M0,0l6,8l6-8"/></svg>') center right no-repeat;
-  padding-right: 3.0rem;
+  padding-right: 3rem;
 }
 
 select:focus {
@@ -258,42 +173,47 @@ select[multiple] {
   height: auto;
 }
 
+/* Textarea styles */
 textarea {
   min-height: 6.5rem;
 }
 
-label,
-legend {
+/* Label and legend styles */
+label, legend {
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
+/* Fieldset styles */
 fieldset {
   border-width: 0;
   padding: 0;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+/* Inline checkbox and radio button styles */
+input[type='checkbox'], input[type='radio'] {
   display: inline;
 }
 
+/* Inline label styles */
 .label-inline {
   display: inline-block;
   font-weight: normal;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
+/* Container styles */
 .container {
   margin: 0 auto;
-  max-width: 112.0rem;
-  padding: 0 2.0rem;
+  max-width: 112rem;
+  padding: 0 2rem;
   position: relative;
   width: 100%;
 }
 
+/* Row and column styles */
 .row {
   display: flex;
   flex-direction: column;
@@ -341,6 +261,7 @@ input[type='radio'] {
   width: 100%;
 }
 
+/* Column offset styles */
 .row .column.column-offset-10 {
   margin-left: 10%;
 }
@@ -385,6 +306,7 @@ input[type='radio'] {
   margin-left: 90%;
 }
 
+/* Column width styles */
 .row .column.column-10 {
   flex: 0 0 10%;
   max-width: 10%;
@@ -440,6 +362,7 @@ input[type='radio'] {
   max-width: 90%;
 }
 
+/* Column alignment styles */
 .row .column .column-top {
   align-self: flex-start;
 }
@@ -452,18 +375,20 @@ input[type='radio'] {
   align-self: center;
 }
 
+/* Media query for larger screens */
 @media (min-width: 40rem) {
   .row {
     flex-direction: row;
-    margin-left: -1.0rem;
-    width: calc(100% + 2.0rem);
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
   }
   .row .column {
     margin-bottom: inherit;
-    padding: 0 1.0rem;
+    padding: 0 1rem;
   }
 }
 
+/* Link styles */
 a {
   color: #9b4dca;
   text-decoration: none;
@@ -473,62 +398,43 @@ a:focus, a:hover {
   color: #606c76;
 }
 
-dl,
-ol,
-ul {
+/* List styles */
+dl, ol, ul {
   list-style: none;
   margin-top: 0;
   padding-left: 0;
 }
 
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ol ol,
-ol ul,
-ul dl,
-ul ol,
-ul ul {
+/* Nested list styles */
+dl dl, dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
   font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3.0rem;
+  margin: 1.5rem 0 1.5rem 3rem;
 }
 
+/* Ordered list styles */
 ol {
   list-style: decimal inside;
 }
 
+/* Unordered list styles */
 ul {
   list-style: circle inside;
 }
 
-.button,
-button,
-dd,
-dt,
-li {
-  margin-bottom: 1.0rem;
+/* Spacing for various elements */
+.button, button, dd, dt, li {
+  margin-bottom: 1rem;
 }
 
-fieldset,
-input,
-select,
-textarea {
+fieldset, input, select, textarea {
   margin-bottom: 1.5rem;
 }
 
-blockquote,
-dl,
-figure,
-form,
-ol,
-p,
-pre,
-table,
-ul {
+blockquote, dl, figure, form, ol, p, pre, table, ul {
   margin-bottom: 2.5rem;
 }
 
+/* Table styles */
 table {
   border-spacing: 0;
   display: block;
@@ -537,22 +443,22 @@ table {
   width: 100%;
 }
 
-td,
-th {
+/* Table cell styles */
+td, th {
   border-bottom: 0.1rem solid #e1e1e1;
   padding: 1.2rem 1.5rem;
 }
 
-td:first-child,
-th:first-child {
+/* Remove padding for first and last table cells */
+td:first-child, th:first-child {
   padding-left: 0;
 }
 
-td:last-child,
-th:last-child {
+td:last-child, th:last-child {
   padding-right: 0;
 }
 
+/* Media query to revert table display to default */
 @media (min-width: 40rem) {
   table {
     display: table;
@@ -560,27 +466,25 @@ th:last-child {
   }
 }
 
-b,
-strong {
+/* Bold and strong text styles */
+b, strong {
   font-weight: bold;
 }
 
+/* Paragraph margin style */
 p {
   margin-top: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
-  letter-spacing: -.1rem;
-  margin-bottom: 2.0rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
   margin-top: 0;
 }
 
+/* Heading font size and line height */
 h1 {
   font-size: 4.6rem;
   line-height: 1.2;
@@ -598,13 +502,13 @@ h3 {
 
 h4 {
   font-size: 2.2rem;
-  letter-spacing: -.08rem;
+  letter-spacing: -0.08rem;
   line-height: 1.35;
 }
 
 h5 {
   font-size: 1.8rem;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   line-height: 1.5;
 }
 
@@ -614,16 +518,19 @@ h6 {
   line-height: 1.4;
 }
 
+/* Responsive image styles */
 img {
   max-width: 100%;
 }
 
+/* Clearfix utility */
 .clearfix:after {
   clear: both;
   content: ' ';
   display: table;
 }
 
+/* Float utility classes */
 .float-left {
   float: left;
 }
