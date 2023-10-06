@@ -28,8 +28,15 @@ By contributing your code, you agree to license your contribution under the [MIT
 
 ### Description
 
-<!-- Are you fixing a bug? Implementing a new feature? Updating the documentation? Describe here something about your changes. Don't forget to add the link to the open issue, or to other pull request related. -->
+<!---->
+In  the previous version of the code, the footer was not properly centered on the page, which can affect the overall visual appeal of the website. To address this issue, significant improvements have been made. The footer is now perfectly centered both horizontally and vertically on the page, providing a more balanced and visually pleasing layout.
 
 ### Code sample
 
 <!-- Provide code samples on [Codepen](http://codepen.io/). -->
+/* Center the content within the footer using Flexbox */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
