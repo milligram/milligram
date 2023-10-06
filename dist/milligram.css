@@ -632,4 +632,12 @@ img {
   float: right;
 }
 
-/*# sourceMappingURL=milligram.css.map */
+/* Center the content within the footer using Flexbox */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
