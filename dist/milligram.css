@@ -60,7 +60,7 @@ input[type='submit'] {
   white-space: nowrap;
 }
 
-.button:focus, .button:hover,
+.button:hover,
 button:focus,
 button:hover,
 input[type='button']:focus,
