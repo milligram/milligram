@@ -8,7 +8,7 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version x64
   - set CI=true
-  - npm i -g npm@"10-11"
+  - npm i -g npm@">=10.2.0 <11.0.0"
   - set PATH=%APPDATA%\npm;%PATH%
   - npm i
 matrix:
