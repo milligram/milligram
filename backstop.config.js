@@ -136,3 +136,22 @@ module.exports = {
   debug: false,
   port: 3002,
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var button = document.getElementById("backToTopButton");
+  
+  // Show the button when the user scrolls down 20px from the top
+  window.onscroll = function() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  };
+
+  // Scroll to the top when the button is clicked
+  button.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+});
+
