@@ -631,5 +631,23 @@ img {
 .float-right {
   float: right;
 }
+.backToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.backToTopButton:hover {
+  background-color: #0056b3;
+}
 
 /*# sourceMappingURL=milligram.css.map */
