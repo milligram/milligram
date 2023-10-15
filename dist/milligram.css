@@ -631,5 +631,11 @@ img {
 .float-right {
   float: right;
 }
+.footer{
+  border-style: solid;
+  border-color: #9b4dca;
+  border-width: 2px;
+  border-radius: 1px;
+}
 
 /*# sourceMappingURL=milligram.css.map */
