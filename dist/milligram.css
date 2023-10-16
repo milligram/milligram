@@ -60,14 +60,14 @@ input[type='submit'] {
   white-space: nowrap;
 }
 
-.button:focus, .button:hover,
-button:focus,
+.button:hover,
+
 button:hover,
-input[type='button']:focus,
+
 input[type='button']:hover,
-input[type='reset']:focus,
+
 input[type='reset']:hover,
-input[type='submit']:focus,
+
 input[type='submit']:hover {
   background-color: #606c76;
   border-color: #606c76;
@@ -106,14 +106,14 @@ input[type='submit'].button-outline {
   color: #9b4dca;
 }
 
-.button.button-outline:focus, .button.button-outline:hover,
-button.button-outline:focus,
+.button.button-outline:hover,
+
 button.button-outline:hover,
-input[type='button'].button-outline:focus,
+
 input[type='button'].button-outline:hover,
-input[type='reset'].button-outline:focus,
+
 input[type='reset'].button-outline:hover,
-input[type='submit'].button-outline:focus,
+
 input[type='submit'].button-outline:hover {
   background-color: transparent;
   border-color: #606c76;
@@ -143,14 +143,14 @@ input[type='submit'].button-clear {
   color: #9b4dca;
 }
 
-.button.button-clear:focus, .button.button-clear:hover,
-button.button-clear:focus,
+.button.button-clear:hover,
+
 button.button-clear:hover,
-input[type='button'].button-clear:focus,
+
 input[type='button'].button-clear:hover,
-input[type='reset'].button-clear:focus,
+
 input[type='reset'].button-clear:hover,
-input[type='submit'].button-clear:focus,
+
 input[type='submit'].button-clear:hover {
   background-color: transparent;
   border-color: transparent;
@@ -213,7 +213,7 @@ input[type='week'],
 input:not([type]),
 textarea,
 select {
-  -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
   border-radius: .4rem;
@@ -470,7 +470,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #606c76;
+  color: #fff;
 }
 
 dl,
