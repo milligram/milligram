@@ -35,6 +35,12 @@ $ npm install milligram
 $ yarn add milligram
 ```
 
+**Install with Bun**
+
+```sh
+$ bun add milligram
+```
+
 ## Table of Contents
 
 - [Getting Started](https://milligram.io/#getting-started)
