@@ -1,6 +1,7 @@
 'use strict'
 
 module.exports = {
+  id: 'milligram',
   viewports: [
     {
       name: 'phone',
