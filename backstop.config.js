@@ -15,6 +15,18 @@ module.exports = {
   ],
   scenarios: [
     {
+      label: 'Image',
+      url: 'http://localhost:3000',
+      hideSelectors: [],
+      removeSelectors: [],
+      selectors: ['#image'],
+      readyEvent: null,
+      delay: 500,
+      misMatchThreshold: 0.1,
+      onReadyScript: null,
+      onBeforeScript: null,
+    },
+    {
       label: 'Typography',
       url: 'http://localhost:3000',
       hideSelectors: [],
