@@ -130,9 +130,8 @@ module.exports = {
     html_report: 'node_modules/backstopjs/.tmp/html_report',
     ci_report: 'node_modules/backstopjs/.tmp/ci_report',
   },
-  engine: 'phantomjs',
+  engine: 'puppeteer',
   report: ['browser', 'CLI', 'CI'],
-  casperFlags: [],
   debug: false,
   port: 3002,
 }
