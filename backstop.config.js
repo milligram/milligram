@@ -8,6 +8,11 @@ module.exports = {
       height: 480,
     },
     {
+      name: 'tablet',
+      width: 680,
+      height: 900,
+    },
+    {
       name: 'laptop',
       width: 1280,
       height: 800,
