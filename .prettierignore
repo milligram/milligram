@@ -5,8 +5,8 @@ bower_components
 node_modules
 
 # testing
-coverage
 .nyc_output
+coverage
 
 # production
 dist
