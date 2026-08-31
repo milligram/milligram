@@ -1,6 +1,6 @@
 # Contributing
 
-We would love for you to contribute to Milligram and help us make this even better! Start reading this document to see it is not difficult as you might have imagined.
+We would love for you to contribute to Milligram and help us make this even better! Start reading this document to see it is not as difficult as you might have imagined.
 
 _Note: For issues relating to the site, please use the [milligram/milligram.github.io](https://github.com/milligram/milligram.github.io)_
 
@@ -20,9 +20,9 @@ _Note: For issues relating to the site, please use the [milligram/milligram.gith
 
 ## Submit a Pull Request
 
-To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
+To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and to attach the link to the [Codepen](http://codepen.io/) along with the description.
 
-Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
+Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look at existing issues for ideas or to see if a similar issue has already been submitted.
 
 1. Fork the Github repo: `git clone https://github.com/milligram/milligram.git`
 1. Create a new branch: `git checkout -b issuenumber-feature-name`
@@ -32,7 +32,7 @@ Try to solve a problem for each pull request, this increases the chances of acce
 
 ## Building
 
-First install [Node.js](https://nodejs.org/en/download/) for the build process. Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `npm start`. This will run the build task which compiles the Sass files into Milligram.css file in the expanded and compressed version.
+First install [Node.js](https://nodejs.org/en/download/) for the build process. Now install all the dependencies by running `npm install` from the project directory. Once you have the dependencies installed, run `npm start`. This will run the build task which compiles the Sass files into Milligram.css file in the expanded and compressed version.
 
 You can do all of this from your browser using Gitpod, the free online dev environment.
 
@@ -43,7 +43,7 @@ You can do all of this from your browser using Gitpod, the free online dev envir
 Milligram use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at how the code is being maintained, we must always be consistent. We try to follow best practices as much as possible. In addition, here are some tips you should follow:
 
 - Properties and selectors are sorted in alphabetical order
-- Always use tab to indentation, no spaces
+- Always use tab for indentation, no spaces
 - Always use single quote, i.e. `content: ''`
 - Quote attribute values in selectors, i.e. `input[type='checkbox']`
 - Avoid specifying units for zero-values, i.e. `margin: 0`
@@ -81,7 +81,7 @@ _Note: This style guide was inspired by [Idiomatic.css](https://github.com/necol
 
 ## Test
 
-Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison run `npm run visual-regression` after making changes to the source code.
+Breaking CSS is easy. Checking every responsive page element is hard. That's why Milligram uses automated visual regression testing for responsive web UI by comparing DOM screenshots at various viewport sizes. To view the comparison, run `npm run visual-regression` after making changes to the source code.
 
 ## Code of Conduct
 
