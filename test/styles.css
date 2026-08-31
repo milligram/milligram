@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #020202;
+}
+
+.dark-theme {
+  --primary-color: #020202;
+  --secondary-color: #edf2fc;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: var(--primary-color);
+}
