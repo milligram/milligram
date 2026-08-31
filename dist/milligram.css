@@ -632,4 +632,8 @@ img {
   float: right;
 }
 
+section:nth-child(even){
+  background-color: rgb(255, 209, 255);
+}
+/*to make the alternate sections differ in colour for better understanding*/
 /*# sourceMappingURL=milligram.css.map */
