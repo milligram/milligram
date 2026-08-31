@@ -289,11 +289,24 @@ input[type='radio'] {
 .container {
   margin: 0 auto;
   max-width: 112.0rem;
-  padding: 0 2.0rem;
+  padding: 0 1.0rem; /* Reduced default padding */
   position: relative;
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  .container {
+    padding: 0 1.5rem; /* Slightly increased padding on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2.0rem; /* Original padding on larger screens */
+  }
+}
+
+/* Adjustments for .row to maintain alignment across screen sizes */
 .row {
   display: flex;
   flex-direction: column;
@@ -301,168 +314,23 @@ input[type='radio'] {
   width: 100%;
 }
 
-.row.row-no-padding {
-  padding: 0;
-}
-
-.row.row-no-padding > .column {
-  padding: 0;
-}
-
-.row.row-wrap {
-  flex-wrap: wrap;
-}
-
-.row.row-top {
-  align-items: flex-start;
-}
-
-.row.row-bottom {
-  align-items: flex-end;
-}
-
-.row.row-center {
-  align-items: center;
-}
-
-.row.row-stretch {
-  align-items: stretch;
-}
-
-.row.row-baseline {
-  align-items: baseline;
-}
-
-.row .column {
-  display: block;
-  flex: 1 1 auto;
-  margin-left: 0;
-  max-width: 100%;
-  width: 100%;
-}
-
-.row .column.column-offset-10 {
-  margin-left: 10%;
-}
-
-.row .column.column-offset-20 {
-  margin-left: 20%;
-}
-
-.row .column.column-offset-25 {
-  margin-left: 25%;
-}
-
-.row .column.column-offset-33, .row .column.column-offset-34 {
-  margin-left: 33.3333%;
-}
-
-.row .column.column-offset-40 {
-  margin-left: 40%;
-}
-
-.row .column.column-offset-50 {
-  margin-left: 50%;
-}
-
-.row .column.column-offset-60 {
-  margin-left: 60%;
-}
-
-.row .column.column-offset-66, .row .column.column-offset-67 {
-  margin-left: 66.6666%;
-}
-
-.row .column.column-offset-75 {
-  margin-left: 75%;
-}
-
-.row .column.column-offset-80 {
-  margin-left: 80%;
-}
-
-.row .column.column-offset-90 {
-  margin-left: 90%;
-}
-
-.row .column.column-10 {
-  flex: 0 0 10%;
-  max-width: 10%;
-}
-
-.row .column.column-20 {
-  flex: 0 0 20%;
-  max-width: 20%;
-}
-
-.row .column.column-25 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.row .column.column-33, .row .column.column-34 {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-}
-
-.row .column.column-40 {
-  flex: 0 0 40%;
-  max-width: 40%;
-}
-
-.row .column.column-50 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.row .column.column-60 {
-  flex: 0 0 60%;
-  max-width: 60%;
-}
-
-.row .column.column-66, .row .column.column-67 {
-  flex: 0 0 66.6666%;
-  max-width: 66.6666%;
-}
-
-.row .column.column-75 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-.row .column.column-80 {
-  flex: 0 0 80%;
-  max-width: 80%;
-}
-
-.row .column.column-90 {
-  flex: 0 0 90%;
-  max-width: 90%;
-}
-
-.row .column .column-top {
-  align-self: flex-start;
-}
-
-.row .column .column-bottom {
-  align-self: flex-end;
-}
-
-.row .column .column-center {
-  align-self: center;
-}
-
-@media (min-width: 40rem) {
+@media (min-width: 600px) {
   .row {
     flex-direction: row;
-    margin-left: -1.0rem;
-    width: calc(100% + 2.0rem);
-  }
-  .row .column {
-    margin-bottom: inherit;
-    padding: 0 1.0rem;
+    margin-left: -0.5rem; /* Adjusted margin for better alignment */
+    width: calc(100% + 1.0rem);
   }
 }
+
+/* Adjust column padding for different screen sizes */
+.row .column {
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .row .column {
+    padding: 0 1.0rem; /* More padding for larger screens */
+  }
 
 a {
   color: #9b4dca;
