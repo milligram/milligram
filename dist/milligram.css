@@ -464,7 +464,7 @@ input[type='radio'] {
   }
 }
 
-a {
+ul li a,a {
   color: #9b4dca;
   text-decoration: none;
 }
@@ -509,6 +509,7 @@ dt,
 li {
   margin-bottom: 1.0rem;
 }
+
 
 fieldset,
 input,

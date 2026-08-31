@@ -23,7 +23,7 @@ _Note: For issues relating to the site, please use the [milligram/milligram.gith
 To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
 
 Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
-
+  
 1. Fork the Github repo: `git clone https://github.com/milligram/milligram.git`
 1. Create a new branch: `git checkout -b issuenumber-feature-name`
 1. Commit your changes: `git commit -m 'issuenumber-feature-name'`
