@@ -35,6 +35,83 @@ $ npm install milligram
 $ yarn add milligram
 ```
 
+## Usage
+
+### Why use a package manager?
+
+While Milligram can be used via CDN, installing via npm, Yarn, or Bower provides several advantages:
+
+- **Offline Development**: Work without an internet connection
+- **Version Control**: Pin specific versions for consistent builds
+- **Bundling**: Include Milligram in your build process for optimized production assets
+- **Customization**: Access to SASS source files for theme customization and variable overrides
+- **Better Performance**: Bundle Milligram with your own CSS to reduce HTTP requests
+
+### Using the Compiled CSS
+
+After installing via npm or Yarn, you can import the compiled CSS file directly:
+
+**Using in HTML:**
+
+```html
+<link rel="stylesheet" href="node_modules/milligram/dist/milligram.css">
+```
+
+**Importing in CSS:**
+
+```css
+@import "milligram/dist/milligram.css";
+```
+
+**Importing in JavaScript (for bundlers like webpack, parcel, etc.):**
+
+```javascript
+import "milligram/dist/milligram.css";
+// or
+require("milligram/dist/milligram.css");
+```
+
+### Customizing with SASS
+
+For advanced customization, you can import the SASS source files directly. This allows you to override variables and customize Milligram's styles before compilation.
+
+**In your SASS file:**
+
+```sass
+// Import Milligram SASS files
+@import "milligram/src/milligram"
+
+// Or import individual modules
+@import "milligram/src/_Color"
+@import "milligram/src/_Base"
+@import "milligram/src/_Typography"
+// ... etc
+```
+
+**Using with ClojureScript/shadow-cljs:**
+
+In your `shadow-cljs.edn` or build configuration, ensure your CSS bundler (like `shadow-cljs` CSS processing or `parcel`/`webpack`) can resolve `node_modules`. Then in your CSS:
+
+```css
+@import "milligram/dist/milligram.css";
+```
+
+Or if using SASS preprocessing in your ClojureScript project:
+
+```sass
+@import "milligram/src/milligram"
+```
+
+### CDN Usage
+
+For quick prototyping or when you don't need customization, you can use the CDN:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css">
+```
+
+Note: CDN links are convenient but don't allow for customization and require an internet connection.
+
 ## Table of Contents
 
 - [Getting Started](https://milligram.io/#getting-started)
