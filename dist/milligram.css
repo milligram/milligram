@@ -537,10 +537,13 @@ table {
   width: 100%;
 }
 
-td,
 th {
   border-bottom: 0.1rem solid #e1e1e1;
   padding: 1.2rem 1.5rem;
+}
+tr>td {
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 1.2rem 0 !important;
 }
 
 td:first-child,
