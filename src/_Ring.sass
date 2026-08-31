@@ -1,0 +1,50 @@
+body
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background: black
+
+@keyframes animate
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+.circle
+  position: relative
+  height: 300px
+  width: 300px
+  border-radius: 50%
+  background: linear-gradient(#33ccff, #ff0066)
+  animation: animate 2s linear infinite
+
+  &:after
+    content: ""
+    position: absolute
+    top: 35px
+    left: 35px
+    bottom: 35px
+    right: 35px
+    background: black
+    border-radius: 50%
+
+  span
+    position: absolute
+    background: linear-gradient(#33ccff, #ff0066)
+    height: 100%
+    width: 100%
+    border-radius: 50%
+
+    &:nth-child(1)
+      filter: blur(5px)
+
+    &:nth-child(2)
+      filter: blur(10px)
+
+    &:nth-child(3)
+      filter: blur(20px)
+
+    &:nth-child(4)
+      filter: blur(55px)
