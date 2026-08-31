@@ -33,3 +33,27 @@ By contributing your code, you agree to license your contribution under the [MIT
 ### Code sample
 
 <!-- Provide code samples on [Codepen](http://codepen.io/). -->
+.selector-a,
+.selector-b,
+.selector-c,
+.selector-d[type='text'] {
+  box-sizing: border-box;
+  color: #333;
+  content: '';
+  display: inline-block;
+  font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif;
+  margin-bottom: 0;
+  margin-left: 5.0rem;
+
+  .other-selector-a {
+    background: #fff;
+
+    .other-selector-b {
+      background: #fff;
+    }
+
+    &.increasing-the-specificity {
+      color: #000;
+    }
+  }
+}
