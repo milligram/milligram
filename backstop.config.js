@@ -8,12 +8,29 @@ module.exports = {
       height: 480,
     },
     {
+      name: 'tablet',
+      width: 680,
+      height: 900,
+    },
+    {
       name: 'laptop',
       width: 1280,
       height: 800,
     },
   ],
   scenarios: [
+    {
+      label: 'Image',
+      url: 'http://localhost:3000',
+      hideSelectors: [],
+      removeSelectors: [],
+      selectors: ['#image'],
+      readyEvent: null,
+      delay: 500,
+      misMatchThreshold: 0.1,
+      onReadyScript: null,
+      onBeforeScript: null,
+    },
     {
       label: 'Typography',
       url: 'http://localhost:3000',
@@ -130,9 +147,8 @@ module.exports = {
     html_report: 'node_modules/backstopjs/.tmp/html_report',
     ci_report: 'node_modules/backstopjs/.tmp/ci_report',
   },
-  engine: 'phantomjs',
+  engine: 'puppeteer',
   report: ['browser', 'CLI', 'CI'],
-  casperFlags: [],
   debug: false,
   port: 3002,
 }
