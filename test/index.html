@@ -21,8 +21,83 @@
     />
     <link rel="stylesheet" href="milligram.min.css" />
     <!-- to generate this style run `$ npm start` -->
+    <style>
+      :root {
+        --bg: #fff;
+        --text: #606c76;
+        --border: #d1d1d1;
+      }
+      [data-theme='dark'] {
+        --bg: #1a1a2e;
+        --text: #e1e1e1;
+        --border: #444;
+      }
+      [data-theme='dark'] .column-demo {
+        background: #2e2e4a;
+        color: #e1e1e1;
+      }
+      html,
+      body {
+        overflow: auto;
+        height: 100%;
+      }
+      .wrapper {
+        overflow: visible !important;
+        position: static !important;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f4f5f6;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d1d1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9b4dca;
+      }
+      [data-theme='dark'] ::-webkit-scrollbar-track {
+        background: #1a1a2e;
+      }
+      [data-theme='dark'] ::-webkit-scrollbar-thumb {
+        background: #444;
+      }
+      [data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+        background: #9b4dca;
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .theme-toggle {
+        background: none;
+        border: 0.1rem solid var(--border);
+        border-radius: 0.4rem;
+        color: var(--text);
+        cursor: pointer;
+        font-size: 1.4rem;
+        padding: 0.6rem 1.2rem;
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        z-index: 100;
+      }
+    </style>
   </head>
   <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+    <script>
+      function toggleTheme () {
+        const isDark = document.documentElement.dataset.theme === 'dark'
+        document.documentElement.dataset.theme = isDark ? '' : 'dark'
+        document.querySelector('.theme-toggle').textContent = isDark
+          ? '🌙 Dark'
+          : '☀️ Light'
+      }
+    </script>
     <main class="wrapper">
       <section class="container" id="image">
         <img

@@ -1,0 +1,34 @@
+
+// Theme
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:root
+  --bg: #fff
+  --text: #606c76
+  --surface: #f4f5f6
+  --border: #d1d1d1
+
+[data-theme="dark"]
+  --bg: #1a1a2e
+  --text: #e1e1e1
+  --surface: #16213e
+  --border: #444
+
+body
+  background-color: var(--bg)
+  color: var(--text)
+  transition: background-color .3s, color .3s
+
+// Theme toggle button
+.theme-toggle
+  background: none
+  border: .1rem solid var(--border)
+  border-radius: .4rem
+  color: var(--text)
+  cursor: pointer
+  font-size: 1.4rem
+  padding: .6rem 1.2rem
+  position: fixed
+  right: 2rem
+  top: 2rem
+  z-index: 100
